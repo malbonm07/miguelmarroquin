@@ -1,0 +1,12 @@
+.home-container {
+    &__hello {
+        width: 100%;
+        height: 100vh;
+        background: $primary-color;
+    }
+    &__contact {
+        width: 100%;
+        height: 100vh;
+        background: $primary-dark-color;
+    }
+}

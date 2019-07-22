@@ -1,7 +1,7 @@
 <template>
-  <div class="about-content">
-    <h2>about section!</h2>
-  </div>
+    <div class="contact-container">
+        <h2>Hola mundo!</h2>
+    </div>
 </template>
 
 <script>
@@ -13,4 +13,3 @@ export default {
 <style>
 
 </style>
-

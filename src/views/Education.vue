@@ -1,7 +1,7 @@
 <template>
-  <div class="about-content">
-    <h2>about section!</h2>
-  </div>
+    <div class="education-content">
+        <h2>education!</h2>
+    </div>
 </template>
 
 <script>
@@ -13,4 +13,3 @@ export default {
 <style>
 
 </style>
-

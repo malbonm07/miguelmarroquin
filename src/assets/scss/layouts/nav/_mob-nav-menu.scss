@@ -1,0 +1,11 @@
+.mob-nav-menu {
+    &__nav {
+        &--list {
+            &--link {
+                .route-link {
+                    color: $text-grey3;
+                }
+            }
+        }
+    }
+}

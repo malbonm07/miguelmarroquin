@@ -1,0 +1,60 @@
+/*######################################################################## 
+                            VIEWPORT MIXINS                                  
+#########################################################################*/
+
+@mixin phone-medium {
+    @media (min-width: 375px) { @content; }
+  }
+@mixin tablet {
+    @media (min-width: 600px) { @content; }
+  }
+@mixin tablet-landscape {
+    @media (min-width: 900px) { @content; }
+  }
+@mixin desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+@mixin lg-desktop {
+    @media (min-width: 1330px) { @content; }
+  }
+
+
+
+
+/*######################################################################## 
+                            BUTTONS MIXINS                                  
+#########################################################################*/
+  
+// @mixin btn($width, $color1, $color2) {
+//     width: $width;
+//     line-height: 40px;
+//     background: $color1;
+//     border: none;
+//     outline: none;
+//     &:hover {
+//       background: $color2;
+//       cursor: pointer;
+//     }
+// }
+// @mixin btn-outline($width, $color1, $color2) {
+//     width: $width;
+//     line-height: 40px;
+//     background: transparent;
+//     border: 1px solid $color1;
+//     outline: none;
+//     &:hover {
+//       border-color: $color2;
+//       cursor: pointer;
+//     }
+// }
+// @mixin swiper-mobile-btn {
+//   font-size: 18px;
+//   color: #4B22F4;
+//   border: none;
+//   outline: none;
+//   margin: 0 15px 0 15px;
+//   background: transparent;
+//   &:hover {
+//       cursor: pointer;
+//   }
+// }
