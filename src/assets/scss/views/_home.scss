@@ -3,10 +3,115 @@
         width: 100%;
         height: 100vh;
         background: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--text {
+            color: $white1-color;
+            margin-bottom: 1rem;
+            font-size: 92px;
+            display: flex;
+            // position: relative;
+            span:nth-child(1) {
+                display: block;
+                opacity: 0;
+                animation: fadeDownHello 1s ease-in-out forwards;
+                animation-delay: 0.18s;
+            }
+            span:nth-child(2) {
+                display: block;
+                opacity: 0;
+                animation: fadeDownHello 1s ease-in-out forwards;
+                animation-delay: .2s;
+            }
+            span:nth-child(3) {
+                display: block;
+                opacity: 0;
+                animation: fadeDownHello 1s ease-in-out forwards;
+                animation-delay: 0.3s;
+            }
+            span:nth-child(4) {
+                display: block;
+                opacity: 0;
+                animation: fadeDownHello 1s ease-in-out forwards;
+                animation-delay: 0.4s;
+            }
+            span:nth-child(5) {
+                display: block;
+                opacity: 0;
+                animation: fadeDownHello 1s ease-in-out forwards;
+                animation-delay: 0.5s;
+            }
+        }
+        &--description {
+            color: $secondary-dark-color;
+            padding: 0 15px 0 15px;
+            h2 {
+                opacity: 0;
+                animation: fadeUpDescription .3s ease-in-out forwards;
+                animation-delay: 1s;
+            }
+            &-btn {
+                opacity: 0;
+                animation: fadeUpDescription .3s ease-in-out forwards;
+                animation-delay: 1.2s;
+                background: $secondary-dark-color;
+                // background: transparent;
+                border: none;
+                // border: 2px solid $secondary-dark-color;
+                border-radius: 10px;
+                outline: none;
+                color: $white1-color;
+                // color: $secondary-dark-color;
+                padding: 4px 20px;
+                font-size: 13px;
+                // font-weight: 700;
+                letter-spacing: 1.5px;
+                font-family: 'Indie Flower';
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
     }
     &__contact {
         width: 100%;
         height: 100vh;
-        background: $primary-dark-color;
+        background: $white2-color;
+        position: relative;
+        z-index: 20;
+    }
+}
+
+@keyframes fadeDownHello {
+    0% {
+        opacity: 0;
+        color: $white2-color;
+        transform: translateY(-40px);
+    }
+    35% {
+        opacity: 0.8;
+        color: $white2-color;
+    }
+    70% {
+        color: $secondary-dark-color;
+    }
+  
+    100% {
+        color: $white1-color;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+@keyframes fadeUpDescription {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
     }
 }

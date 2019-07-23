@@ -6,7 +6,7 @@
     </div>
 
     <div class="mob-nav-btn">
-      <input type="checkbox" id="menu-toggle" @click="show = !show">
+      <input type="checkbox" ref="mobToggle" id="menu-toggle" @click="showMobNav = !showMobNav">
       <label for="menu-toggle" class="menu-toggle-label">
         <div class="line"></div>
         <div class="line"></div>
@@ -14,37 +14,75 @@
       </label>
     </div>
 
-    <router-view/>
-    <div class="mob-nav-menu">
-      <nav class="mob-nav-menu__nav">
-        <ul class="mob-nav-menu__nav--list">
-          <li class="mob-nav-menu__nav--list--link">
-            <router-link class="route-link" to="/">intro</router-link>
-          </li>
-          <li class="mob-nav-menu__nav--list--link">
-            <router-link class="route-link" to="/about">about</router-link>
-          </li>
-          <li class="mob-nav-menu__nav--list--link">
-            <router-link class="route-link" to="/skills">skills</router-link>
-          </li>
-          <li class="mob-nav-menu__nav--list--link">
-            <router-link class="route-link" to="/portfolio">portfolio</router-link>
-          </li>
-          <li class="mob-nav-menu__nav--list--link">
-            <router-link class="route-link" to="/education">education</router-link>
-          </li>
-        </ul>
-        <div>
-          <font-awesome-icon :icon="['fab', 'twitter']" />
-        </div>
-      </nav>
-    </div>
+    <transition name="pageTransition">
+      <router-view/>
+    </transition>
+
+    <transition name="fadeNav">
+      <div v-if="showMobNav" class="mob-nav-menu">
+        <nav class="mob-nav-menu__nav">
+          <ul class="mob-nav-menu__nav--list">
+            <li class="mob-nav-menu__nav--list--link">
+              <router-link class="route-link" to="/"
+              @click.native="closeMobNav">
+              intro
+            </router-link>
+            </li>
+            <li class="mob-nav-menu__nav--list--link">
+              <router-link class="route-link" to="/about"
+              @click.native="closeMobNav">
+              sobre
+            </router-link>
+            </li>
+            <li class="mob-nav-menu__nav--list--link">
+              <router-link class="route-link" to="/skills"
+              @click.native="closeMobNav">
+              skills
+            </router-link>
+            </li>
+            <li class="mob-nav-menu__nav--list--link">
+              <router-link class="route-link" to="/portfolio"
+              @click.native="closeMobNav">
+              portafolio
+            </router-link>
+            </li>
+            <li class="mob-nav-menu__nav--list--link">
+              <router-link class="route-link" to="/education"
+              @click.native="closeMobNav">
+              educación
+            </router-link>
+            </li>
+          </ul>
+          <div class="mob-nav-menu__nav--icons">
+            <h4 class="text-center text-caption uppercase text-regular mb-2 mt-3">Estemos en contacto</h4>
+            <a href="" class="icon-link"><font-awesome-icon :icon="['fa', 'envelope']" /></a>
+            <a href="" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+            <a href="" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+            <a href="" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
+            <a href="" class="icon-link"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
+            <a href="" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+          </div>
+        </nav>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
-  
+  data() {
+    return {
+      showMobNav: false,
+    }
+  },
+  methods: {
+    closeMobNav() {
+      if(this.showMobNav) {
+        this.showMobNav = false;
+        this.$refs.mobToggle.checked = false;
+      }
+    }
+  }
 }
 </script>
 
