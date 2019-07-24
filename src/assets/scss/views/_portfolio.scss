@@ -142,109 +142,79 @@
         }
     }
     &__projects {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        &--item {
+            width: 100%;
+            height: 100%;
+            background: #E7EEED;
+            padding: 15px;
+            &--img {
+                // background: red;
+                width: 90%;
+                // margin: auto;
+                .lazy-img {
+                    width: 100%;
+                }
+            }
+            &--description {
+                font-size: 14px;
+                font-weight: 200;
+                color: $secondary-dark-color;
+                h3 {
+                    font-size: 10px;
+                    margin: 5px 0;
+                    color: $text-grey2;
+                    letter-spacing: 1px;
+                }
+                .skills-description {
+                    a {
+                        font-weight: 400;
+                        color: $secondary-dark-color;
+                    }
+                }
+                .workflow-description {
+                    li {
+                        .sub {
+                            margin: 2px 0;
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+                        a {
+                            font-weight: 400;
+                            color: $secondary-dark-color;
+                        }
+                    }
+                }
+            }
+        }
         // background: $primary-color;
         // background: $white2-color;
-        background: #1F2833;
-        position: relative;
-        z-index: 20;
-        h2 {
-            font-size: 16px;
-            font-weight: 200;
-            padding: 3rem 2rem 2rem 2rem;
-            line-height: 22px;
-            color: $white2-color;
-            // color: #C5C6C7;
-            letter-spacing: 2px;
-            text-transform: capitalize;
-            // font-size: 20px;
-            // color: $secondary-dark-color;
-            // letter-spacing: 2px;
-        }
-        .skills-center {
-            width: 100%;
-            // position: relative;
-            // z-index: 40;
-            // overflow: hidden;
-            .skills-list {
-            //   list-style: none;
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-              grid-gap: 1.2rem;
-              text-align: center;
-              padding: 0 2.5rem;
-              @include phone-medium {
-                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-                grid-gap: 1.5rem;
-                padding: 0 1.5rem;
-              }
-          /* ########## intro-appear-skills-list effect ############## */
-            //   transform: translateY(40px);
-            //   transition: 0.5s all ease-in-out;
-            //   opacity: 0;
-          /* ########## end intro-appear-skills-list effect ############## */
-              li {
-                width: 80%;
-                margin: auto;
-                position: relative;
-                // background: $white1-color;
-                // background: $secondary-dark-color;
-                // background: #E7EEED;
-                // background: black;
-                border-radius: 0%;
-                // transform: rotate(0deg);
-                span, a {
-                    font-size: 3.5rem;
-                    //   color: $secondary-dark-color;
-                    // color: $secondary-dark-color;
-                    // color: $white2-color;
-                    color: #C5C6C7;
-                    width: 100%;
-                    background: transparent;
-                    text-align: center;
-                    // border-radius: 50%;
-                    transition: .3s;
-                    &:hover {
-                        cursor: pointer;
-                    }
-                    &:hover .skill-item__popover {
-                        opacity: 1;
-                    }
-                }
-                .skill-item__popover {
-                    display: block;
-                    width: 80%;
-                    position: absolute;
-                    bottom: -15px;
-                    left: 0;
-                    right: 0;
-                    font-size: 12px;
-                    margin: auto;
-                    letter-spacing: 1px;
-                    opacity: 1;
-                    transition: 0.2s;
-                }
-              }
-            }
-            // .skills-overlay {
-            //     position: absolute;
-            //     bottom: 0;
-            //     right: 0;
-            //     left: 0;
-            //     z-index: -1;
-            //     width: 130%;
-            //     height: 30%;
-            //     // transform: rotate(-25deg) translate(20px, -50px);
-            //     transform: rotate(-25deg) translate(-10px, -100px);
-            //     background: $secondary-dark-color;
-            //     border: 1px solid $primary-color;
-            // }
-            .skills-appear {
-              opacity: 1;
-              transform: translateY(0px);
-            }
-          }
+        // background: #1F2833;
+        // position: relative;
+        // z-index: 20;
+        // .project-img {
+        //     width: 100vw;
+        //     .lazy-img {
+        //         width: 100%;
+        //     }
+        // }
+        // &--item {
+        //     // display: grid;
+        //     // grid-template-columns: 100vh;
+        //     // grid-template-rows: 40% 60%;
+        //     width: 300px;
+        //     height: 300px;
+        //     &--img {
+        //         background: red;
+        //         .lazy-img {
+        //             width: 100%;
+        //         }
+        //     }
+        //     &--description {
+
+        //     }
+        // }
     }
 }
 
