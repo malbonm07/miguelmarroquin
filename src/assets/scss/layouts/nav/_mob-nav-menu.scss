@@ -40,17 +40,22 @@
             }
         }
         &--icons {
+            h4 {
+                letter-spacing: 1px;
+            }
             background: $white-color;
             text-align: center;
             position: relative;
             z-index: 90;
             .icon-link {
-                font-size: 17px;
+                font-size: 20px;
                 margin: 3px;
-                padding: 5px;
+                padding: 7px;
                 color: $secondary-color;
+                transition: all .2s ease-in-out;
                 &:hover {
                     cursor: pointer;
+                    color: $primary-dark-color;
                 }
             }
             &:before {

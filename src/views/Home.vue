@@ -8,9 +8,10 @@
         <span>L</span>
         <span>O</span>
       </div>
+      <div class="spacer"></div>
       <div class="home-container__hello--description text-center">
-        <h2 class="text-regular">I'm&nbsp;<span class="text-title">Miguel Marroquin</span>&nbsp;aspirant to Frontend Developer and UI/UX designer currently living in Perú.</h2>
-        <button class="home-container__hello--description-btn mt-1 text-light">
+        <h2>I'm&nbsp;<span class="text-regular">Miguel Marroquin</span>&nbsp;aspirant to Frontend Developer and UI/UX designer currently living in Perú.</h2>
+        <button class="home-container__hello--description-btn mt-2">
           Portfolio
         </button>
       </div>

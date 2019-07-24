@@ -13,7 +13,7 @@
     margin: 0;
 }
 html {
-    font-family: 'Lato'
+    font-family: 'Lato', serif;
 }
 // html, body {
 //     margin: 0; height: 100%; overflow: hidden
@@ -148,17 +148,17 @@ a {
                             LETTER SPACING                                  
 #########################################################################*/
 
-.text-space1 {
-    letter-spacing: 5px; 
+.letter-space1 {
+    letter-spacing: 1px; 
 }
-.text-space2 {
-    letter-spacing: 3px; 
-}
-.text-space3 {
+.letter-space2 {
     letter-spacing: 2px; 
 }
-.text-space4 {
-    letter-spacing: 1.5px;
+.letter-space3 {
+    letter-spacing: 3px; 
+}
+.letter-space4 {
+    letter-spacing: 4px;
 }
 
 
