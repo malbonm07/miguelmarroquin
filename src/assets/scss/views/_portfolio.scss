@@ -142,79 +142,52 @@
         }
     }
     &__projects {
-        width: 100vw;
-        height: 100vh;
+        // width: 100vw;
+        // height: 100vh;
+        background: #E7EEED;
+        // background: #000837;
         &--item {
-            width: 100%;
-            height: 100%;
-            background: #E7EEED;
+            width: 100vw;
+            height: 450px;
             padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             &--img {
-                // background: red;
-                width: 90%;
-                // margin: auto;
+                width: 100%;
                 .lazy-img {
                     width: 100%;
                 }
             }
-            &--description {
-                font-size: 14px;
-                font-weight: 200;
-                color: $secondary-dark-color;
-                h3 {
-                    font-size: 10px;
-                    margin: 5px 0;
-                    color: $text-grey2;
-                    letter-spacing: 1px;
+            &--links {
+                margin: 10px 0;
+                display: flex;
+                flex-direction: column;
+                line-height: 25px;
+                .details {
+                    text-align: center;
+                    color: $text-grey3;
+                    font-size: 14px;
+                    font-weight: 400;
                 }
-                .skills-description {
-                    a {
-                        font-weight: 400;
-                        color: $secondary-dark-color;
-                    }
+                .name {
+                    text-align: center;
+                    color: #2E47BF;
+                    font-size: 16;
+                    font-weight: 600;
+                    text-transform: capitalize;
                 }
-                .workflow-description {
-                    li {
-                        .sub {
-                            margin: 2px 0;
-                            font-weight: 400;
-                            font-size: 16px;
-                        }
-                        a {
-                            font-weight: 400;
-                            color: $secondary-dark-color;
-                        }
-                    }
+                .skills-span {
+                    margin-top: 10px; 
+                    text-align: center;
+                    font-size: 14px;
+                    color: $text-grey3;
+                    text-transform: capitalize;
+                    font-weight: 200;
                 }
             }
         }
-        // background: $primary-color;
-        // background: $white2-color;
-        // background: #1F2833;
-        // position: relative;
-        // z-index: 20;
-        // .project-img {
-        //     width: 100vw;
-        //     .lazy-img {
-        //         width: 100%;
-        //     }
-        // }
-        // &--item {
-        //     // display: grid;
-        //     // grid-template-columns: 100vh;
-        //     // grid-template-rows: 40% 60%;
-        //     width: 300px;
-        //     height: 300px;
-        //     &--img {
-        //         background: red;
-        //         .lazy-img {
-        //             width: 100%;
-        //         }
-        //     }
-        //     &--description {
-
-        //     }
-        // }
     }
 }
 

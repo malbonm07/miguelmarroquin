@@ -17,7 +17,6 @@
       </div>
     </div>
     <div class="home-container__contact">
-
     </div>
   </div>
 </template>

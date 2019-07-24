@@ -1,0 +1,60 @@
+.quasar-app {
+    width: 100%;
+    min-height: 100vh;
+    background: #E7EEED;
+    // background: #212121;
+    // background: #000837;
+    padding: 15px;
+    &--img {
+        // background: red;
+        width: 100%;
+        // margin: auto;
+        .lazy-img {
+            width: 100%;
+        }
+    }
+    .img-sub {
+        margin: 10px 0;
+        &__link {
+            color: #2E47BF;
+            font-weight: 600;
+            letter-spacing: 1px;
+            &-icon {
+                font-size: 14px;
+                margin-right: 3px;
+            }
+        }
+    }
+    &--description {
+        font-size: 14px;
+        font-weight: 200;
+        color: $secondary-dark-color;
+        h3 {
+            font-size: 10px;
+            margin: 1rem 0;
+            color: $text-grey2;
+            letter-spacing: 1px;
+        }
+        .skills-description {
+            a {
+                font-weight: 400;
+                color: $secondary-dark-color;
+            }
+        }
+        .workflow-description {
+            li {
+                margin-bottom: 1rem;
+                .sub {
+                    color: #2E47BF;
+                    margin: 5px 0;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                a {
+                    font-weight: 400;
+                    color: $secondary-dark-color;
+                }
+            }
+        }
+    }
+}

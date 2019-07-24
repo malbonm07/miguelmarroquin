@@ -12,7 +12,7 @@
       <div class="portfolio-container__works--description text-center">
         <h2 class="mb-2">trabajos realizados</h2>
         <ul class="portfolio-container__works--description-list">
-            <li><a>vue music app con quasar</a></li>
+            <li ><router-link to="/portfolio/quasar-app">vue music app con quasar</router-link></li>
             <li><a>vuetify landing page</a></li>
             <li><a>pagina web de escuela con nuxt</a></li>
             <li><a>blog con vue</a></li>
@@ -27,34 +27,17 @@
       </div>
     </div>
     <div class="portfolio-container__projects">
-        <!-- <div class="project-img">
-        <v-lazy-image
-                class="lazy-img" :src="proyectos[0].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-        </div> -->
-        <div class="portfolio-container__projects--item">
+        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index">
             <figure class="portfolio-container__projects--item--img">
-                <v-lazy-image
-                     class="lazy-img" :src="proyectos[0].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
+                <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
             </figure>
-            <article class="portfolio-container__projects--item--description">
-                <div class="skills-description">
-                    <h3>Skills:</h3>
-                    <p>Para retar mis habilidades decidí poner en práctica todo lo aprendido es por eso que creé una pequeña app de música que consume los servicios de spotify a traves de una <span>API</span> que utilicé en el curso de VueJS de Platzi.</p>
-                    <p>Agregué una funcionalidad que permité seleccionar y guardar las canciones en un ruta diferente llamada 'favoritos' y le agregué una pequeña notificación al momento de hacerlo, y para no perder la data utilicé el localstorage. Además de guardar canciones también se pueden eliminar</p>
-                    <p>Para diseñar la app utilicé&nbsp;<a href="https://quasar.dev/">Quasar Framework</a>ya que creo que era un buen momento para prácticar con algún framework.</p>
+            <div class="portfolio-container__projects--item--links">
+                <router-link class="details" :to="proyectos[0].link">Ver Detalles</router-link>
+                <router-link class="name" :to="proyectos[0].link">{{proyecto.titulo}}</router-link>
+                <div class="skills-span">
+                    <span v-for="(skill, i) in proyecto.skills" :key="i">{{skill}},&nbsp;</span>
                 </div>
-                <ul class="workflow-description">
-                    <h3>Herramientas:</h3>
-                    <li>
-                        <h4 class="sub">CSS</h4>
-                        <p><a href="">Sass</a>, <a href="">Bemit</a></p>
-                    </li>
-                    <li>
-                        <h4 class="sub">Javascript</h4>
-                        <p><a href="https://quasar.dev/">Quasar Framework</a>, <a href="https://vuejs.org/">Vue</a>, <a href="https://router.vuejs.org/">Vue Router</a>, </p>
-                    </li>
-                </ul>
-            </article>
+            </div>
         </div>
     </div>
   </div>
@@ -76,35 +59,102 @@ export default {
             proyectos: [
                 {
                     img: img2,
-                    titulo: 'music app'
+                    titulo: 'vue music SPA con quasar',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'VueJS',
+                        'Vue-router',
+                        'Bootstrap',
+                        'Javascript linting: Eslint',
+                        'Rest API with AXIOS',
+                        'Event-bus (plugin)',
+                        'Vue i18n',
+                        'localStorage',
+                    ]
                 },
                 {
                     img: img8,
-                    titulo: 'landing page'
+                    titulo: 'landing page con vuetify',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'Vuetify Material Design',
+                        'VueJS',
+                        'Vue router',
+                        'Sass',
+                        'Css Grid',
+                        'Css Flexbox',
+                        'Maquetación y diseño Web',
+                    ]
                 },
                 {
                     img: img1,
-                    titulo: 'escuela digital'
-                },
-                {
-                    img: img4,
-                    titulo: 'blog'
-                },
-                {
-                    img: img6,
-                    titulo: 'calculadora'
-                },
-                {
-                    img: img5,
-                    titulo: 'shop cart'
+                    titulo: 'escuela digital con nuxt',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'Nuxt',
+                        'Sass',
+                        'Css Flexbox',
+                        'Css Grid',
+                        'Vue Components',
+                    ]
                 },
                 {
                     img: img7,
-                    titulo: 'pokedex'
+                    titulo: 'blog con vuetify',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'Vuetify',
+                        'Sass',
+                        'Css Grid',
+                    ]
+                },
+                {
+                    img: img4,
+                    titulo: 'calculadora con vueJS',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'VueJS',
+                        'Props and directives',
+                        'V-model',
+                        'V-bind',
+                    ]
+                },
+                {
+                    img: img6,
+                    titulo: 'shop cart con VueJS',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'VueJS',
+                        'Vue Components',
+                        'Props, directives, methods',
+                        'Css grid, Sass',
+                        'localStorage'
+                    ]
+                },
+                {
+                    img: img5,
+                    titulo: 'pokedex con vuetify',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'VueJS',
+                        'Vuetify',
+                        'UI Components',
+                        'Vue router',
+                        'Rest API with AXIOS'
+
+                    ]
                 },
                 {
                     img: img3,
-                    titulo: 'todo list'
+                    titulo: 'todo list con vueJS',
+                    link: '/portfolio/quasar-app',
+                    skills: [
+                        'VueJS',
+                        'Props, directives, methods',
+                        'Computed properties',
+                        'Watch property',
+                        'Event handling, Conditional',
+                    ]
                 },
             ]
         }
