@@ -1,4 +1,4 @@
-.quasar-app {
+.todo-list {
     width: 100%;
     min-height: 100vh;
     background: #E7EEED;
@@ -46,11 +46,11 @@
             li {
                 margin-bottom: 1rem;
                 .sub {
+                    text-transform: capitalize;
                     color: #2E47BF;
                     margin: 5px 0;
                     font-weight: 600;
                     font-size: 18px;
-                    text-transform: capitalize;
                 }
                 a {
                     font-weight: 400;

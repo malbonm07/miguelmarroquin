@@ -12,14 +12,28 @@
       <div class="portfolio-container__works--description text-center">
         <h2 class="mb-2">trabajos realizados</h2>
         <ul class="portfolio-container__works--description-list">
-            <li ><router-link to="/portfolio/quasar-app">vue music app con quasar</router-link></li>
-            <li><a>vuetify landing page</a></li>
-            <li><a>pagina web de escuela con nuxt</a></li>
-            <li><a>blog con vue</a></li>
-            <li><a>calculadora vue</a></li>
-            <li><a>vue shop cart</a></li>
-            <li><a>mini pokedex vue</a></li>
-            <li><a>todo list vue</a></li>
+            <li><router-link class="li-route" to="/portfolio/quasar-music-app">vue music app con quasar</router-link></li>
+            <li><router-link class="li-route" to="/portfolio/vuetify-landing">
+            vuetify landing page
+            </router-link></li>
+            <li><router-link class="li-route" to="/portfolio/nuxt-school-page">
+            pagina web de escuela con nuxt
+            </router-link></li>
+            <li><router-link class="li-route" to="/portfolio/vuetify-blog">
+            blog con vue
+            </router-link></li>
+            <li><router-link class="li-route" to="/portfolio/vue-calculator">
+            calculadora vue
+            </router-link></li>
+            <li><router-link class="li-route" to="/portfolio/vue-shop-cart">
+            vue shop cart
+            </router-link></li>
+            <li><router-link class="li-route" to="/portfolio/pokedex">
+            mini pokedex vue
+            </router-link></li>
+            <li><router-link class="li-route" to="/portfolio/todo-list">
+            todo list vue
+            </router-link></li>
         </ul>
         <button class="portfolio-container__works--description-btn mt-1">
           proyectos
@@ -32,8 +46,8 @@
                 <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
             </figure>
             <div class="portfolio-container__projects--item--links">
-                <router-link class="details" :to="proyectos[0].link">Ver Detalles</router-link>
-                <router-link class="name" :to="proyectos[0].link">{{proyecto.titulo}}</router-link>
+                <router-link class="details" :to="proyecto.link">Ver Detalles</router-link>
+                <router-link class="name" :to="proyecto.link">{{proyecto.titulo}}</router-link>
                 <div class="skills-span">
                     <span v-for="(skill, i) in proyecto.skills" :key="i">{{skill}},&nbsp;</span>
                 </div>
@@ -75,7 +89,7 @@ export default {
                 {
                     img: img8,
                     titulo: 'landing page con vuetify',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/vuetify-landing',
                     skills: [
                         'Vuetify Material Design',
                         'VueJS',
@@ -89,7 +103,7 @@ export default {
                 {
                     img: img1,
                     titulo: 'escuela digital con nuxt',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/nuxt-school-page',
                     skills: [
                         'Nuxt',
                         'Sass',
@@ -101,7 +115,7 @@ export default {
                 {
                     img: img7,
                     titulo: 'blog con vuetify',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/vuetify-blog',
                     skills: [
                         'Vuetify',
                         'Sass',
@@ -111,7 +125,7 @@ export default {
                 {
                     img: img4,
                     titulo: 'calculadora con vueJS',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/vue-calculator',
                     skills: [
                         'VueJS',
                         'Props and directives',
@@ -122,7 +136,7 @@ export default {
                 {
                     img: img6,
                     titulo: 'shop cart con VueJS',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/vue-shop-cart',
                     skills: [
                         'VueJS',
                         'Vue Components',
@@ -134,7 +148,7 @@ export default {
                 {
                     img: img5,
                     titulo: 'pokedex con vuetify',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/pokedex',
                     skills: [
                         'VueJS',
                         'Vuetify',
@@ -147,7 +161,7 @@ export default {
                 {
                     img: img3,
                     titulo: 'todo list con vueJS',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/todo-list',
                     skills: [
                         'VueJS',
                         'Props, directives, methods',

@@ -7,6 +7,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 20;
+        overflow: hidden;
         &--text {
             color: $white1-color;
             text-align: center;
@@ -20,38 +23,70 @@
             span:nth-child(1) {
                 display: block;
                 opacity: 0;
-                animation: fadeDownHello 1s ease-in-out forwards;
+                animation: fadeDownHello .8s ease-in-out forwards;
                 animation-delay: 0.18s;
             }
             span:nth-child(2) {
                 display: block;
                 opacity: 0;
-                animation: fadeDownHello 1s ease-in-out forwards;
+                animation: fadeDownHello .8s ease-in-out forwards;
                 animation-delay: .2s;
             }
             span:nth-child(3) {
                 display: block;
                 opacity: 0;
-                animation: fadeDownHello 1s ease-in-out forwards;
+                animation: fadeDownHello .8s ease-in-out forwards;
                 animation-delay: 0.3s;
             }
             span:nth-child(4) {
                 display: block;
                 opacity: 0;
-                animation: fadeDownHello 1s ease-in-out forwards;
+                animation: fadeDownHello .8s ease-in-out forwards;
                 animation-delay: 0.4s;
             }
             span:nth-child(5) {
                 display: block;
                 opacity: 0;
-                animation: fadeDownHello 1s ease-in-out forwards;
+                animation: fadeDownHello .8s ease-in-out forwards;
                 animation-delay: 0.5s;
             }
         }
-        // .spacer {
-        //     width: 100%;
-        //     height: 100px;
-        // }
+        .spacer {
+            width: 0px;
+            height: 200px;
+            background: lighten($primary-color, 1%);
+            animation: cubeAppear .3s ease-in-out forwards;
+            animation-delay: 1.5s;
+            // background: red;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // bottom: 0;
+            position: absolute;
+            z-index: -1;
+            transform: translate(-50px, 100px) rotate(20deg);
+            box-shadow: 70px 70px lighten($primary-color, 2%),
+                        140px 140px lighten($primary-color, 5%),
+                        210px 210px lighten($primary-color, 6%);
+            // transform: rotate(25deg) translate(10px, 20px);
+
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: lighten($primary-color, 2%);
+                position: absolute;
+                z-index: -1;
+                transform: translate(0, -150px) rotate(0deg);
+                box-shadow: 100px 100px lighten($primary-color, 3%),
+                            200px 200px lighten($primary-color, 5%),
+                            300px 300px lighten($primary-color, 6%);
+            }
+        }
         &--description {
             color: $secondary-dark-color;
             padding: 0 15px 0 15px;
@@ -129,5 +164,18 @@
     100% {
         opacity: 1;
         transform: translateY(0)
+    }
+}
+@keyframes cubeAppear {
+    0% {
+        width: 0px;
+    }
+    // 50% {
+    //     width: 100px;
+    //     background: $primary-dark-color;
+    // }
+    100% {
+        width: 200px;
+        background: $primary-color;
     }
 }
