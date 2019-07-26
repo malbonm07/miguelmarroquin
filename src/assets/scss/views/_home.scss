@@ -17,8 +17,8 @@
             font-size: 92px;
             display: flex;
             // transform: translateY(-25px);
-            @include phone-medium {
-                // transform: translateY(-90px);
+            @include tablet {
+                font-size: 110px;
             }
             span:nth-child(1) {
                 display: block;
@@ -56,19 +56,14 @@
             height: 200px;
             background: lighten($primary-color, 1%);
             animation: cubeAppear .3s ease-in-out forwards;
-            animation-delay: 1.5s;
-            // background: red;
-            // top: 0;
-            // left: 0;
-            // right: 0;
-            // bottom: 0;
-            position: absolute;
+            animation-delay: .7s;
+            position: fixed;
             z-index: -1;
+            // border: 1px solid darken($primary-color, 0%);
             transform: translate(-50px, 100px) rotate(20deg);
             box-shadow: 70px 70px lighten($primary-color, 2%),
                         140px 140px lighten($primary-color, 5%),
                         210px 210px lighten($primary-color, 6%);
-            // transform: rotate(25deg) translate(10px, 20px);
 
             &:before {
                 content: "";
@@ -81,6 +76,7 @@
                 background: lighten($primary-color, 2%);
                 position: absolute;
                 z-index: -1;
+                // border: 1px solid darken($primary-color, 0%);
                 transform: translate(0, -150px) rotate(0deg);
                 box-shadow: 100px 100px lighten($primary-color, 3%),
                             200px 200px lighten($primary-color, 5%),
@@ -97,31 +93,40 @@
                 animation-delay: 1s;
                 font-size: 18px;
                 line-height: 25px;
+                @include tablet {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                }
             }
             &-btn {
+                background: $secondary-dark-color;
+                border: none;
                 opacity: 0;
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1.2s;
-                background: $secondary-dark-color;
-                // background: transparent;
-                border: 1px solid transparent;
-                // border: 2px solid $secondary-dark-color;
-                // border-radius: 10px;
-                // border-radius: 2px;
-                outline: none;
-                color: $white1-color;
-                // color: $secondary-dark-color;
-                padding: 3px 19px;
-                font-size: 13px;
-                // font-weight: 700;
-                letter-spacing: 1.5px;
-                font-family: 'Indie Flower';
-                &:hover {
-                    cursor: pointer;
-                    // background: $secondary-dark-color;
+                a {
+                    display: block;
+                    padding: 5px 19px;
                     // background: transparent;
-                    // border-color: $secondary-dark-color;
+                    border: 1px solid transparent;
+                    // border: 2px solid $secondary-dark-color;
+                    // border-radius: 10px;
+                    // border-radius: 2px;
+                    outline: none;
+                    color: $white1-color;
                     // color: $secondary-dark-color;
+                    // padding: 3px 19px;
+                    font-size: 14px;
+                    // font-weight: 700;
+                    letter-spacing: 1.5px;
+                    font-family: 'Indie Flower';
+                    &:hover {
+                        cursor: pointer;
+                        // background: $secondary-dark-color;
+                        // background: transparent;
+                        // border-color: $secondary-dark-color;
+                        // color: $secondary-dark-color;
+                    }
                 }
             }
         }
@@ -166,16 +171,33 @@
         transform: translateY(0)
     }
 }
+
 @keyframes cubeAppear {
     0% {
         width: 0px;
     }
-    // 50% {
-    //     width: 100px;
-    //     background: $primary-dark-color;
-    // }
     100% {
         width: 200px;
-        background: $primary-color;
+    }
+}
+
+@include tablet {
+    @keyframes cubeAppear {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 300px;
+        }
+    }
+}
+@include desktop {
+    @keyframes cubeAppear {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 400px;
+        }
     }
 }

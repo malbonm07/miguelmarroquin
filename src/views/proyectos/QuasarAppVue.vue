@@ -19,7 +19,7 @@
                 <h3>Skills:</h3>
                 <p>Para retar mis habilidades decidí poner en práctica todo lo aprendido, es por eso que creé una Single Page Aplication <span class="text-regular">(SPA)</span> de música que consume los servicios de spotify a traves de una <span class="text-regular">API</span> que utilicé en el curso de VueJS de Platzi.</p>
                 <p>Agregué una funcionalidad que permité seleccionar y guardar las canciones en un ruta diferente llamada 'favoritos' y le agregué una pequeña notificación al momento de hacerlo, y para no perder la data utilicé el localstorage. Una vez en favoritos las canciones se pueden escuchar o eliminar si se desea.</p>
-                <p>Para diseñar la app utilicé&nbsp;<a href="https://quasar.dev/">Quasar Framework</a>&nbsp;ya que creo que era un buen momento para prácticar con algún framework.</p>
+                <p>Para diseñar la app utilicé&nbsp;<a href="https://quasar.dev/">Quasar Framework</a>&nbsp;ya que creo que era un buen momento para prácticar con algún framework con componentes UI.</p>
             </div>
             <ul class="workflow-description">
                 <h3>Herramientas:</h3>

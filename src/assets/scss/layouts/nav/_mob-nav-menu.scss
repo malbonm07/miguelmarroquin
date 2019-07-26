@@ -77,9 +77,9 @@
 
 .fadeNav-enter-active, .fadeNav-leave-active {
     // transition: opacity 1s;
-    transition: 0.65s cubic-bezier(.52,.01,.16,1);
-  }
-  .fadeNav-enter, .fadeNav-leave-to /* .fade-leave-active below version 2.1.8 */ {
     transition: 0.55s cubic-bezier(.52,.01,.16,1);
+}
+.fadeNav-enter, .fadeNav-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    transition: 0.2s cubic-bezier(.52,.01,.16,1);
     opacity: 0;
-  }
+}

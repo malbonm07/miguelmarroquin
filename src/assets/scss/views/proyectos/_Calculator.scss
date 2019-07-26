@@ -1,8 +1,11 @@
 .calculator {
     width: 100%;
     min-height: 100vh;
-    background: #E7EEED;
+    background: #e7eeed;
     padding: 15px;
+    @include tablet {
+        padding: 3rem;
+    }
     &--img {
         width: 100%;
         .lazy-img {

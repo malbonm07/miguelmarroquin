@@ -4,8 +4,12 @@
     justify-content: center;
     align-items: center;
     min-height: 120px;
+    position: relative;
+    background: white;
+    z-index: 40;
     &__details {
         font-size: 10px;
+        margin-top: 20px;
         margin-bottom: 1rem;
         color: $text-grey3;
         line-height: 18px;
@@ -24,6 +28,9 @@
                 font-size: 11px;
             }
         }
+        @include tablet {
+            margin: 40px 10rem 1rem 10rem;
+        }
     }
     &__social-icons {
         font-size: 18px;
@@ -36,6 +43,26 @@
                 cursor: pointer;
                 color: $primary-dark-color;
             }
+        }
+        @include tablet {
+            margin-bottom: 20px;
+        }
+    }
+    &__up-btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        left: 50%;
+        transform: translate(-20px, -20px);
+        background: $secondary-dark-color;
+        border: 1px solid white;
+        color: $white2-color;
+        outline: none;
+        &--icon {
+            display: block;
+            font-size: 25px;
         }
     }
 }

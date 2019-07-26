@@ -2,8 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import EmptyViewComponent from './views/proyectos/EmptyViewComponent.vue'
-import Portfolio from './views/Portfolio.vue'
-import QuasarAppVue from './views/proyectos/QuasarAppVue.vue'
 
 Vue.use(Router)
 
@@ -31,8 +29,6 @@ export default new Router({
     },
     {
       path: '/portfolio',
-      name: 'portfolio',
-      // component: Portfolio,
       component: EmptyViewComponent,
       children: [
         {

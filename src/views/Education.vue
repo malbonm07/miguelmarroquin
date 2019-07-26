@@ -14,38 +14,38 @@
             <div class="education-container__courses--description text-center">
                 <h2 class="mb-2">couses i did</h2>
                 <ul class="education-container__courses--description-list">
-                    <li>Fundamentos de Javascript.</li>
-                    <li>website performance optimizactón.</li>
-                    <li>Advance course of Vue.js</li>
-                    <li>UI/UX Basic</li>
-                    <li>Curso de diseño de prototipos</li>
-                    <li>Javascript testing con Jest</li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1339-fundamentos-javascript/diploma/detalle/" target="_blank" class="text-white">Fundamentos de Javascript</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1390-optimizacion-web/diploma/detalle/" target="_blank" class="text-white">Website Performance Optimization</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1145-vuejs-profesional/diploma/detalle/" target="_blank" class="text-white">Curso Avanzado VueJS</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1140-diseno-interfaces-ux/diploma/detalle/" target="_blank" class="text-white">Diseño de interfaces UI/UX</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1373-diseno-prototipos/diploma/detalle/" target="_blank" class="text-white">Curso de Diseño de Prototipos</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1357-js-jest/diploma/detalle/" target="_blank" class="text-white">Javascript testing con Jest</a></li>
                 </ul>
-                <button class="education-container__courses--description-btn mt-1">
-                Certificates
+                <button class="education-container__courses--description-btn mt-1" v-scroll-to="{el: '#certificates'}">
+                Certificados
                 </button>
             </div>
         </div>
         <div class="education-container__certificates">
-            <h2 class="education-container__certificates--title">
-                Certificates
+            <h2 class="education-container__certificates--title" id="certificates">
+                Certificados
             </h2>
             <div class="education-container__certificates--lists">
                 <h3>Freecodecamp</h3>
                 <ul class="mb-2 text-center">
-                    <li><a href="">Responsive Web Design</a></li>
-                    <li><a href="">Javascript algorithms and Data Structures</a></li>
+                    <li><a href="https://www.freecodecamp.org/certification/malbonm07/responsive-web-design" target="_blank">Responsive Web Design</a></li>
+                    <li><a href="https://www.freecodecamp.org/certification/malbonm07/javascript-algorithms-and-data-structures" target="_blank">Javascript algorithms and Data Structures</a></li>
                 </ul>
                 <h3>Platzi</h3>
                 <ul class="mb-2 text-center">
-                    <li><a href="">Javascript Basics</a></li>
-                    <li><a href="">Git and Github</a></li>
-                    <li><a href="">Bootstrap</a></li>
-                    <li><a href="">Online Web Development course</a></li>
-                    <li><a href="">Web performance optimization (WPO)</a></li>
-                    <li><a href="">VueJS Basics</a></li>
-                    <li><a href="">Advanced course VueJS</a></li>
-                    <li><a href="">NodeJS Basic</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1339-fundamentos-javascript/diploma/detalle/" target="_blank">Javascript Basics</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1170-git-github-2017/diploma/detalle/" target="_blank">Git and Github</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1111-vuejs/diploma/detalle/" target="_blank">Bootstrap</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1350-html5-css3/diploma/detalle/" target="_blank">Online Web Development course</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1390-optimizacion-web/diploma/detalle/" target="_blank">Web performance optimization (WPO)</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1111-vuejs/diploma/detalle/" target="_blank">VueJS Basics</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1145-vuejs-profesional/diploma/detalle/" target="_blank">Advanced course VueJS</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1380-basico-nodejs/diploma/detalle/" target="_blank">NodeJS Basic</a></li>
                 </ul>
             </div>
         </div>

@@ -1,6 +1,65 @@
-.navbar {
+.desk-nav-menu {
     display: none;
     @include tablet {
         display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        &__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            &--link {
+                margin: 5px;
+                .route-link {
+                    font-family: 'Indie Flower', 'Lato';
+                    padding: 10px;
+                    color: $white2-color;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                }
+            }
+            &--link:nth-child(1) {
+                opacity: 0;
+                animation: fadeDownDeskLi .2s ease-in-out forwards;
+                animation-delay: 1.1s;
+            }
+            &--link:nth-child(2) {
+                opacity: 0;
+                animation: fadeDownDeskLi .2s ease-in-out forwards;
+                animation-delay: 1.15s;
+            }
+            &--link:nth-child(3) {
+                opacity: 0;
+                animation: fadeDownDeskLi .2s ease-in-out forwards;
+                animation-delay: 1.2s;
+            }
+            &--link:nth-child(4) {
+                opacity: 0;
+                animation: fadeDownDeskLi .2s ease-in-out forwards;
+                animation-delay: 1.25s;
+            }
+            &--link:nth-child(5) {
+                opacity: 0;
+                animation: fadeDownDeskLi .2s ease-in-out forwards;
+                animation-delay: 1.3s;
+            }
+        }
+    }
+}
+
+@keyframes fadeDownDeskLi {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

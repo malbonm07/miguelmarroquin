@@ -1,8 +1,38 @@
 <template>
   <div id="app" class="app-container">
-    <div id="nav" class="navbar">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="nav" class="desk-nav-menu">
+      <ul class="desk-nav-menu__nav">
+        <li class="desk-nav-menu__nav--link">
+          <router-link class="route-link" to="/"
+          @click.native="closeMobNav">
+          intro
+        </router-link>
+        </li>
+        <li class="desk-nav-menu__nav--link">
+          <router-link class="route-link" to="/about"
+          @click.native="closeMobNav">
+          sobre
+        </router-link>
+        </li>
+        <li class="desk-nav-menu__nav--link">
+          <router-link class="route-link" to="/skills"
+          @click.native="closeMobNav">
+          skills
+        </router-link>
+        </li>
+        <li class="desk-nav-menu__nav--link">
+          <router-link class="route-link" to="/portfolio"
+          @click.native="closeMobNav">
+          portafolio
+        </router-link>
+        </li>
+        <li class="desk-nav-menu__nav--link">
+          <router-link class="route-link" to="/education"
+          @click.native="closeMobNav">
+          educación
+        </router-link>
+        </li>
+      </ul>
     </div>
 
     <div class="mob-nav-btn">
@@ -14,9 +44,9 @@
       </label>
     </div>
 
-    <transition name="pageTransition">
+    <transition name="page" mode="out-in">
       <router-view/>
-    </transition>
+    </transition> 
 
     <footer class="footer">
       <div class="footer__details text-center text-light">
@@ -28,6 +58,9 @@
         <a class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
         <a class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
       </nav>
+      <button id="upButton" class="footer__up-btn" v-scroll="positionUp" v-scroll-to="'#app'">
+        <span class="footer__up-btn--icon"><font-awesome-icon :icon="['fas', 'angle-up']" /></span>
+      </button>
     </footer>
 
     <transition name="fadeNav">
@@ -93,6 +126,9 @@ export default {
         this.showMobNav = false;
         this.$refs.mobToggle.checked = false;
       }
+    },
+    positionUp(evt, el) {
+        console.log(window.scrollY);
     }
   }
 }
@@ -100,5 +136,18 @@ export default {
 
 
 <style lang="scss">
-  @import './assets/scss/main.scss';
+@import './assets/scss/main.scss';
+
+// #app {
+//   background: #2E47BF;
+// }
+
+// .page-enter-active, .page-leave-active {
+//   transition: opacity .3s, transform .2s;
+//   transition-delay: .1s;
+// }
+// .page-enter, .page-leave-to {
+//   opacity: 0;
+//   // transform: translateX(-100%);
+// }
 </style>

@@ -18,7 +18,7 @@
             <div class="skills-description">
                 <h3>Skills:</h3>
                 <p>Este es uno de los proyectos que realicé para obtener mi certificado Front End en <a href="https://www.freecodecamp.org/" target="_blank" >Freecodecamp</a>.</p>
-                <p>Para maquetar el diseño utilicé <span class="text-regular">Css Grid</span> y <span class="text-regular">Flexbox</span></p>
+                <p>Para maquetar el diseño utilicé <span class="text-regular">Css Grid</span> y <span class="text-regular">Flexbox</span>, la estructura lo hice con HTML.</p>
                 <p>Para desarrollar la app utilicé <span class="text-regular">Vue Framework</span>. Con todo listo puse en práctica mi lógica en programación.</p>
             </div>
             <ul class="workflow-description">

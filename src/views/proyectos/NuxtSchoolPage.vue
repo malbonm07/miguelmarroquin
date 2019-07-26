@@ -17,7 +17,7 @@
         <article class="nuxt-school--description">
             <div class="skills-description">
                 <h3>Skills:</h3>
-                <p>Para mejorar mi dominio en <span class="text-regular">CSS</span> me propuse como reto reproducir una pagina web enfocada en la enseñanda artistica. Decidí hacerla totalmente responsive e imitar los componentes utilizando Vue. Para el swiper instalé <span class="text-regular">vue-awesome-swiper</span>. Los otros componentes como los Expansion panels y Tabs los desarrollé con&nbsp;<span class="text-regular">VUE</span>&nbsp;y&nbsp;<span class="text-regular">SaSS</span></p>
+                <p>Para mejorar mi dominio en <span class="text-regular">CSS</span> me propuse como reto reproducir una pagina web enfocada en la enseñanza artistica. Decidí hacerla totalmente responsive e imitar los componentes utilizando Vue. Para el swiper instalé <span class="text-regular">vue-awesome-swiper</span>. Los otros componentes como los Expansion panels y Tabs los desarrollé con&nbsp;<span class="text-regular">VUE</span>&nbsp;y&nbsp;<span class="text-regular">SaSS</span></p>
             </div>
             <ul class="workflow-description">
                 <h3>Herramientas:&nbsp;</h3>

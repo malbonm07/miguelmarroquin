@@ -12,43 +12,43 @@
       <div class="portfolio-container__works--description text-center">
         <h2 class="mb-2">trabajos realizados</h2>
         <ul class="portfolio-container__works--description-list">
-            <li><router-link class="li-route" to="/portfolio/quasar-music-app">vue music app con quasar</router-link></li>
-            <li><router-link class="li-route" to="/portfolio/vuetify-landing">
+            <li><router-link class="li-route" to="portfolio/quasar-music-app">vue music app con quasar</router-link></li>
+            <li><router-link class="li-route" to="portfolio/vuetify-landing">
             vuetify landing page
             </router-link></li>
-            <li><router-link class="li-route" to="/portfolio/nuxt-school-page">
+            <li><router-link class="li-route" to="portfolio/nuxt-school-page">
             pagina web de escuela con nuxt
             </router-link></li>
-            <li><router-link class="li-route" to="/portfolio/vuetify-blog">
+            <li><router-link class="li-route" to="portfolio/vuetify-blog">
             blog con vue
             </router-link></li>
-            <li><router-link class="li-route" to="/portfolio/vue-calculator">
+            <li><router-link class="li-route" to="portfolio/vue-calculator">
             calculadora vue
             </router-link></li>
-            <li><router-link class="li-route" to="/portfolio/vue-shop-cart">
+            <li><router-link class="li-route" to="portfolio/vue-shop-cart">
             vue shop cart
             </router-link></li>
-            <li><router-link class="li-route" to="/portfolio/pokedex">
+            <li><router-link class="li-route" to="portfolio/pokedex">
             mini pokedex vue
             </router-link></li>
-            <li><router-link class="li-route" to="/portfolio/todo-list">
+            <li><router-link class="li-route" to="portfolio/todo-list">
             todo list vue
             </router-link></li>
         </ul>
-        <button class="portfolio-container__works--description-btn mt-1">
+        <button class="portfolio-container__works--description-btn mt-1" v-scroll-to="{el: '#proyectos'}">
           proyectos
         </button>
       </div>
     </div>
     <div class="portfolio-container__projects">
-        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index">
+        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index" id="proyectos">
             <figure class="portfolio-container__projects--item--img">
                 <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
             </figure>
             <div class="portfolio-container__projects--item--links">
                 <router-link class="details" :to="proyecto.link">Ver Detalles</router-link>
                 <router-link class="name" :to="proyecto.link">{{proyecto.titulo}}</router-link>
-                <div class="skills-span">
+                <div class="skills-span" v-scroll="addFadeUp">
                     <span v-for="(skill, i) in proyecto.skills" :key="i">{{skill}},&nbsp;</span>
                 </div>
             </div>
@@ -74,7 +74,7 @@ export default {
                 {
                     img: img2,
                     titulo: 'vue music SPA con quasar',
-                    link: '/portfolio/quasar-app',
+                    link: '/portfolio/quasar-music-app',
                     skills: [
                         'VueJS',
                         'Vue-router',
@@ -171,6 +171,11 @@ export default {
                     ]
                 },
             ]
+        }
+    },
+    methods: {
+        addFadeUp(evt, el) {
+            // console.log(el.classList)
         }
     }
 }

@@ -7,6 +7,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 20;
+        overflow: hidden;
         &--text {
             color: $white1-color;
             margin-bottom: 1.5rem;
@@ -18,6 +21,9 @@
             @include phone-medium {
                 // transform: translateY(-110px);
                 font-size: 90px;
+            }
+            @include tablet {
+                font-size: 110px;
             }
             span:nth-child(1) {
                 display: block;
@@ -50,13 +56,45 @@
                 animation-delay: 0.5s;
             }
         }
-        // .spacer {
-        //     width: 100%;
-        //     height: 100px;
-        // }
+        .spacer {
+            width: 0px;
+            height: 200px;
+            background: lighten(#EC5D3D, 1%);
+            animation: cubeAppear .3s ease-in-out forwards;
+            animation-delay: .5s;
+            position: absolute;
+            z-index: -1;
+            // border: 1px solid darken(#EC5D3D, 1%);
+            transform: translate(-50px, 100px) rotate(20deg);
+            box-shadow: 70px 70px lighten(#EC5D3D, 2%),
+                        140px 140px lighten(#EC5D3D, 4%),
+                        210px 210px lighten(#EC5D3D, 6%);
+            // transform: rotate(25deg) translate(10px, 20px);
+
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: lighten(#EC5D3D, 2%);
+                position: absolute;
+                z-index: -1;
+                // border: 1px solid darken(#EC5D3D, 1%);
+                transform: translate(0, -150px) rotate(0deg);
+                box-shadow: 100px 100px lighten(#EC5D3D, 2%),
+                            200px 200px lighten(#EC5D3D, 4%),
+                            300px 300px lighten(#EC5D3D, 6%);
+            }
+        }
         &--description {
             color: $secondary-dark-color;
             padding: 0 15px 0 15px;
+            @include phone-medium {
+                padding: 0 20px 0 20px;
+            }
             h2 {
                 opacity: 0;
                 animation: fadeUpDescription .3s ease-in-out forwards;
@@ -74,6 +112,10 @@
                     &:hover {
                         cursor: pointer;
                     }
+                }
+                @include tablet {
+                    margin-left: 10%;
+                    margin-right: 10%;
                 }
             }
             // &-btn {
