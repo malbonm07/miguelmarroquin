@@ -228,11 +228,11 @@
                         </span>
                     </div>
                     <div class="box-buttons">
-                        <a :href="currentProjectModal.linkSitio" class="modal-btn1">
+                        <a :href="currentProjectModal.linkSitio" target="_blank" class="modal-btn1">
                             <font-awesome-icon class="img-sub__link-icon proyectModalIcon" :icon="['fas', 'link']"/>
                             Ver el Sitio
                         </a>
-                        <a :href="currentProjectModal.linkGithub" class="modal-btn2">
+                        <a :href="currentProjectModal.linkGithub" target="_blank" class="modal-btn2">
                             <font-awesome-icon class="img-sub__link-icon proyectModalIcon" :icon="['fab', 'github']" />
                             Ver en Github
                         </a>

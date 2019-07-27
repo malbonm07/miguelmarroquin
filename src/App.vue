@@ -58,10 +58,10 @@
         Designer by Miguel Alonso Marroquin, 2019 -&nbsp;<a>malbonm07@gmail.com</a>
       </div>
       <nav class="footer__social-icons">
-        <a class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
-        <a class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
-        <a class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
-        <a class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+        <a  href="https://twitter.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+        <a  href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+        <a  href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
+        <a  href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
       </nav>
       <button id="upButton" class="footer__up-btn" v-scroll="positionUp" v-scroll-to="'#app'">
         <span class="footer__up-btn--icon"><font-awesome-icon :icon="['fas', 'angle-up']" /></span>
@@ -105,12 +105,12 @@
           </ul>
           <div class="mob-nav-menu__nav--icons">
             <h4 class="text-center text-caption uppercase text-regular mb-2 mt-3">Estemos en contacto</h4>
-            <a class="icon-link"><font-awesome-icon :icon="['fa', 'envelope']" /></a>
-            <a class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
-            <a class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
-            <a class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
-            <a class="icon-link"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
-            <a class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+            <a href="mailto:malbonm07@gmail.com" target="_blank" class="icon-link"><font-awesome-icon :icon="['fa', 'envelope']" /></a>
+            <a href="https://twitter.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+            <a href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+            <a href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
+            <a href="https://codepen.io/Malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
+            <a href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
           </div>
         </nav>
       </div>
@@ -119,6 +119,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -134,7 +135,13 @@ export default {
     },
     positionUp(evt, el) {
         console.log(window.scrollY);
+    },
+    changeLang() {
+      this.$i18n.locale = 'us'
     }
+  },
+  computed: {
+
   }
 }
 </script>

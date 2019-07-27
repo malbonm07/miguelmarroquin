@@ -1,0 +1,23 @@
+.langSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Indie Flower';
+    margin-bottom: 1rem;
+    .langBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 15px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        .icon {
+            margin: 0;
+        }
+    }
+    .us {
+        margin-right: 20px;
+    }
+}

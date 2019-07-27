@@ -10,6 +10,16 @@
       </div>
       <div class="spacer"></div>
       <div class="home-container__hello--description text-center">
+        <div class="langSwitch">
+          <div class="langBox us">
+              <!-- <country-flag class="icon" country='us' size='normal'/> -->
+              English
+          </div>
+          <div class="langBox es">
+              <!-- <country-flag class="icon" country='es' size='normal'/> -->
+              Español
+          </div>
+        </div>
         <h2>Hola!, Yo soy&nbsp;<span class="text-regular">Miguel Alonso Marroquin</span>&nbsp;aspirante a desarrollador Front End, Diseño de interfaces y UX, viviendo actualmente en Perú. Bienvenido a mi portafolio! :)</h2>
         <button class="home-container__hello--description-btn mt-2">
           <router-link class="text-white" to="/portfolio">
@@ -19,30 +29,20 @@
       </div>
     </div>
     <div class="home-container__contact">
-      <!-- <div v-scroll="myFuncion" class="box">
-
-      </div> -->
     </div>
   </div>
 </template>
 
 <script>
+import CountryFlag from 'vue-country-flag'
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
   components: {
+    CountryFlag
   },
-  methods: {
-    // myFuncion(evt, el) {
-    //   console.log(evt)
-    //   if(window.scrollY > 300) {
-    //     console.log('mayor a 300')
-    //   }
-    //   return window.scrollY > 600;
-    // }
-  }
+  name: 'home',
 }
 </script>
 

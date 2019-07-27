@@ -19,7 +19,6 @@
             <li>Buena comunicación.</li>
             <li>Con mucha voluntad de aprender.</li>
             <li>Flexible y adaptable.</li>
-            <li>Trabajo bajo presión.</li>
             <li>Trabajo en Equipo.</li>
             <!-- <li>Mobile First, Responsive Design.</li>
             <li>Browser Developer Tools.</li>
