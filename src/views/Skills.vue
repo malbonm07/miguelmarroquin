@@ -13,20 +13,28 @@
       <div class="skills-container__soft--description text-center">
         <h2 class="mb-2">Soft Skills</h2>
         <ul class="skills-container__soft--description-list">
-            <li>Mobile First, Responsive Design.</li>
+            <li>Mobile First, Diseño Responsivo.</li>
+            <li>Browser Developer Tools.</li>
+            <li>Enfocado en el desarrollo Ágil.</li>
+            <li>Buena comunicación.</li>
+            <li>Con mucha voluntad de aprender.</li>
+            <li>Flexible y adaptable.</li>
+            <li>Trabajo bajo presión.</li>
+            <li>Trabajo en Equipo.</li>
+            <!-- <li>Mobile First, Responsive Design.</li>
             <li>Browser Developer Tools.</li>
             <li>Agile Development Approach.</li>
             <li>Good Communication.</li>
-            <li>Willingness to Learn.</li>
+            <li>Willingness to Learn.</li> -->
         </ul>
         <button class="skills-container__soft--description-btn mt-1" v-scroll-to="{el: '#tools'}"
         >
-          Tools
+          Herramientas
         </button>
       </div>
     </div>
     <div class="skills-container__tools">
-        <h2 class="text-center subTools" id="tools" v-scroll="toolsSubAppear">programing lenguages, frameworks and tools</h2>
+        <h2 class="text-center subTools" id="tools" v-scroll="toolsSubAppear">lenguajes de programación, frameworks y herramientas de desarrollo</h2>
         <div class="skills-center">
           <ul id="skills-list-effect" class="skills-list">
             <li v-scroll="skillsIconsAppear"><a href="https://www.w3.org/html/" target="_blank">
@@ -35,7 +43,7 @@
             </a></li>
             <li v-scroll="skillsIconsAppear"><a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
             <font-awesome-icon class="css3-icon" :icon="['fab', 'css3-alt']" />
-            <span class="skill-item__popover">Css3</span>
+            <span class="skill-item__popover">Css</span>
             </a></li>
             <li v-scroll="skillsIconsAppear"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
               <font-awesome-icon class="javascript-icon" :icon="['fab', 'js-square']" />

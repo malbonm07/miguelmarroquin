@@ -12,7 +12,7 @@
             </div>
             <div class="spacer"></div>
             <div class="education-container__courses--description text-center">
-                <h2 class="mb-2">couses i did</h2>
+                <h2 class="mb-2">cursos que hice</h2>
                 <ul class="education-container__courses--description-list">
                     <li><a href="https://platzi.com/@malbonm07/curso/1339-fundamentos-javascript/diploma/detalle/" target="_blank" class="text-white">Fundamentos de Javascript</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1390-optimizacion-web/diploma/detalle/" target="_blank" class="text-white">Website Performance Optimization</a></li>

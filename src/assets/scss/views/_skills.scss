@@ -138,6 +138,16 @@
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.8s;
                 }
+                li:nth-child(7) {
+                    // opacity: 0;
+                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
+                    animation-delay: 1.9s;
+                }
+                li:nth-child(8) {
+                    // opacity: 0;
+                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
+                    animation-delay: 2s;
+                }
             }
             &-btn {
                 opacity: 0;
@@ -196,6 +206,9 @@
             }
             @include tablet {
                 padding: 3rem 12rem 3rem 12rem;
+            }
+            @include desktop {
+                padding: 3rem 20.5rem 3rem 20.5rem;
             }
         }
         .textAppear {

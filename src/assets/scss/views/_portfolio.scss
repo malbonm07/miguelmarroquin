@@ -103,6 +103,9 @@
                 text-transform: capitalize;
             }
             &-list {
+                @include desktop {
+                    display: none;
+                }
                 li {
                     color: $white1-color;
                     font-weight: 200;
@@ -153,6 +156,61 @@
                     animation-delay: 2s;
                 }
             }
+            .desktContainer-list {
+                display: none;
+                @include desktop {
+                    display: block;
+                    li {
+                        color: $white1-color;
+                        font-weight: 200;
+                        margin: 15px 0;
+                        text-transform: capitalize;
+                        .li-route {
+                            color: inherit;
+                        }
+                    }
+                    li:nth-child(1) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: 1.3s;
+                    }
+                    li:nth-child(2) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: 1.4s;
+                    }
+                    li:nth-child(3) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: 1.5s;
+                    }
+                    li:nth-child(4) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: 1.6s;
+                    }
+                    li:nth-child(5) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: 1.7s;
+                    }
+                    li:nth-child(6) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: 1.8s;
+                    }
+                    li:nth-child(7) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .5s ease-in-out forwards;
+                        animation-delay: 1.9s;
+                    }
+                    li:nth-child(8) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .5s ease-in-out forwards;
+                        animation-delay: 2s;
+                    }
+                }
+            }
             &-btn {
                 text-transform: capitalize;
                 opacity: 0;
@@ -174,7 +232,7 @@
                 font-family: 'Indie Flower';
                 &:hover {
                     cursor: pointer;
-                    background: $primary-dark-color;
+                    // background: $primary-dark-color;
                 }
             }
         }
@@ -260,7 +318,133 @@
             }
         }
     }
+    &__DesktProjects {
+        display: none;
+        @include desktop {
+            display: block;
+            width: 100%;
+            // background: $white2-color;
+            background: $secondary-dark-color;
+            &--container {
+                width: 100%;
+                // min-height: 100vh;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 50% 50%;
+                justify-items: center;
+                align-items: center;
+                grid-row-gap: 5rem;
+                padding: 5rem 0 10rem 0;
+                .DesktProjects-item {
+                    width: 90%;
+                    height: 100%;
+                    // height: 100%;
+                    // background: red;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .DesktP-img {
+                        width: 50%;
+                        height: 100%;
+                        // background: #66FCF1;;
+                        background: transparent;
+                        border-bottom: 1px solid #66FCF1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 30px;
+                        position: relative;
+                        .lazy-img {
+                            width: 100%;
+                        }
+                        .img-overlay {
+                            position: absolute;
+                            width: 100%;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            font-size: 35px;
+                            text-transform: capitalize;
+                            padding: 0 6rem 0 6rem;
+                            text-align: center;
+                            font-weight: 800;
+                            // background: rgba(46,71,191,.7);
+                            background: rgba(0,0,0,0.7);
+                            opacity: 0;
+                            transition: .1s ease-in;
+                            letter-spacing: 2px;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            .img-overlay {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .DesktP-links {
+                        width: 40%;
+                        height: 100%;
+                        // background: #4DAEA8;
+                        background: $secondary-dark-color;
+                        // background: #2E47BF;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        align-self: start;
+                        transition: 0.2s cubic-bezier(.52,.01,.16,1);
+                        &:hover {
+                            // background: rgba(255,255,255,0.2);
+                        }
+                        .details {
+                            text-align: center;
+                            color: $white1-color;
+                            font-size: 22px;
+                            font-weight: 400;
+                            opacity: 1;
+                            padding: 0 40px;
+                            margin-bottom: 1rem;
+                            cursor: pointer;
+                        }
+                        .name {
+                            text-align: center;
+                            // color: #2E47BF;
+                            color: #66FCF1;
+                            font-size: 35px;
+                            font-weight: 800;
+                            text-transform: capitalize;
+                            opacity: 1;
+                            padding: 0 40px;
+                            letter-spacing: 2px;
+                            cursor: pointer;
+                        }
+                        .skills-span {
+                            margin-top: 10px; 
+                            text-align: center;
+                            font-size: 18px;
+                            color: $white1-color;
+                            // color: $secondary-dark-color;
+                            text-transform: capitalize;
+                            font-weight: 200;
+                            opacity: 1;
+                            padding: 0 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+
 }
+
 
 @keyframes fadeDownWorks {
     0% {

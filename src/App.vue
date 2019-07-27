@@ -35,6 +35,11 @@
       </ul>
     </div>
 
+    <router-link class="logo" to="/">
+      <div class="linea1">M</div>
+      <div class="linea2">M</div>
+    </router-link>
+
     <div class="mob-nav-btn">
       <input type="checkbox" ref="mobToggle" id="menu-toggle" @click="showMobNav = !showMobNav">
       <label for="menu-toggle" class="menu-toggle-label">

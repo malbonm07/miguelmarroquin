@@ -3,12 +3,16 @@
 
 @import './mixins/breakpoints';
 
+@import './logo';
 @import './layouts/nav/mob-nav-btn';
 @import './layouts/nav/mob-nav-menu';
 @import './layouts/nav/navbar-desktop';
 
 @import './layouts/header';
 @import './layouts/footer';
+
+@import './views/proyectos/modal/deskModBtn';
+@import './views/proyectos/modal/desktProyectModal';
 
 @import './views/home';
 @import './views/about';

@@ -5,6 +5,8 @@ import store from './store'
 import { VLazyImagePlugin } from "v-lazy-image";
 import scroll from './directives/scroll';
 import VueScrollTo from 'vue-scrollto';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTh, faEnvelope, faLink,faAngleUp } from '@fortawesome/free-solid-svg-icons'
@@ -34,6 +36,9 @@ Vue.use(VLazyImagePlugin);
 Vue.config.productionTip = false
 
 new Vue({
+  created () {
+    AOS.init()
+  },
   router,
   store,
   render: h => h(App)

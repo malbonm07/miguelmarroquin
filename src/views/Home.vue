@@ -10,7 +10,7 @@
       </div>
       <div class="spacer"></div>
       <div class="home-container__hello--description text-center">
-        <h2>I'm&nbsp;<span class="text-regular">Miguel Marroquin</span>&nbsp;aspirant to Frontend Developer and UI/UX designer currently living in Perú.</h2>
+        <h2>Hola!, Yo soy&nbsp;<span class="text-regular">Miguel Alonso Marroquin</span>&nbsp;aspirante a desarrollador Front End, Diseño de interfaces y UX, viviendo actualmente en Perú. Bienvenido a mi portafolio! :)</h2>
         <button class="home-container__hello--description-btn mt-2">
           <router-link class="text-white" to="/portfolio">
             Portfolio
