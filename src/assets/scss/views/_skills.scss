@@ -15,8 +15,6 @@
             margin-bottom: 0rem;
             font-size: 85px;
             display: flex;
-            // position: fixed;
-            // transform: translateY(-120px);
             letter-spacing: 2px;
             @include phone-medium {
                 font-size: 96px;
@@ -109,42 +107,34 @@
                     margin: 15px 0;
                 }
                 li:nth-child(1) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.3s;
                 }
                 li:nth-child(2) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.4s;
                 }
                 li:nth-child(3) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.5s;
                 }
                 li:nth-child(4) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.6s;
                 }
                 li:nth-child(5) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.7s;
                 }
                 li:nth-child(6) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.8s;
                 }
                 li:nth-child(7) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 1.9s;
                 }
                 li:nth-child(8) {
-                    // opacity: 0;
                     animation: fadeUpSoftSkills 1s ease-in-out forwards;
                     animation-delay: 2s;
                 }
@@ -154,17 +144,12 @@
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1.2s;
                 background: $secondary-dark-color;
-                // background: transparent;
-                // border: 1px solid transparent;
                 border: 1px solid $primary-color;
-                // border-radius: 10px;
                 border-radius: 2px;
                 outline: none;
                 color: $white1-color;
-                // color: $secondary-dark-color;
                 padding: 3px 19px;
                 font-size: 13px;
-                // font-weight: 700;
                 letter-spacing: 1.5px;
                 font-family: 'Indie Flower';
                 &:hover {
@@ -178,10 +163,6 @@
         width: 100%;
         min-height: 100vh;
         padding: 0 0 68px 0;
-        // background: $primary-color;
-        // background: $white2-color;
-        // background: #1F2833;
-        // background: #E0E0E0;
         background: #EEEEEE;
         position: relative;
         z-index: 20;
@@ -194,13 +175,9 @@
             transition: 0.5s all ease-in-out;
             text-align: center;
             opacity: 0;
-            // color: $white2-color;
-            // color: #C5C6C7;
             letter-spacing: 2px;
             text-transform: capitalize;
-            // font-size: 20px;
             color: $secondary-dark-color;
-            // letter-spacing: 2px;
             @include phone-medium {
                 padding: 3rem 6rem 2rem 6rem;
             }
@@ -217,11 +194,7 @@
         }
         .skills-center {
             width: 100%;
-            // position: relative;
-            // z-index: 40;
-            // overflow: hidden;
             .skills-list {
-            //   list-style: none;
               display: grid;
               grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
               grid-gap: 1.2rem;
@@ -231,18 +204,10 @@
                 width: 80%;
                 margin: auto;
                 position: relative;
-                // background: $white1-color;
-                // background: $secondary-dark-color;
-                // background: #E7EEED;
-                // background: black;
                 border-radius: 0%;
-                // transform: rotate(0deg);
                 span, a {
                     font-size: 3.5rem;
-                    //   color: $secondary-dark-color;
                     color: $secondary-dark-color;
-                    // color: $white2-color;
-                    // color: #C5C6C7;
                     width: 100%;
                     background: transparent;
                     text-align: center;
@@ -271,65 +236,6 @@
                     transition: 0.2s;
                     }
                 }
-                // li:nth-child(1) {
-                //     transform: translateY(10px);
-                //     opacity: 0;
-                //     transition: 1s;
-                //     transition-delay: .1s;
-                //     }
-                // li:nth-child(2) {
-                //     transform: translateY(10px);
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .2s;
-                //     }
-                // li:nth-child(3) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .3s;
-                //     }
-                // li:nth-child(4) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .4s;
-                //     }
-                // li:nth-child(5) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .5s;
-                // }
-                // li:nth-child(6) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .6s;
-                // }
-                // li:nth-child(7) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .7s;
-                // }
-                // li:nth-child(8) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .8s;
-                // }
-                // li:nth-child(9) {
-                //     transform: translateY(10px);
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: .9s;
-                // }
-                // li:nth-child(10) {
-                //     opacity: 0;
-                //     transition: .2s;
-                //     transition-delay: 1s;
-                //     transform: translateY(50px);
-                // }
-                // .skillAppearP {
-                //     opacity: 1 !important;
-                //     transform: translateY(0px) !important;
-                // }
-
                 @include phone-medium {
                 grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
                 grid-gap: 1.5rem;
@@ -366,14 +272,12 @@
 }
 .grid-icon {
     color: $secondary-dark-color;
-    // color: $white2-color;
 }
 .npm-icon {
     color: #C60B00;
 }
 .github-icon {
     color: $secondary-dark-color;
-    // color: $white2-color;
 }
 .webpack-icon {
     color: #8AD0F3;

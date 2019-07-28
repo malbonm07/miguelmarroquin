@@ -16,7 +16,6 @@
             margin-bottom: 2rem;
             font-size: 92px;
             display: flex;
-            // transform: translateY(-25px);
             @include tablet {
                 font-size: 110px;
             }
@@ -59,7 +58,6 @@
             animation-delay: .7s;
             position: fixed;
             z-index: -1;
-            // border: 1px solid darken($primary-color, 0%);
             transform: translate(-50px, 100px) rotate(20deg);
             box-shadow: 70px 70px lighten($primary-color, 2%),
                         140px 140px lighten($primary-color, 5%),
@@ -76,7 +74,6 @@
                 background: lighten($primary-color, 2%);
                 position: absolute;
                 z-index: -1;
-                // border: 1px solid darken($primary-color, 0%);
                 transform: translate(0, -150px) rotate(0deg);
                 box-shadow: 100px 100px lighten($primary-color, 3%),
                             200px 200px lighten($primary-color, 5%),
@@ -107,25 +104,14 @@
                 a {
                     display: block;
                     padding: 5px 19px;
-                    // background: transparent;
                     border: 1px solid transparent;
-                    // border: 2px solid $secondary-dark-color;
-                    // border-radius: 10px;
-                    // border-radius: 2px;
                     outline: none;
                     color: $white1-color;
-                    // color: $secondary-dark-color;
-                    // padding: 3px 19px;
                     font-size: 14px;
-                    // font-weight: 700;
                     letter-spacing: 1.5px;
                     font-family: 'Indie Flower';
                     &:hover {
                         cursor: pointer;
-                        // background: $secondary-dark-color;
-                        // background: transparent;
-                        // border-color: $secondary-dark-color;
-                        // color: $secondary-dark-color;
                     }
                 }
             }

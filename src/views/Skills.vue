@@ -1,5 +1,8 @@
 <template>
   <div class="skills-container">
+
+
+<!------------------------------ SOFT SKILLS SECTION -------------------------->
     <div class="skills-container__soft">
       <div class="skills-container__soft--text text-title">
         <span>S</span>
@@ -32,6 +35,10 @@
         </button>
       </div>
     </div>
+<!------------------------------ END SOFT SKILLS SECTION -------------------------->
+
+
+<!------------------------------ HERRAMIENTAS SECTION -------------------------->
     <div class="skills-container__tools">
         <h2 class="text-center subTools" id="tools" v-scroll="toolsSubAppear">lenguajes de programación, frameworks y herramientas de desarrollo</h2>
         <div class="skills-center">
@@ -80,6 +87,9 @@
           <!-- <div class="skills-overlay"></div> -->
         </div>
     </div>
+<!------------------------------ END HERRAMIENTAS SECTION -------------------------->
+
+
   </div>
 </template>
 

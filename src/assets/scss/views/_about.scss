@@ -15,11 +15,8 @@
             margin-bottom: 1.5rem;
             font-size: 80px;
             display: flex;
-            // position: fixed;
-            // transform: translateY(-12px);
             letter-spacing: 2px;
             @include phone-medium {
-                // transform: translateY(-110px);
                 font-size: 90px;
             }
             @include tablet {
@@ -64,12 +61,10 @@
             animation-delay: .5s;
             position: absolute;
             z-index: -1;
-            // border: 1px solid darken(#EC5D3D, 1%);
             transform: translate(-50px, 100px) rotate(20deg);
             box-shadow: 70px 70px lighten(#EC5D3D, 2%),
                         140px 140px lighten(#EC5D3D, 4%),
                         210px 210px lighten(#EC5D3D, 6%);
-            // transform: rotate(25deg) translate(10px, 20px);
 
             &:before {
                 content: "";
@@ -82,7 +77,6 @@
                 background: lighten(#EC5D3D, 2%);
                 position: absolute;
                 z-index: -1;
-                // border: 1px solid darken(#EC5D3D, 1%);
                 transform: translate(0, -150px) rotate(0deg);
                 box-shadow: 100px 100px lighten(#EC5D3D, 2%),
                             200px 200px lighten(#EC5D3D, 4%),
@@ -101,12 +95,9 @@
                 animation-delay: 1s;
                 font-size: 18px;
                 font-weight: 200;
-                // color: $white1-color;
-                // color: $white2-color;
                 color: $secondary-dark-color;
                 line-height: 25px;
                 a {
-                    // color: $white2-color;
                     color: $secondary-dark-color;
                     font-weight: 400;
                     &:hover {
@@ -118,32 +109,6 @@
                     margin-right: 10%;
                 }
             }
-            // &-btn {
-            //     opacity: 0;
-            //     animation: fadeUpDescription .3s ease-in-out forwards;
-            //     animation-delay: 1.2s;
-            //     background: $secondary-dark-color;
-            //     // background: transparent;
-            //     border: 1px solid transparent;
-            //     // border: 2px solid $secondary-dark-color;
-            //     // border-radius: 10px;
-            //     // border-radius: 2px;
-            //     outline: none;
-            //     color: $white1-color;
-            //     // color: $secondary-dark-color;
-            //     padding: 3px 19px;
-            //     font-size: 13px;
-            //     // font-weight: 700;
-            //     letter-spacing: 1.5px;
-            //     font-family: 'Indie Flower';
-            //     &:hover {
-            //         cursor: pointer;
-            //         // background: $secondary-dark-color;
-            //         // background: transparent;
-            //         // border-color: $secondary-dark-color;
-            //         // color: $secondary-dark-color;
-            //     }
-            // }
         }
     }
     &__contact {
@@ -172,7 +137,6 @@
   
     100% {
         color: $white2-color;
-        // color: #311B92;
         opacity: 1;
         transform: translateY(0px);
     }

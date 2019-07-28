@@ -1,5 +1,8 @@
 <template>
   <div class="home-container">
+
+
+<!------------------------------ HOME SECTION -------------------------->
     <div class="home-container__hello">
       <div class="home-container__hello--text text-title">
         <span>H</span>
@@ -28,8 +31,15 @@
         </button>
       </div>
     </div>
+<!------------------------------ END HOME SECTION -------------------------->
+
+
+<!------------------------------ CONTACT SECTION -------------------------->
     <div class="home-container__contact">
     </div>
+<!------------------------------ END CONTACT SECTION -------------------------->
+
+
   </div>
 </template>
 

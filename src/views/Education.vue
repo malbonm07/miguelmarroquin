@@ -1,5 +1,7 @@
 <template>
     <div class="education-content">
+
+<!------------------------------ COURSES LIST SECTION -------------------------->
         <div class="education-container__courses">
             <div class="education-container__courses--text text-title">
                 <span>C</span>
@@ -26,6 +28,10 @@
                 </button>
             </div>
         </div>
+<!------------------------------ END COURSES LIST SECTION -------------------------->
+
+
+<!------------------------------ CERTIFICATES SECTION -------------------------->
         <div class="education-container__certificates">
             <h2 class="education-container__certificates--title" id="certificates">
                 Certificados
@@ -49,6 +55,8 @@
                 </ul>
             </div>
         </div>
+<!------------------------------ END CERTIFICATES SECTION -------------------------->
+
     </div>
     
 </template>

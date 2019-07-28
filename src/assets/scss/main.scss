@@ -1,26 +1,49 @@
+/*######################################################################## 
+                            BASE Y VARIABLES                                 
+#########################################################################*/
 @import './variables/variables';
 @import './base/base';
 
+/*######################################################################## 
+                            MIXINS BREAKPOINTS                                 
+#########################################################################*/
 @import './mixins/breakpoints';
 
+/*######################################################################## 
+                            LAYOUT AND COMPONENTS                                 
+#########################################################################*/
 @import './logo';
 @import './components/langSwitch';
 @import './layouts/nav/mob-nav-btn';
 @import './layouts/nav/mob-nav-menu';
 @import './layouts/nav/navbar-desktop';
 
+/*######################################################################## 
+                            LAYOUT                                  
+#########################################################################*/
 @import './layouts/header';
 @import './layouts/footer';
 
+/*######################################################################## 
+                            MODAL COMPONENT                                 
+#########################################################################*/
 @import './views/proyectos/modal/deskModBtn';
 @import './views/proyectos/modal/desktProyectModal';
 
+
+/*######################################################################## 
+                            VIEWS PAGES                                 
+#########################################################################*/
 @import './views/home';
 @import './views/about';
 @import './views/education';
 @import './views/skills';
 @import './views/portfolio';
 
+
+/*######################################################################## 
+                            VIEWS PROYECTOS MODAL                                  
+#########################################################################*/
 @import './views/proyectos/quasarAppVue';
 @import './views/proyectos/VuetifyLandingPage';
 @import './views/proyectos/NuxtSchoolPage';

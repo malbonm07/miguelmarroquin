@@ -1,5 +1,7 @@
 <template>
   <div id="app" class="app-container">
+    
+<!------------------------------ NAV MENU DESKTOP -------------------------->
     <div id="nav" class="desk-nav-menu">
       <ul class="desk-nav-menu__nav">
         <li class="desk-nav-menu__nav--link">
@@ -34,12 +36,18 @@
         </li>
       </ul>
     </div>
+<!------------------------------ END NAV MENU DESKTOP -------------------------->
 
+
+<!------------------------------ LOGO -------------------------->
     <router-link class="logo" to="/">
       <div class="linea1">M</div>
       <div class="linea2">M</div>
     </router-link>
+<!------------------------------ END LOGO -------------------------->
 
+
+<!------------------------------ MOBILE NAV BTN -------------------------->
     <div class="mob-nav-btn">
       <input type="checkbox" ref="mobToggle" id="menu-toggle" @click="showMobNav = !showMobNav">
       <label for="menu-toggle" class="menu-toggle-label">
@@ -48,11 +56,17 @@
         <div class="line"></div>
       </label>
     </div>
+<!------------------------------ END MOB NAV BTN -------------------------->
 
+
+<!------------------------------ ROUTER VIEW -------------------------->
     <transition name="page" mode="out-in">
       <router-view/>
     </transition> 
+<!------------------------------ END ROUTER VIEW -------------------------->
 
+
+<!------------------------------ FOOTER -------------------------->
     <footer class="footer">
       <div class="footer__details text-center text-light">
         Designer by Miguel Alonso Marroquin, 2019 -&nbsp;<a>malbonm07@gmail.com</a>
@@ -67,7 +81,10 @@
         <span class="footer__up-btn--icon"><font-awesome-icon :icon="['fas', 'angle-up']" /></span>
       </button>
     </footer>
+<!------------------------------ END FOOTER -------------------------->
 
+
+<!------------------------------ MOBILE NAV MENU -------------------------->
     <transition name="fadeNav">
       <div v-show="showMobNav" class="mob-nav-menu">
         <nav class="mob-nav-menu__nav">
@@ -115,6 +132,9 @@
         </nav>
       </div>
     </transition>
+<!------------------------------ END MOBILE NAV MENU -------------------------->
+
+
   </div>
 </template>
 

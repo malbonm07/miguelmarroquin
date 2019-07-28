@@ -10,7 +10,7 @@
                 Ver en Github
             </a></h5>
         <h5 class="img-sub">
-            <a class="img-sub__link" href="">
+            <a class="img-sub__link" href="https://malbonm07.github.io/landing-school/" target="_blank">
                 <font-awesome-icon class="img-sub__link-icon" :icon="['fas', 'link']" />
                 Ver el sitio
             </a></h5>
