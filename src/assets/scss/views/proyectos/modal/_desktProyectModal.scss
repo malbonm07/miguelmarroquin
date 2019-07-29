@@ -71,7 +71,7 @@
             }
             .box-buttons {
                 opacity: 0;
-                animation: modalDataAppear .7s cubic-bezier(.52,.01,.16,1) forwards;
+                animation: modalDataAppear .5s ease-in-out forwards;
                 animation-delay: 1.5s;
                 margin: 3rem 0rem 1rem 0rem;
                 .proyectModalIcon {
@@ -81,32 +81,21 @@
                     color: white;
                     padding: 10px 25px;
                     background: $secondary-dark-color;
-                    // background: #2E47BF;
                     border: 1px solid $secondary-dark-color;
                     margin-right: 15px;
                     transition: .2s ease-in-out;
                     font-family: 'Indie Flower', 'Lato';
                     text-transform: capitalize;
-                    // &:hover {
-                    //     background: transparent;
-                    //     color: black;
-                    // }
                 }
                 .modal-btn2 {
                     color: $secondary-dark-color;
-                    // color: #2E47BF;
                     padding: 10px 25px;
                     background: transparent;
-                    // border: 1px solid #333;
                     border: 1px solid $secondary-dark-color;
                     margin-left: 15px;
                     transition: .2s ease-in-out;
                     font-family: 'Indie Flower', 'Lato';
                     text-transform: capitalize;
-                    // &:hover {
-                    //     color: white;
-                    //     background: #333;
-                    // }
                 }
             }
             .box-text {
@@ -155,5 +144,13 @@
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@keyframes modalBtnsAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

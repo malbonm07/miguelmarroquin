@@ -16,11 +16,8 @@
         }
         &--text {
             color: $white1-color;
-            // margin-bottom: 1rem;
             font-size: 72px;
             display: flex;
-            // position: fixed;
-            // transform: translateY(-120px);
             letter-spacing: 2px;
             @include phone-medium {
                 font-size: 85px;

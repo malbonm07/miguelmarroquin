@@ -18,7 +18,6 @@
         <ul class="skills-container__soft--description-list">
             <li>Mobile First, Diseño Responsivo.</li>
             <li>Browser Developer Tools.</li>
-            <li>Enfocado en el desarrollo Ágil.</li>
             <li>Buena comunicación.</li>
             <li>Con mucha voluntad de aprender.</li>
             <li>Flexible y adaptable.</li>

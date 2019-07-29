@@ -35,8 +35,8 @@
 
 
 <!------------------------------ CONTACT SECTION -------------------------->
-    <div class="home-container__contact">
-    </div>
+    <!-- <div class="home-container__contact">
+    </div> -->
 <!------------------------------ END CONTACT SECTION -------------------------->
 
 
@@ -57,11 +57,5 @@ export default {
 </script>
 
 <style>
-.box {
-  width: 200px;
-  height: 200px;
-  background: red;
-  margin-top: 300px;
-}
 </style>
 

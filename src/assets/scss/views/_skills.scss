@@ -194,6 +194,9 @@
         }
         .skills-center {
             width: 100%;
+            @include desktop {
+                width: 100%;
+            }
             .skills-list {
               display: grid;
               grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
@@ -245,6 +248,7 @@
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 grid-gap: 3rem;
                 padding: 0 4rem;
+                margin-top: 1rem;
                 }
 
             }
