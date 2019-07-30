@@ -169,6 +169,13 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/main.scss';
+//logo styles ares in '.assets/scss/logo';
+//langagues switch styles are in './assets/scss/components/langSwitch';'
+//mob nav menu styles are in './assets/scss/layouts/nav/mob-nav-menu';
+//mob nav menu btn styles are in './assets/scss/layouts/nav/mob-nav-btn';
+//nav menu styles are in './assets/scss/layouts/nav/navbar-desktop';
+
+
 
 // #app {
 //   background: #2E47BF;

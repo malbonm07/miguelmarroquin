@@ -67,6 +67,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+//styles are in 'assets/scss/views/education';
+//desktop modal project styles are in './views/proyectos/modal/desktProyectModal';
 </style>

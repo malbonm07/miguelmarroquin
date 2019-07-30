@@ -108,6 +108,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+//styles are in 'assets/scss/views/skills';
 </style>

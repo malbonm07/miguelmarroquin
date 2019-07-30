@@ -1,4 +1,7 @@
 .portfolio-container {
+
+    // ############################ SECTION PART 1 ################################
+
     &__works {
         width: 100%;
         min-height: 100vh;
@@ -50,6 +53,9 @@
                 animation-delay: 0.5s;
             }
         }
+
+        // ##################### FIGURE BACKGROUND STYLES ######################
+
         .spacer {
             width: 0px;
             height: 200px;
@@ -230,6 +236,9 @@
             }
         }
     }
+
+    // ######################## SECTION PART 2 MODE MOBILE ##########################
+
     &__projects {
         background: $secondary-dark-color;
         @include tablet {
@@ -301,6 +310,9 @@
             }
         }
     }
+
+    // ########################## SECTION PART 2 MODE DESKTOP ##############################
+
     &__DesktProjects {
         display: none;
         @include desktop {
@@ -414,6 +426,17 @@
 
 }
 
+.v-lazy-image {
+    filter: blur(10px);
+    transition: filter 0.7s;
+}
+.v-lazy-image-loaded {
+    filter: blur(0);
+}
+
+/*######################################################################## 
+                            ANIMATION                                  
+#########################################################################*/
 
 @keyframes fadeDownWorks {
     0% {
