@@ -10,20 +10,13 @@
         position: relative;
         z-index: 20;
         overflow: hidden;
-        @include tablet {
-            padding-top: 3rem;
-            padding-bottom: 6rem;
-        }
         &--text {
             color: $white1-color;
-            // margin-bottom: 1rem;
-            font-size: 72px;
+            font-size: 7.2rem;
             display: flex;
-            // position: fixed;
-            // transform: translateY(-120px);
             letter-spacing: 2px;
             @include phone-medium {
-                font-size: 85px;
+                font-size: 8.5rem;
                 letter-spacing: 3px;
             }
             span:nth-child(1) {
@@ -96,11 +89,13 @@
                 opacity: 0;
                 animation: fadeUpSubTitleWorks .3s ease-in-out forwards;
                 animation-delay: 1s;
-                font-size: 16px;
+                font-size: 1.4rem;
                 font-weight: 100;
                 color: $white2-color;
                 letter-spacing: 2px;
                 text-transform: capitalize;
+                padding: 10px 0;
+                border-bottom: 1px solid #64FFDA;
             }
             &-list {
                 @include desktop {
@@ -168,6 +163,9 @@
                         cursor: pointer;
                         .li-route {
                             color: inherit;
+                            &:hover {
+                                color: #64FFDA;
+                            }
                         }
                     }
                     li:nth-child(1) {
@@ -218,42 +216,27 @@
                 animation: fadeUpSubTitleWorks .3s ease-in-out forwards;
                 animation-delay: 1.3s;
                 background: $secondary-dark-color;
-                // background: transparent;
                 border: 1px solid transparent;
-                // border: 1px solid $primary-color;
-                // border-radius: 10px;
                 border-radius: 2px;
                 outline: none;
                 color: $white1-color;
-                // color: $secondary-dark-color;
                 padding: 3px 19px;
-                font-size: 13px;
-                // font-weight: 700;
+                font-size: 1.4rem;
                 letter-spacing: 1.5px;
                 font-family: 'Indie Flower';
                 &:hover {
                     cursor: pointer;
-                    // background: $primary-dark-color;
                 }
             }
         }
     }
     &__projects {
-        // width: 100vw;
-        // height: 100vh;
-        // background: #E7EEED;
         background: $secondary-dark-color;
-        // background: #000837;
         @include tablet {
-            padding: 4rem 40px 4rem 40px;
+            padding: 6.2rem 40px 6.2rem 40px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            // grid-column-gap: 15px;
-            // grid-row-gap: 20px;
             grid-gap: 40px;
-            // padding-bottom: 4rem;
-            // transform: translateY(40px);
-            // transition: 0.5s all ease-in-out;
         }
         @include desktop {
             display: none;
@@ -279,7 +262,6 @@
             }
             &--img {
                 width: 100%;
-                // border: 2px solid #2E47BF;
                 border-radius: 2px;
                 .lazy-img {
                     width: 100%;
@@ -294,20 +276,20 @@
                 .details {
                     text-align: center;
                     color: $text-grey1;
-                    font-size: 14px;
+                    font-size: 1.4rem;
                     font-weight: 400;
                 }
                 .name {
                     text-align: center;
                     color: #2E47BF;
-                    font-size: 16;
+                    font-size: 1.6rem;
                     font-weight: 600;
                     text-transform: capitalize;
                 }
                 .skills-span {
                     margin-top: 10px; 
                     text-align: center;
-                    font-size: 14px;
+                    font-size: 1.4rem;
                     color: $text-grey1;
                     text-transform: capitalize;
                     font-weight: 200;
@@ -324,30 +306,25 @@
         @include desktop {
             display: block;
             width: 100%;
-            // background: $white2-color;
             background: $secondary-dark-color;
             &--container {
                 width: 100%;
-                // min-height: 100vh;
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: 50% 50%;
                 justify-items: center;
                 align-items: center;
-                grid-row-gap: 5rem;
-                padding: 5rem 0 10rem 0;
+                grid-row-gap: 8rem;
+                padding: 8rem 0 16rem 0;
                 .DesktProjects-item {
                     width: 90%;
                     height: 100%;
-                    // height: 100%;
-                    // background: red;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
                     .DesktP-img {
                         width: 50%;
                         height: 100%;
-                        // background: #66FCF1;;
                         background: transparent;
                         border-bottom: 1px solid #66FCF1;
                         display: flex;
@@ -369,15 +346,13 @@
                             justify-content: center;
                             align-items: center;
                             color: white;
-                            font-size: 35px;
+                            font-size: 3.5rem;
                             text-transform: capitalize;
-                            padding: 0 6rem 0 6rem;
                             text-align: center;
                             font-weight: 800;
-                            // background: rgba(46,71,191,.7);
                             background: rgba(0,0,0,0.7);
                             opacity: 0;
-                            transition: .1s ease-in;
+                            transition: .18s ease-in;
                             letter-spacing: 2px;
                         }
                         &:hover {
@@ -390,33 +365,27 @@
                     .DesktP-links {
                         width: 40%;
                         height: 100%;
-                        // background: #4DAEA8;
                         background: $secondary-dark-color;
-                        // background: #2E47BF;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         align-self: start;
                         transition: 0.2s cubic-bezier(.52,.01,.16,1);
-                        &:hover {
-                            // background: rgba(255,255,255,0.2);
-                        }
                         .details {
                             text-align: center;
                             color: $white1-color;
-                            font-size: 22px;
+                            font-size: 2.2rem;
                             font-weight: 400;
                             opacity: 1;
                             padding: 0 40px;
-                            margin-bottom: 1rem;
+                            margin-bottom: 1.6rem;
                             cursor: pointer;
                         }
                         .name {
                             text-align: center;
-                            // color: #2E47BF;
                             color: #66FCF1;
-                            font-size: 35px;
+                            font-size: 3.5rem;
                             font-weight: 800;
                             text-transform: capitalize;
                             opacity: 1;
@@ -427,9 +396,8 @@
                         .skills-span {
                             margin-top: 10px; 
                             text-align: center;
-                            font-size: 18px;
+                            font-size: 1.8rem;
                             color: $white1-color;
-                            // color: $secondary-dark-color;
                             text-transform: capitalize;
                             font-weight: 200;
                             opacity: 1;

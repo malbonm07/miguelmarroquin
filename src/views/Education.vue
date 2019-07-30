@@ -14,7 +14,7 @@
             </div>
             <div class="spacer"></div>
             <div class="education-container__courses--description text-center">
-                <h2 class="mb-2">cursos que hice</h2>
+                <h2 class="mb-2">{{$t("message.education.sub")}}</h2>
                 <ul class="education-container__courses--description-list">
                     <li><a href="https://platzi.com/@malbonm07/curso/1339-fundamentos-javascript/diploma/detalle/" target="_blank" class="text-white">Fundamentos de Javascript</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1390-optimizacion-web/diploma/detalle/" target="_blank" class="text-white">Website Performance Optimization</a></li>
@@ -23,8 +23,8 @@
                     <li><a href="https://platzi.com/@malbonm07/curso/1373-diseno-prototipos/diploma/detalle/" target="_blank" class="text-white">Curso de Diseño de Prototipos</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1357-js-jest/diploma/detalle/" target="_blank" class="text-white">Javascript testing con Jest</a></li>
                 </ul>
-                <button class="education-container__courses--description-btn mt-1" v-scroll-to="{el: '#certificates'}">
-                Certificados
+                <button class="education-container__courses--description-btn mt-2" v-scroll-to="{el: '#certificates'}">
+                {{$t("message.education.certificates")}}
                 </button>
             </div>
         </div>

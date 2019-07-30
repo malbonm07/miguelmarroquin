@@ -13,11 +13,11 @@
         &--text {
             color: $white1-color;
             text-align: center;
-            margin-bottom: 2rem;
-            font-size: 65px;
+            margin-bottom: 3.2rem;
+            font-size: 6.5rem;
             display: flex;
             @include desktop {
-                font-size: 85px;
+                font-size: 8.5rem;
             }
             span:nth-child(1) {
                 display: block;
@@ -97,13 +97,15 @@
             padding: 0 15px 0 15px;
             h2 {
                 color: $white2-color;
-                font-size: 16px;
+                font-size: 1.4rem;
                 font-weight: 100;
                 letter-spacing: 2px;
                 text-transform: capitalize;
                 opacity: 0;
                 animation: fadeUpSubtitleCourses .3s ease-in-out forwards;
                 animation-delay: 1s;
+                padding: 10px 0;
+                border-bottom: 1px solid #64FFDA;
             }
             &-list {
                 li {
@@ -111,6 +113,10 @@
                     font-weight: 200;
                     margin: 15px 0;
                     text-transform: capitalize;
+                    &:hover a{
+                        cursor: pointer;
+                        color: #64FFDA;
+                    }
                 }
                 li:nth-child(1) {
                     opacity: 0;
@@ -152,10 +158,9 @@
                 outline: none;
                 color: $white2-color;
                 padding: 3px 19px;
-                font-size: 13px;
+                font-size: 1.4rem;
                 letter-spacing: 1.5px;
                 font-family: 'Indie Flower';
-                
                 &:hover {
                     cursor: pointer;
                     background: $secondary-dark-color;
@@ -172,9 +177,9 @@
         background: #4DD0E1;
         &--title {
             text-align: center;
-            font-size: 16px;
+            font-size: 1.4rem;
             font-weight: 400;
-            padding: 3rem 2rem;
+            padding: 4rem 3.2rem;
             line-height: 22px;
             letter-spacing: 2px;
             text-transform: capitalize;
@@ -182,17 +187,22 @@
         }
         &--lists {
             h3 {
+                font-size: 1.6rem;
                 text-align: center;
-                margin-bottom: 2rem;
+                margin-bottom: 3.2rem;
                 font-weight: 600;
             }
             ul {
                 li {
-                    line-height: 25px;
+                    line-height: 30px;
                     font-weight: 200;
                     text-transform: capitalize;
                     a {
                         color: $secondary-dark-color;
+                        &:hover {
+                            cursor: pointer;
+                            color: $white1-color;
+                        }
                     }
                 }
             }

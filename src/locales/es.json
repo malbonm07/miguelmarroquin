@@ -1,5 +1,42 @@
 {
     "message": {
-        "hello": "hola i18n!!"
+        "nav": {
+            "intro": "intro",
+            "about": "sobre",
+            "skills": "skills",
+            "portfolio": "portafolio",
+            "education": "educación",
+            "touch": "Estemos en Contacto"
+        },
+        "home": {
+            "msg": "<h2>Hola!, Yo soy&nbsp;<span class='text-regular'>Miguel Alonso Marroquin</span>&nbsp;aspirante a desarrollador Front End, Diseño de interfaces y UX, viviendo actualmente en Perú. Bienvenido a mi portafolio! :)</h2>",
+            "btn": "Portafolio"
+        },
+        "about": {
+            "msg": "<h2 class='text-regular'>He trabajado como Web Responsive Designer con tecnologías como <a href='https://www.w3.org/html/' target='_blank'>HTML</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CCS</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> y más. Me tomé el tiempo de aprender programación y web development y decidí que este es el tipo de trabajo que quiero ejercer, intentando mejorar siempre, algunas veces con errores pero aprendiendo constantemente. Me considero una persona comprometida con mi trabajo, dispuesto a contribuir y  aprender.</h2>"
+        },
+        "skills": {
+            "sub": "Habilidades Blandas",
+            "ul": {
+              "li1": "Mobile First, Responsive Design.",
+              "li2": "Browser Developer Tools.",
+              "li3": "Empatía.",
+              "li4": "Buena Comunicación.",
+              "li5": "Con mucha voluntad de aprender.",
+              "li6": "Flexible y Adaptable.",
+              "li7": "Trabajo bajo presión."
+            },
+            "btn": "Herramientas",
+            "sub2": "lenguajes de programación, frameworks y herramientas de desarrollo"
+        },
+        "portfolio": {
+            "sub": "Trabajos que hice",
+            "btn": "Proyectos",
+            "details": "Ver Detalles"
+        },
+        "education": {
+            "sub": "Cursos que Hice",
+            "certificates": "Certificados"
+        }
     }
 }

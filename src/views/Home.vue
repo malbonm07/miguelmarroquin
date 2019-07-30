@@ -13,21 +13,22 @@
       </div>
       <div class="spacer"></div>
       <div class="home-container__hello--description text-center">
-        <div class="langSwitch">
-          <div class="langBox us">
-              <!-- <country-flag class="icon" country='us' size='normal'/> -->
-              English
-          </div>
-          <div class="langBox es">
-              <!-- <country-flag class="icon" country='es' size='normal'/> -->
-              Español
-          </div>
-        </div>
-        <h2>Hola!, Yo soy&nbsp;<span class="text-regular">Miguel Alonso Marroquin</span>&nbsp;aspirante a desarrollador Front End, Diseño de interfaces y UX, viviendo actualmente en Perú. Bienvenido a mi portafolio! :)</h2>
+        <p v-html='$t("message.home.msg")'>
+        </p>
         <button class="home-container__hello--description-btn mt-2">
           <router-link class="text-white" to="/portfolio">
-            Portfolio
+            {{$t("message.home.btn")}}
           </router-link>
+        </button>
+      </div>
+      <div class="langSwitch">
+        <button :class="{'langBtn-active' : activeLanguage === 'us'}" class="langBox us" @click="changeLanguage('us')">
+            <!-- <country-flag class="icon" country='us' size='normal'/> -->
+            English
+        </button>
+        <button :class="{'langBtn-active' : activeLanguage === 'es'}" class="langBox es" @click="changeLanguage('es')">
+            <!-- <country-flag class="icon" country='es' size='normal'/> -->
+            Español
         </button>
       </div>
     </div>
@@ -53,15 +54,20 @@ export default {
     CountryFlag
   },
   name: 'home',
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang;
+    }
+  },
+  computed: {
+    activeLanguage() {
+      console.log(this.$i18n.locale)
+      return this.$i18n.locale;
+    }
+  }
 }
 </script>
 
 <style>
-.box {
-  width: 200px;
-  height: 200px;
-  background: red;
-  margin-top: 300px;
-}
 </style>
 

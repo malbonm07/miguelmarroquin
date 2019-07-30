@@ -83,17 +83,19 @@
         &--description {
             color: $secondary-dark-color;
             padding: 0 15px 0 15px;
+            @include tablet{
+                max-width: 90%;
+            }
+            @include desktop{
+                max-width: 65%;
+            }
             h2 {
                 font-weight: 200;
                 opacity: 0;
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1s;
-                font-size: 18px;
+                font-size: 1.8rem;
                 line-height: 25px;
-                @include tablet {
-                    margin-left: 10%;
-                    margin-right: 10%;
-                }
             }
             &-btn {
                 background: $secondary-dark-color;
@@ -101,13 +103,16 @@
                 opacity: 0;
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1.2s;
+                @include desktop {
+                    margin-top: 4rem;
+                }
                 a {
                     display: block;
                     padding: 5px 19px;
                     border: 1px solid transparent;
                     outline: none;
                     color: $white1-color;
-                    font-size: 14px;
+                    font-size: 1.4rem;
                     letter-spacing: 1.5px;
                     font-family: 'Indie Flower';
                     &:hover {

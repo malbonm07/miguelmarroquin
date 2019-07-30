@@ -7,31 +7,31 @@
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/"
           @click.native="closeMobNav">
-          intro
+          {{$t("message.nav.intro")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/about"
           @click.native="closeMobNav">
-          sobre
+          {{$t("message.nav.about")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/skills"
           @click.native="closeMobNav">
-          skills
+          {{$t("message.nav.skills")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/portfolio"
           @click.native="closeMobNav">
-          portafolio
+          {{$t("message.nav.portfolio")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/education"
           @click.native="closeMobNav">
-          educación
+          {{$t("message.nav.education")}}
         </router-link>
         </li>
       </ul>
@@ -92,36 +92,36 @@
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/"
               @click.native="closeMobNav">
-              intro
+              {{$t("message.nav.intro")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/about"
               @click.native="closeMobNav">
-              sobre
+              {{$t("message.nav.about")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/skills"
               @click.native="closeMobNav">
-              skills
+              {{$t("message.nav.skills")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/portfolio"
               @click.native="closeMobNav">
-              portafolio
+              {{$t("message.nav.portfolio")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/education"
               @click.native="closeMobNav">
-              educación
+              {{$t("message.nav.education")}}
             </router-link>
             </li>
           </ul>
           <div class="mob-nav-menu__nav--icons">
-            <h4 class="text-center text-caption uppercase text-regular mb-2 mt-3">Estemos en contacto</h4>
+            <h4 class="text-center text-caption uppercase text-regular mb-2 mt-3">{{$t("message.nav.touch")}}</h4>
             <a href="mailto:malbonm07@gmail.com" target="_blank" class="icon-link"><font-awesome-icon :icon="['fa', 'envelope']" /></a>
             <a href="https://twitter.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
             <a href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
