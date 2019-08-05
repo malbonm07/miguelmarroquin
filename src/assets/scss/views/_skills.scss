@@ -152,7 +152,6 @@
                 animation-delay: 1.2s;
                 background: $secondary-dark-color;
                 border: 1px solid $primary-color;
-                border-radius: 2px;
                 outline: none;
                 color: $white1-color;
                 padding: 3px 19px;
@@ -174,23 +173,29 @@
         background: #EEEEEE;
         position: relative;
         z-index: 20;
-        .subTools {
-            font-size: 1.6rem;
-            font-weight: 400;
-            padding: 4.8rem 3.2rem 3.2rem 3.2rem;
-            line-height: 22px;
-            transform: translateY(30px);
-            transition: 0.5s all ease-in-out;
-            text-align: center;
-            opacity: 0;
-            letter-spacing: 2px;
-            text-transform: capitalize;
-            color: $secondary-dark-color;
+        .subTools-container {
+            margin: auto;
+            width: 100%;
+            color: black;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 15px;
             @include tablet {
-                padding: 4.8rem 19.2rem 4.8rem 19.2rem;
+                width: 60%;
             }
             @include desktop {
-                padding: 4.8rem 32.8rem 4.8rem 32.8rem;
+                width: 40%;
+            }
+            .subTools {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 2px;
+                text-transform: capitalize;
+                color: $secondary-dark-color;
             }
         }
         .textAppear {
@@ -205,14 +210,16 @@
             .skills-list {
               display: grid;
               grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-              grid-gap: 1.92rem;
               text-align: center;
-              padding: 0 4rem;
+              grid-column-gap: 1.90rem;
+              grid-row-gap: 4.5rem;
+              padding: 1rem 4rem;
+              max-width: 650px;
+              margin: auto;
                 li {
                 width: 80%;
                 margin: auto;
                 position: relative;
-                border-radius: 0%;
                 span, a {
                     font-size: 5.6rem;
                     color: $secondary-dark-color;
@@ -247,17 +254,6 @@
                     transition: 0.2s;
                     }
                 }
-                @include phone-medium {
-                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-                grid-gap: 2.4rem;
-                padding: 0 4rem;
-                }
-                @include tablet {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                grid-gap: 4rem;
-                padding: 0 6.4rem;
-                }
-
             }
           }
     }
@@ -321,18 +317,8 @@
         opacity: 1;
         transform: translateY(0px);
     }
-  }
-
-@keyframes fadeUpSubTitle {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
 }
+
 @keyframes fadeUpSoftSkills {
     0% {
         opacity: 0;

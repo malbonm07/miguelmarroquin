@@ -77,8 +77,10 @@
         <a  href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
         <a  href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
       </nav>
-      <button id="upButton" class="footer__up-btn" v-scroll="positionUp" v-scroll-to="'#app'">
-        <span class="footer__up-btn--icon"><font-awesome-icon :icon="['fas', 'angle-up']" /></span>
+      <button id="upButton" class="footer__up-btn" 
+              v-scroll="positionUp" v-scroll-to="'#app'"
+      >
+        <span class="footer__up-btn--icon"><font-awesome-icon :icon="['fas', 'angle-up']"/></span>
       </button>
     </footer>
 <!------------------------------ END FOOTER -------------------------->

@@ -27,6 +27,7 @@
                 {{$t("message.education.certificates")}}
                 </button>
             </div>
+            <backBtn></backBtn>
         </div>
 <!------------------------------ END COURSES LIST SECTION -------------------------->
 
@@ -62,8 +63,11 @@
 </template>
 
 <script>
+import backBtn from '@/components/backBtn.vue'
 export default {
-
+    components: {
+        backBtn
+    }
 }
 </script>
 

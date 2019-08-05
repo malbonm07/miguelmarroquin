@@ -65,6 +65,7 @@
           {{$t("message.portfolio.btn")}}
         </button>
       </div>
+      <backBtn></backBtn>
     </div>
 <!------------------------------ END WORKS LIST -------------------------->
 
@@ -290,8 +291,12 @@
 
 <script>
 import proyectos from '@/data/proyectos.js';
+import backBtn from '@/components/backBtn.vue'
 
 export default {
+    components: {
+        backBtn
+    },
     data() {
         return {
             currentProjectModal: null,

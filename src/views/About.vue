@@ -8,18 +8,23 @@
         <span>O</span>
         <span>U</span>
         <span>T</span>
-      </div>
-      <div class="spacer"></div>
-      <div class="about-container__hello--description text-center">
+    </div>
+    <div class="spacer"></div>
+    <div class="about-container__hello--description text-center">
         <h2 v-html='$t("message.about.msg")'></h2>
-      </div>
+    </div>
+    <backBtn></backBtn>
+
 <!------------------------------ END ABOUT SECTION -------------------------->
   </div>
 </template>
 
 <script>
+import backBtn from '@/components/backBtn.vue';
 export default {
-
+  components: {
+    backBtn
+  }
 }
 </script>
 
