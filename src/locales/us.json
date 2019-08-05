@@ -1,5 +1,42 @@
 {
-  "message": {
-    "hello": "hello i18n !!"
-  }
+    "message": {
+        "nav": {
+            "intro": "intro",
+            "about": "about",
+            "skills": "skills",
+            "portfolio": "portfolio",
+            "education": "education",
+            "touch": "Get in Touch"
+        },
+        "home": {
+            "msg": "<h2>Hello!, I'am <span class='text-regular'>Miguel Alonso Marroquin</span>&nbsp;aspirant to Front End Development, interface design y UX, currently living in Perú. Welcome to my portfolio! :)</h2>",
+            "btn": "Portfolio"
+        },
+        "about": {
+            "msg": "<h2 class='text-regular'>I have been working as a Web Responsive Designer with technologies such as <a href='https://www.w3.org/html/' target='_blank'>HTML5</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CCS3</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> and more. I took the time to learn programming and web development and decided that this is the type of work I want, always improving, sometimes with mistakes, and constantly learning. I am a person committed to my work, eager to contribute and learn.</h2>"
+        },
+        "skills": {
+            "sub": "Soft Skills",
+            "ul": {
+              "li1": "Mobile First, Responsive Design.",
+              "li2": "Browser Developer Tools.",
+              "li3": "Empathy.",
+              "li4": "Good Communitation.",
+              "li5": "Willingness to Learn.",
+              "li6": "Flexible and Adaptable.",
+              "li7": "Work Under Pressure"
+            },
+            "btn": "Tools",
+            "sub2": "Programmings Languages, Frameworks and Tools"
+        },
+        "portfolio": {
+          "sub": "Own Works",
+          "btn": "Projects",
+          "details": "See Details"
+        },
+        "education": {
+          "sub": "Courses I Took",
+          "certificates": "Certificates"
+        }
+    }
 }

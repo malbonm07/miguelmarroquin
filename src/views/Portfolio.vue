@@ -12,7 +12,7 @@
       </div>
       <div class="spacer"></div>
       <div class="portfolio-container__works--description text-center">
-        <h2 class="mb-2">trabajos realizados</h2>
+        <h2 class="mb-2">{{$t("message.portfolio.sub")}}</h2>
         <ul class="portfolio-container__works--description-list">
             <li><router-link class="li-route" to="portfolio/quasar-music-app">vue music app con quasar</router-link></li>
             <li><router-link class="li-route" to="portfolio/vuetify-landing">
@@ -62,7 +62,7 @@
             </a></li>
         </ul>
         <button class="portfolio-container__works--description-btn mt-1" v-scroll-to="{el: '#proyectos'}">
-          proyectos
+          {{$t("message.portfolio.btn")}}
         </button>
       </div>
     </div>
@@ -75,7 +75,9 @@
                 <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
             </figure>
             <div class="portfolio-container__projects--item--links">
-                <router-link class="details" :to="proyecto.link">Ver Detalles</router-link>
+                <router-link class="details" :to="proyecto.link">
+                    {{$t("message.portfolio.details")}}
+                </router-link>
                 <router-link class="name" :to="proyecto.link">{{proyecto.titulo}}</router-link>
                 <div class="skills-span" v-scroll="addFadeUp">
                     <span v-for="(skill, i) in proyecto.skills" :key="i">{{skill}},&nbsp;</span>
@@ -97,7 +99,8 @@
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
                     <a @click="projectModal(proyectos[0])" class="details" 
-                    >Ver Detalles</a>
+                    >
+                    {{$t("message.portfolio.details")}}</a>
                     <a @click="projectModal(proyectos[0])" class="name"
                     >{{proyectos[0].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
@@ -112,7 +115,9 @@
                     <div class="img-overlay">Ver Sitio</div></a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[1])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[1])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[1])" class="name">{{proyectos[1].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[1].skills" :key="i">{{skill}},&nbsp;</span>
@@ -130,7 +135,9 @@
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[2])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[2])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[2])" class="name">{{proyectos[2].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[2].skills" :key="i">{{skill}},&nbsp;</span>
@@ -146,7 +153,9 @@
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[3])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[3])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[3])" class="name">{{proyectos[3].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[3].skills" :key="i">{{skill}},&nbsp;</span>
@@ -164,7 +173,9 @@
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[4])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[4])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[4])" class="name">{{proyectos[4].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[4].skills" :key="i">{{skill}},&nbsp;</span>
@@ -180,7 +191,9 @@
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[5])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[5])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[5])" class="name">{{proyectos[5].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[5].skills" :key="i">{{skill}},&nbsp;</span>
@@ -198,7 +211,9 @@
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[6])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[6])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[6])" class="name">{{proyectos[6].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[6].skills" :key="i">{{skill}},&nbsp;</span>
@@ -214,7 +229,9 @@
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                    <a @click="projectModal(proyectos[7])" class="details">Ver Detalles</a>
+                    <a @click="projectModal(proyectos[7])" class="details">
+                        {{$t("message.portfolio.details")}}
+                    </a>
                     <a @click="projectModal(proyectos[7])" class="name">{{proyectos[7].titulo}}</a>
                     <div class="skills-span" v-scroll="addFadeUp">
                         <span v-for="(skill, i) in proyectos[7].skills" :key="i">{{skill}},&nbsp;</span>
@@ -272,14 +289,14 @@
 </template>
 
 <script>
-import proyectos from '@/datos/proyectos.js'; //array de proyectos para mapear en portafolio
+import proyectos from '@/data/proyectos.js';
 
 export default {
     data() {
         return {
             currentProjectModal: null,
             showProjectModal: false,
-            proyectos: proyectos,
+            proyectos: proyectos
         }
     },
     methods: {
@@ -301,12 +318,6 @@ export default {
 }
 </script>
 
-<style>
-    .v-lazy-image {
-    filter: blur(10px);
-    transition: filter 0.7s;
-    }
-    .v-lazy-image-loaded {
-    filter: blur(0);
-    }
+<style lang="scss">
+//styles are in 'assets/scss/views/skills';
 </style>

@@ -14,16 +14,17 @@
 }
 html, body {
     font-family: 'Lato', serif;
-    // font-size: 1rem;
+    font-size: 62.5%;
+    @include lg-desktop {
+        font-size: 80%;
+    }
 }
-// html, body {
-//     margin: 0; height: 100%; overflow: hidden
-// }
 ul {
     padding: 0;
 }
 li {
     list-style: none;
+    font-size: 1.6rem;
 }
 a {
     text-decoration: none;

@@ -14,23 +14,19 @@
       </div>
       <div class="spacer"></div>
       <div class="skills-container__soft--description text-center">
-        <h2 class="mb-2">Soft Skills</h2>
+        <h2 class="mb-2">{{$t("message.skills.sub")}}</h2>
         <ul class="skills-container__soft--description-list">
-            <li>Mobile First, Diseño Responsivo.</li>
-            <li>Browser Developer Tools.</li>
-            <li>Buena comunicación.</li>
-            <li>Con mucha voluntad de aprender.</li>
-            <li>Flexible y adaptable.</li>
-            <li>Trabajo en Equipo.</li>
-            <!-- <li>Mobile First, Responsive Design.</li>
-            <li>Browser Developer Tools.</li>
-            <li>Agile Development Approach.</li>
-            <li>Good Communication.</li>
-            <li>Willingness to Learn.</li> -->
+            <li>{{$t("message.skills.ul.li1")}}</li>
+            <li>{{$t("message.skills.ul.li2")}}</li>
+            <li>{{$t("message.skills.ul.li3")}}</li>
+            <li>{{$t("message.skills.ul.li4")}}</li>
+            <li>{{$t("message.skills.ul.li5")}}</li>
+            <li>{{$t("message.skills.ul.li6")}}</li>
+            <li>{{$t("message.skills.ul.li7")}}</li>
         </ul>
         <button class="skills-container__soft--description-btn mt-1" v-scroll-to="{el: '#tools'}"
         >
-          Herramientas
+          {{$t("message.skills.btn")}}
         </button>
       </div>
     </div>
@@ -39,7 +35,9 @@
 
 <!------------------------------ HERRAMIENTAS SECTION -------------------------->
     <div class="skills-container__tools">
-        <h2 class="text-center subTools" id="tools" v-scroll="toolsSubAppear">lenguajes de programación, frameworks y herramientas de desarrollo</h2>
+        <h2 class="text-center subTools" id="tools" v-scroll="toolsSubAppear">
+          {{$t("message.skills.sub2")}}
+        </h2>
         <div class="skills-center">
           <ul id="skills-list-effect" class="skills-list">
             <li v-scroll="skillsIconsAppear"><a href="https://www.w3.org/html/" target="_blank">
@@ -110,6 +108,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+//styles are in 'assets/scss/views/skills';
 </style>

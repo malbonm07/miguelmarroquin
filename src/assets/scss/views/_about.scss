@@ -1,4 +1,7 @@
 .about-container {
+
+    // ############################ SECTION PART 1 ################################
+
     &__hello {
         width: 100%;
         height: 100vh;
@@ -12,15 +15,15 @@
         overflow: hidden;
         &--text {
             color: $white1-color;
-            margin-bottom: 1.5rem;
-            font-size: 80px;
+            margin-bottom: 2.4rem;
+            font-size: 8rem;
             display: flex;
             letter-spacing: 2px;
             @include phone-medium {
-                font-size: 90px;
+                font-size: 9rem;
             }
             @include tablet {
-                font-size: 110px;
+                font-size: 11rem;
             }
             span:nth-child(1) {
                 display: block;
@@ -53,6 +56,9 @@
                 animation-delay: 0.5s;
             }
         }
+
+        // ####################### FIGURE BACKGROUND STYLES #########################
+
         .spacer {
             width: 0px;
             height: 200px;
@@ -89,14 +95,24 @@
             @include phone-medium {
                 padding: 0 20px 0 20px;
             }
+            @include tablet {
+                padding: 0;
+                width: 90%;
+            }
+            @include desktop {
+                width: 85%;
+            }
             h2 {
                 opacity: 0;
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1s;
-                font-size: 18px;
+                font-size: 1.6rem;
                 font-weight: 200;
                 color: $secondary-dark-color;
-                line-height: 25px;
+                line-height: 2.5rem;
+                @include desktop {
+                    font-size: 1.8rem;
+                }
                 a {
                     color: $secondary-dark-color;
                     font-weight: 400;
@@ -104,22 +120,21 @@
                         cursor: pointer;
                     }
                 }
-                @include tablet {
-                    margin-left: 10%;
-                    margin-right: 10%;
-                }
             }
         }
     }
-    &__contact {
-        width: 100%;
-        height: 100vh;
-        background: $white2-color;
-        position: relative;
-        z-index: 20;
-    }
+    // &__contact {
+    //     width: 100%;
+    //     height: 100vh;
+    //     background: $white2-color;
+    //     position: relative;
+    //     z-index: 20;
+    // }
 }
 
+/*######################################################################## 
+                            ANIMATION                                  
+#########################################################################*/
 
 @keyframes fadeDownAbout {
     0% {

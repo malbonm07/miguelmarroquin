@@ -1,13 +1,7 @@
 .desktModal-btnContent {
-    // position: fixed;
-    // z-index: 100;
     position: absolute;
     top: 30px;
     right: 30px;
-    // transform: translate(-50%, -50%);
-    // @include tablet {
-    //   display: none;
-    // }
     #menu-toggle {
       display: none;
     }
@@ -20,9 +14,6 @@
       align-items: center;
       transition: .2s ease-in-out;
       cursor: pointer;
-      // &:hover{
-      //   // background: #2E47BF;
-      // }
       .line{
         transition: all 0.2s ease-in-out;
         margin: 2.5px 0;
@@ -45,20 +36,4 @@
           }
       }
     }
-    
-    // #menu-toggle:checked + .menu-toggle-label {
-    //   .line{
-    //     transition: all 0.2s ease-in-out;
-    //     background: black;
-    //     &:nth-child(1){
-    //       transform: translateY(7px) rotate(45deg);
-    //     }
-    //     &:nth-child(2){
-    //       transform: scale(0);
-    //     }
-    //     &:nth-child(3){
-    //       transform: translateY(-7px) rotate(-45deg);
-    //     }
-    //   }
-    // }
 }

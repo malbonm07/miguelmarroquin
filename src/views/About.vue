@@ -11,8 +11,7 @@
       </div>
       <div class="spacer"></div>
       <div class="about-container__hello--description text-center">
-        <h2 class="text-regular">He trabajado como Web Responsive Designer con tecnologías como <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>, <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">CCS</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://vuejs.org/" target="_blank">VueJS</a> y más. Me tomé el tiempo de aprender programación y web development y decidí que este es el tipo de trabajo que quiero ejercer, intentando mejorar siempre, algunas veces con errores pero aprendiendo constantemente. Me considero una persona comprometida con mi trabajo, dispuesto a contribuir y  aprender.</h2>
-        <!-- <h2 class="text-regular">I have been working as a Web Responsive Designer with technologies such as <a href="">HTML5</a>, <a href="">CCS3</a>, <a href="">Javascript</a>, <a href="">VueJS</a> and more. I took the time to learn programming and web development and decided that this is the type of work I want, always improving, sometimes with mistakes, and constantly learning. I am a person committed to my work, eager to contribute and learn.</h2> -->
+        <h2 v-html='$t("message.about.msg")'></h2>
       </div>
 <!------------------------------ END ABOUT SECTION -------------------------->
   </div>
@@ -24,6 +23,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+//styles are in 'assets/scss/views/about';
 </style>
