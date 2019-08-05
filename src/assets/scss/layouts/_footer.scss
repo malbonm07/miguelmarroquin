@@ -61,10 +61,21 @@
         border: 1px solid white;
         color: $white2-color;
         outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        @include lg-desktop {
+            width: 60px;
+            height: 60px;
+            transform: translate(-30px, -30px);
+        }
         &--icon {
             display: block;
             font-size: 2.5rem;
+            @include lg-desktop {
+                font-size: 3rem;
+            }
         }
     }
 }

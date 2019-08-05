@@ -3,29 +3,29 @@
     @include tablet {
         display: block;
         position: fixed;
+        width: 3.2rem;
         top: 25px;
         left: 30px;
-        width: 32px;
         height: 30px;
         z-index: 90;
         cursor: pointer;
         .linea1 {
-            font-size: 7px;
+            font-size: 0.7rem;
             color: white;
             text-align: center;
             width: 100%;
-            height: 10px;
+            height: 1rem;
             background: $secondary-dark-color;
             border: .5px solid $primary-color;
             transform: rotate(-35deg);
             margin-bottom: 7px;
         }
         .linea2 {
-            font-size: 7px;
+            font-size: 0.7rem;
             color: white;
             text-align: center;
             width: 100%;
-            height: 10px;
+            height: 1rem;
             background: $secondary-dark-color;
             border: .5px solid $primary-color;
             transform: rotate(-35deg);

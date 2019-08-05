@@ -23,6 +23,9 @@
                     font-size: 1.6rem;
                     font-weight: 400;
                     letter-spacing: 0.5px;
+                    @include desktop {
+                        font-size: 1.8rem;
+                    }
                 }
             }
             &--link:nth-child(1) {
