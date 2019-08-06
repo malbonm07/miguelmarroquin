@@ -32,7 +32,8 @@
         "portfolio": {
             "sub": "Trabajos que hice",
             "btn": "Proyectos",
-            "details": "Ver Detalles"
+            "details": "Ver Detalles",
+            "view": "Ver Proyecto"
         },
         "education": {
             "sub": "Cursos que Hice",

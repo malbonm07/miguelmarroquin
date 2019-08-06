@@ -104,7 +104,7 @@
                 font-weight: 400;
                 color: $white2-color;
                 letter-spacing: 2px;
-                padding: 10px 0;
+                padding: 1rem 0;
                 border-bottom: 1px solid #64FFDA;
             }
             &-list {
@@ -178,11 +178,11 @@
             margin: auto;
             width: 100%;
             color: black;
-            height: 120px;
+            height: 12rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0px 15px;
+            padding: 0px 1.5rem;
             @include tablet {
                 width: 60%;
             }
@@ -192,9 +192,9 @@
             .subTools {
                 font-size: 1.6rem;
                 font-weight: 400;
-                line-height: 22px;
+                line-height: 2.2rem;
                 text-align: center;
-                letter-spacing: 2px;
+                letter-spacing: 0.2rem;
                 text-transform: capitalize;
                 color: $secondary-dark-color;
             }
@@ -203,61 +203,146 @@
             transform: translateY(0);
             opacity: 1;
         }
-        .skills-center {
+        .skills-content {
             width: 100%;
-            @include desktop {
-                width: 100%;
+            min-height: calc(100vh - 12rem);
+            display: flex;
+            flex-direction: column;
+            @include tablet {
+                flex-direction: row;
             }
-            .skills-list {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-              text-align: center;
-              grid-column-gap: 1.90rem;
-              grid-row-gap: 4.5rem;
-              padding: 1rem 4rem;
-              max-width: 650px;
-              margin: auto;
-                li {
-                width: 80%;
-                margin: auto;
-                position: relative;
-                span, a {
-                    font-size: 5.6rem;
-                    color: $secondary-dark-color;
+            .skills-center {
+                width: 100%;
+                height: 100%;
+                @include desktop {
                     width: 100%;
-                    background: transparent;
-                    text-align: center;
-                    transition: .3s;
-                    &:hover {
-                        cursor: pointer;
-                        }
-                    &:hover .skill-item__popover {
-                        opacity: 1;
-                        }
-                    @include tablet {
-                        font-size: 4rem;
-                        }
-                    @include desktop {
-                        font-size: 6rem;
-                        }
-                    }
-                .skill-item__popover {
-                    display: block;
+                }
+                .skills-list {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                  text-align: center;
+                  grid-column-gap: 1.90rem;
+                  grid-row-gap: 4.5rem;
+                  padding: 1rem 2rem;
+                  max-width: 650px;
+                  margin: auto;
+                    li {
                     width: 80%;
-                    position: absolute;
-                    bottom: -15px;
-                    left: 0;
-                    right: 0;
-                    font-size: 1.2rem;
                     margin: auto;
-                    letter-spacing: 1px;
-                    opacity: 1;
-                    transition: 0.2s;
+                    position: relative;
+                    span, a {
+                        font-size: 5.6rem;
+                        color: $secondary-dark-color;
+                        width: 100%;
+                        background: transparent;
+                        text-align: center;
+                        transition: .3s;
+                        &:hover {
+                            cursor: pointer;
+                            }
+                        &:hover .skill-item__popover {
+                            opacity: 1;
+                            }
+                        @include tablet {
+                            font-size: 4rem;
+                            }
+                        @include desktop {
+                            font-size: 6rem;
+                            }
+                        }
+                    .skill-item__popover {
+                        display: block;
+                        width: 80%;
+                        position: absolute;
+                        bottom: -15px;
+                        left: 0;
+                        right: 0;
+                        font-size: 1.2rem;
+                        margin: auto;
+                        letter-spacing: 1px;
+                        opacity: 1;
+                        transition: 0.2s;
+                        }
                     }
                 }
             }
-          }
+            .skills-secondary {
+                display: none;
+                @include tablet {
+                    display: block;
+                    width: 100%;
+                    padding: 1rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    .css {
+                        width: 0%;
+                        height: 30%;
+                        margin-bottom: 2rem;
+                        background: $secondary-dark-color;
+                        align-self: center;
+                        transition: .3s cubic-bezier(.52,.01,.16,1);
+                        // animation: skDescriptionApp 0.3s cubic-bezier(.52,.01,.16,1) forwards;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .javascript {
+                        width: 0%;
+                        height: 30%;
+                        margin-bottom: 2rem;
+                        align-self: center;
+                        background: $secondary-dark-color;
+                        transition: .3s cubic-bezier(.52,.01,.16,1);
+                        // animation: skDescriptionApp 0.3s cubic-bezier(.52,.01,.16,1) forwards;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .workflow {
+                        min-width: 0%;
+                        min-height: 30%;
+                        background: $secondary-dark-color;
+                        transition: .3s cubic-bezier(.52,.01,.16,1);
+                        // animation: skDescriptionApp 0.3s cubic-bezier(.52,.01,.16,1) forwards;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .ul-list {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        color: white;
+                        opacity: 0;
+                        h4 {
+                            border-bottom: 1px solid #66FCF1;
+                            font-size: 1.2rem;
+                            margin-bottom: 1rem;
+                            letter-spacing: 0.2rem;
+                            padding-bottom: 0.2rem;
+                            @include desktop {
+                                font-size: 1.6rem;
+                            }
+                        }
+                        li {
+                            font-weight: 200;
+                            text-transform: capitalize;
+                            font-size: 1.2rem;
+                            @include desktop {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+.animationSkill {
+    animation: listAppear 0.3s cubic-bezier(.52,.01,.16,1) forwards;
+    animation-delay: .3s;
 }
 
 /*######################################################################## 
@@ -338,5 +423,14 @@
     100% {
         opacity: 1;
         transform: translateY(0)
+    }
+}
+
+@keyframes listAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

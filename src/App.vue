@@ -6,31 +6,31 @@
       <ul class="desk-nav-menu__nav">
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/"
-          @click.native="closeMobNav">
+          exact>
           {{$t("message.nav.intro")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/about"
-          @click.native="closeMobNav">
+          exact>
           {{$t("message.nav.about")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/skills"
-          @click.native="closeMobNav">
+          exact>
           {{$t("message.nav.skills")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/portfolio"
-          @click.native="closeMobNav">
+          exact>
           {{$t("message.nav.portfolio")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
           <router-link class="route-link" to="/education"
-          @click.native="closeMobNav">
+          exact>
           {{$t("message.nav.education")}}
         </router-link>
         </li>
@@ -135,11 +135,16 @@ export default {
         this.$refs.mobToggle.checked = false;
       }
     },
-    positionUp(evt, el) {
-        console.log(window.scrollY);
-    },
+    // positionUp(evt, el) {
+    //     console.log(window.scrollY);
+    // },
     changeLang() {
       this.$i18n.locale = 'us'
+    }
+  },
+  computed: {
+    activeRoute() {
+      return this.$route
     }
   }
 }
@@ -158,15 +163,15 @@ export default {
 
 
 // #app {
-//   background: #2E47BF;
+//   background: $primary-color;
 // }
 
 // .page-enter-active, .page-leave-active {
-//   transition: opacity .3s, transform .2s;
+//   transition: opacity 1s;
 //   transition-delay: .1s;
 // }
 // .page-enter, .page-leave-to {
 //   opacity: 0;
-//   // transform: translateX(-100%);
+//   transform: translateX(-100%);
 // }
 </style>

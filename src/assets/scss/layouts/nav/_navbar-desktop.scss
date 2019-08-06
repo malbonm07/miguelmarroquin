@@ -15,18 +15,24 @@
             height: 7rem;
             &--link {
                 margin: 5px;
+                position: relative;
                 .route-link {
                     font-family: 'Indie Flower', 'Lato';
-                    padding: 10px;
+                    padding: 5px 10px;
                     color: $white2-color;
                     text-transform: capitalize;
                     font-size: 1.6rem;
                     font-weight: 400;
                     letter-spacing: 0.5px;
+                    transition: .2s ease-in-out;
+                    border-bottom: 1px solid transparent;
                     @include desktop {
                         font-size: 1.8rem;
                     }
                 }
+            }
+            .router-link-active{
+                border-color: white;
             }
             &--link:nth-child(1) {
                 opacity: 0;

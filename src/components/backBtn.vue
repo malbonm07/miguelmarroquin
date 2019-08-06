@@ -2,6 +2,7 @@
     <div class="backBtn" @click="$router.go(-1)">
         <div class="btn-icon">
         </div>
+        <span>Back</span>
     </div>
 </template>
 

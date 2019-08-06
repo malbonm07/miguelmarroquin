@@ -1,8 +1,8 @@
 .backBtn {
     display: none;
     @include desktop {
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
         position: absolute;
         top: 50%;
         right: 15px;
@@ -12,11 +12,14 @@
         justify-content: center;
         color: white;
         font-size: 1.1rem;
-        transition: .2s ease;
+        transition: .3s ease-in-out;
         animation: backBtnAppear .2s ease-in-out forwards;
         &:hover {
             cursor: pointer;
             background: rgba(255,255,255,0.2);
+            span {
+                opacity: 1;
+            }
         }
         .btn-icon {
             width: 1.5rem;
@@ -24,6 +27,11 @@
             border-top: 1px solid white;
             border-right: 1px solid white;
             transform: rotate(-135deg) translate(-2px, 2px);
+        }
+        span {
+            opacity: 0;
+            position: relative;
+            transition: .2s ease-in-out;
         }
     }
     @keyframes backBtnAppear {

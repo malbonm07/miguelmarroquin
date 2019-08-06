@@ -3,8 +3,8 @@
     height: 4rem;
     position: absolute;
     z-index: 40;
-    bottom: calc(154px - 20px);
-    left: calc(50% - 20px);
+    bottom: calc(15.4rem - 2rem);
+    left: calc(50% - 2rem);
     background: $secondary-dark-color;
     border: 1px solid white;
     color: $white2-color;
@@ -24,9 +24,9 @@
     &--icon {
         width: 1.5rem;
         height: 1.5rem;
-        border-left: 1px solid $white2-color;
-        border-top: 1px solid $white2-color;
-        transform: rotate(45deg) translate(3px, 3px);
+        border-left: 0.1rem solid $white2-color;
+        border-top: 0.1rem solid $white2-color;
+        transform: rotate(45deg) translate(0.3rem, 0.3rem);
         display: block;
         font-size: 2.5rem;
     }

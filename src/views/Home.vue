@@ -31,6 +31,14 @@
             Español
         </button>
       </div>
+      <div class="social-content">
+          <a href="mailto:malbonm07@gmail.com" target="_blank" class="social-content__desktopIcon"><font-awesome-icon :icon="['fa', 'envelope']" /></a>
+          <a href="https://twitter.com/malbonm07" target="_blank" class="social-content__desktopIcon"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+          <!-- <a href="https://www.facebook.com/malbonm07" target="_blank" class="social-content__desktopIcon"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a> -->
+          <a href="https://github.com/malbonm07" target="_blank" class="social-content__desktopIcon"><font-awesome-icon :icon="['fab', 'github']" /></a>
+          <a href="https://codepen.io/Malbonm07" target="_blank" class="social-content__desktopIcon"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
+          <a href="https://www.linkedin.com/in/malbonm07" target="_blank" class="social-content__desktopIcon"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+      </div>
     </div>
 <!------------------------------ END HOME SECTION -------------------------->
 

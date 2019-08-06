@@ -89,7 +89,7 @@
             }
         }
         &--description {
-            padding: 0 15px 0 15px;
+            padding: 0 15px;
             transform: translateY(40px);
             h2 {
                 opacity: 0;
@@ -164,7 +164,7 @@
                     li {
                         color: $white1-color;
                         font-weight: 200;
-                        margin: 15px 0;
+                        margin: 1.5rem 0;
                         text-transform: capitalize;
                         cursor: pointer;
                         .li-route {
@@ -252,7 +252,7 @@
         &--item {
             width: 100vw;
             height: 450px;
-            padding: 15px;
+            padding: 0.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -360,7 +360,7 @@
                             font-size: 3.5rem;
                             text-transform: capitalize;
                             text-align: center;
-                            font-weight: 800;
+                            font-weight: 600;
                             background: rgba(0,0,0,0.7);
                             opacity: 0;
                             transition: .18s ease-in;

@@ -77,7 +77,7 @@
 
 <!------------------------------ MOBILE PROJECTS -------------------------->
     <div class="portfolio-container__projects">
-        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index">
+        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index" data-aos-duration="500" data-aos="fade-up">
             <figure class="portfolio-container__projects--item--img">
                 <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
             </figure>
@@ -102,7 +102,7 @@
                 <figure class="DesktP-img">
                     <a href="https://malbonm07.github.io/vue-quasar-spa/#/" target="_blank"><v-lazy-image class="lazy-img" :src="proyectos[0].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                     <!-- <div class="img-overlay">{{proyectos[0].titulo}}</div> -->
-                    <div class="img-overlay">Ver Sitio</div></a>
+                    <div class="img-overlay">{{$t("message.portfolio.view")}}</div></a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
                     <a @click="projectModal(proyectos[0])" class="details" 
@@ -119,7 +119,7 @@
                 <figure class="DesktP-img">
                     <a href="https://malbonm07.github.io/nuxt-landing-template/" target="_blank"><v-lazy-image class="lazy-img" :src="proyectos[1].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                     <!-- <div class="img-overlay">{{proyectos[1].titulo}}</div> -->
-                    <div class="img-overlay">Ver Sitio</div></a>
+                    <div class="img-overlay">{{$t("message.portfolio.view")}}</div></a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
                     <a @click="projectModal(proyectos[1])" class="details">
@@ -138,7 +138,7 @@
                     <a href="https://malbonm07.github.io/landing-school/" target="_blank">
                         <v-lazy-image class="lazy-img" :src="proyectos[2].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                         <!-- <div class="img-overlay">{{proyectos[2].titulo}}</div> -->
-                        <div class="img-overlay">Ver Sitio</div>
+                        <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
@@ -156,7 +156,7 @@
                     <a href="https://malbonm07.github.io/nuxt-blog-template/" target="_blank">
                         <v-lazy-image class="lazy-img" :src="proyectos[3].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                         <!-- <div class="img-overlay">{{proyectos[3].titulo}}</div> -->
-                        <div class="img-overlay">Ver Sitio</div>
+                        <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
@@ -176,7 +176,7 @@
                     <a href="https://malbonm07.github.io/v-calculator/" target="_blank">
                         <v-lazy-image class="lazy-img" :src="proyectos[4].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                         <!-- <div class="img-overlay">{{proyectos[4].titulo}}</div> -->
-                        <div class="img-overlay">Ver Sitio</div>
+                        <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
@@ -194,7 +194,7 @@
                     <a href="https://malbonm07.github.io/v-shoppingcart/" target="_blank">
                         <v-lazy-image class="lazy-img" :src="proyectos[5].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                         <!-- <div class="img-overlay">{{proyectos[5].titulo}}</div> -->
-                        <div class="img-overlay">Ver Sitio</div>
+                        <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
@@ -214,7 +214,7 @@
                     <a href="https://malbonm07.github.io/v-pokemon/" target="_blank">
                         <v-lazy-image class="lazy-img" :src="proyectos[6].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                         <!-- <div class="img-overlay">{{proyectos[6].titulo}}</div> -->
-                        <div class="img-overlay">Ver Sitio</div>
+                        <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
@@ -232,7 +232,7 @@
                     <a href="https://malbonm07.github.io/v-todolist/" target="_blank">
                         <v-lazy-image class="lazy-img" :src="proyectos[7].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                         <!-- <div class="img-overlay">{{proyectos[7].titulo}}</div> -->
-                        <div class="img-overlay">Ver Sitio</div>
+                        <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
                     </a>
                 </figure>
                 <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">

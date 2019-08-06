@@ -32,7 +32,8 @@
         "portfolio": {
           "sub": "Own Works",
           "btn": "Projects",
-          "details": "See Details"
+          "details": "See Details",
+          "view": "View Project"
         },
         "education": {
           "sub": "Courses I Took",
