@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio-container">
 
+
 <!------------------------------ WORKS LIST -------------------------->
     <div class="portfolio-container__works">
       <div class="portfolio-container__works--text text-title">
@@ -69,9 +70,14 @@
     </div>
 <!------------------------------ END WORKS LIST -------------------------->
 
+
+<!------------------------------ PROJECTS -------------------------->
+  <div id="proyectos">
+
+
 <!------------------------------ MOBILE PROJECTS -------------------------->
     <div class="portfolio-container__projects">
-        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index" id="proyectos">
+        <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index">
             <figure class="portfolio-container__projects--item--img">
                 <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
             </figure>
@@ -244,6 +250,32 @@
 <!------------------------------ END DESKTOP PROJECTS -------------------------->
 
 
+  </div>
+<!------------------------------ END PROJECTS -------------------------->
+
+
+<!------------------------------ PORT FOOTER SECTION -------------------------->
+    <div class="footer">
+        <div class="footer__details text-center text-light">
+        Designer by Miguel Alonso Marroquin, 2019 -&nbsp;<a>malbonm07@gmail.com</a>
+        </div>
+        <nav class="footer__social-icons">
+        <a  href="https://twitter.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+        <a  href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+        <a  href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
+        <a  href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+        </nav>
+        <button id="upButton" class="up-btn" 
+                v-scroll-to="'#app'"
+                data-aos-duration="500" data-aos="zoom-in"
+        >
+        <div class="up-btn--icon">
+        </div>
+        </button>
+    </div>
+<!------------------------------ END FOOTER SECTION -------------------------->
+
+
 <!------------------------------ DESKT PROJECT MODAL -------------------------->
     <transition name="projectModalAppear">
         <div v-show="showProjectModal" class="dekstProjectModal">
@@ -286,6 +318,7 @@
      </transition>
 <!------------------------------ END DESKT PROJECT MODAL -------------------------->
 
+
   </div>
 </template>
 
@@ -310,12 +343,14 @@ export default {
         },
         projectModal(obj) {
             if(!this.showProjectModal) {
+                document.body.style.cssText = "height: 100%; overflow: hidden"
                 this.showProjectModal = true;
                 this.currentProjectModal = obj;
             }
         },
         closeModalProject() {
             if(this.showProjectModal) {
+                document.body.style.cssText = "height: inherit; overflow: none"
                 this.showProjectModal = false;
             }
         }

@@ -1,0 +1,33 @@
+.up-btn {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    z-index: 40;
+    bottom: calc(154px - 20px);
+    left: calc(50% - 20px);
+    background: $secondary-dark-color;
+    border: 1px solid white;
+    color: $white2-color;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    // @include tablet {
+    //     left: calc(90% - 20px);
+    //     bottom: calc(60% - 20px);
+    //     background: none;
+    //     border: none;
+    //     background: black;
+    // }
+    &--icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-left: 1px solid $white2-color;
+        border-top: 1px solid $white2-color;
+        transform: rotate(45deg) translate(3px, 3px);
+        display: block;
+        font-size: 2.5rem;
+    }
+}

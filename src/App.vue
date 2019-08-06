@@ -66,26 +66,6 @@
 <!------------------------------ END ROUTER VIEW -------------------------->
 
 
-<!------------------------------ FOOTER -------------------------->
-    <footer class="footer">
-      <div class="footer__details text-center text-light">
-        Designer by Miguel Alonso Marroquin, 2019 -&nbsp;<a>malbonm07@gmail.com</a>
-      </div>
-      <nav class="footer__social-icons">
-        <a  href="https://twitter.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
-        <a  href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
-        <a  href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
-        <a  href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
-      </nav>
-      <button id="upButton" class="footer__up-btn" 
-              v-scroll="positionUp" v-scroll-to="'#app'"
-      >
-        <span class="footer__up-btn--icon"><font-awesome-icon :icon="['fas', 'angle-up']"/></span>
-      </button>
-    </footer>
-<!------------------------------ END FOOTER -------------------------->
-
-
 <!------------------------------ MOBILE NAV MENU -------------------------->
     <transition name="fadeNav">
       <div v-show="showMobNav" class="mob-nav-menu">
@@ -126,7 +106,7 @@
             <h4 class="text-center text-caption uppercase text-regular mb-2 mt-3">{{$t("message.nav.touch")}}</h4>
             <a href="mailto:malbonm07@gmail.com" target="_blank" class="icon-link"><font-awesome-icon :icon="['fa', 'envelope']" /></a>
             <a href="https://twitter.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
-            <a href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+            <!-- <a href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a> -->
             <a href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
             <a href="https://codepen.io/Malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
             <a href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
@@ -161,9 +141,6 @@ export default {
     changeLang() {
       this.$i18n.locale = 'us'
     }
-  },
-  computed: {
-
   }
 }
 </script>
@@ -171,6 +148,7 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/main.scss';
+// body {margin: 0; height: 100%; overflow: hidden}
 //logo styles ares in '.assets/scss/logo';
 //langagues switch styles are in './assets/scss/components/langSwitch';'
 //mob nav menu styles are in './assets/scss/layouts/nav/mob-nav-menu';

@@ -1,18 +1,13 @@
 .langSwitch {
-    // display: none;
-    // @include tablet {
+    display: none;
+    @include tablet {
         position: absolute;
-        bottom: 1%;
-        right: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
-        // border: 2px solid $white2-color;
-        @include tablet {
-            bottom: 5%;
-            right: 6%;
-        }
+        bottom: 5%;
+        right: 6%;
         .langBox {
             display: flex;
             flex-direction: row;
@@ -33,16 +28,12 @@
         }
         .us {
             border-right: 0.5px solid $white2-color;
-            &:hover {
-                background: rgba(0,0,0,0.3);
-            }
         }
         .es {
             border-left: 0.5px solid $white2-color;
-            &:hover {
-                background: rgba(0,0,0,0.3);
-            }
         }
+    }
+
 }
 
 .langBtn-active {

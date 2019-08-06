@@ -32,6 +32,7 @@
         animation: modalAppear 0.45s cubic-bezier(.52,.01,.16,1) forwards;
         animation-delay: .12s;
         background: #E7EEED;
+        position: relative;
         .desktModal-title {
             display: flex;
             justify-content: center;

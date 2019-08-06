@@ -37,35 +37,35 @@ export default new Router({
         },
         {
           path: 'quasar-music-app',
-          component: () => import('./views/proyectos/QuasarAppVue')
+          component: () => import('./views/proyectos/mobileByRoute/QuasarAppVue')
         },
         {
           path: 'vuetify-landing',
-          component: () => import('./views/proyectos/VuetifyLandingPage.vue')
+          component: () => import('./views/proyectos/mobileByRoute/VuetifyLandingPage.vue')
         },
         {
           path: 'nuxt-school-page',
-          component: () => import('./views/proyectos/NuxtSchoolPage.vue')
+          component: () => import('./views/proyectos/mobileByRoute/NuxtSchoolPage.vue')
         },
         {
           path: 'vuetify-blog',
-          component: () => import('./views/proyectos/BlogVuetify.vue')
+          component: () => import('./views/proyectos/mobileByRoute/BlogVuetify.vue')
         },
         {
           path: 'vue-calculator',
-          component: () => import('./views/proyectos/Calculator.vue')
+          component: () => import('./views/proyectos/mobileByRoute/Calculator.vue')
         },
         {
           path: 'vue-shop-cart',
-          component: () => import('./views/proyectos/ShopCart.vue')
+          component: () => import('./views/proyectos/mobileByRoute/ShopCart.vue')
         },
         {
           path: 'pokedex',
-          component: () => import('./views/proyectos/Pokedex.vue')
+          component: () => import('./views/proyectos/mobileByRoute/Pokedex.vue')
         },
         {
           path: 'todo-list',
-          component: () => import('./views/proyectos/TodoList.vue')
+          component: () => import('./views/proyectos/mobileByRoute/TodoList.vue')
         },
       ]
     },

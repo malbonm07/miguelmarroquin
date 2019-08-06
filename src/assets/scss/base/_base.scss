@@ -18,6 +18,9 @@ html, body {
     @include lg-desktop {
         font-size: 80%;
     }
+    @media (min-width: 2550px) { 
+        font-size: 150%;
+    }
 }
 ul {
     padding: 0;
