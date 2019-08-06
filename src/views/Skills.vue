@@ -41,7 +41,7 @@
             {{$t("message.skills.sub2")}}
           </h2>
         </div>
-        <div class="skills-content" v-scroll="animatedSkill">
+        <div class="skills-content" v-scroll="animatedSkillMupi">
           <div class="skills-center">
             <ul id="skills-list-effect" class="skills-list">
               <li data-aos-duration="500" data-aos="fade-up"><a href="https://www.w3.org/html/" target="_blank">
@@ -87,7 +87,7 @@
             </ul>
             <!-- <div class="skills-overlay"></div> -->
           </div>
-          <div class="skills-secondary">
+          <div class="skills-mupi">
             <div class="css">
               <ul class="ul-list">
                 <h4>CSS</h4>
@@ -145,41 +145,21 @@
 
 <script>
 import backBtn from '@/components/backBtn.vue';
+import { scrollEffect } from '@/functions/skills/animatedSkillMupi.js';
 export default {
   components: {
     backBtn
   },
   name: 'skills',
   methods: {
-    animatedSkill(evt, el) {
+    animatedSkillMupi(evt, el) {
       let elCss = el.childNodes[1].childNodes[0]
       let elJavascript = el.childNodes[1].childNodes[1]
       let elWorkflow = el.childNodes[1].childNodes[2]
-
-      if(window.scrollY > 440) {
-        elCss.style = "width: 55%"
-        elCss.childNodes[0].classList.add('animationSkill')
-      }
-      if(window.scrollY < 440) {
-        elCss.style = "width: 0%"
-        elCss.childNodes[0].classList.remove('animationSkill')
-      }
-      if(window.scrollY > 540) {
-        elJavascript.style = "width: 35%"
-        elJavascript.childNodes[0].classList.add('animationSkill')
-      }
-      if(window.scrollY < 540) {
-        elJavascript.style = "width: 0%"
-        elJavascript.childNodes[0].classList.remove('animationSkill')
-      }
-      if(window.scrollY > 640) {
-        elWorkflow.style = "width: 35%"
-        elWorkflow.childNodes[0].classList.add('animationSkill')
-      }
-      if(window.scrollY < 640) {
-        elWorkflow.style = "width: 0%"
-        elWorkflow.childNodes[0].classList.remove('animationSkill')
-      }
+      scrollEffect(elCss, 440, 55);
+      scrollEffect(elJavascript, 540, 35);
+      scrollEffect(elWorkflow, 640, 35);
+      //scrollEffect is a imported function from '@/functions/skills/animatedSkillMupi.js'
     },
   }
 }
