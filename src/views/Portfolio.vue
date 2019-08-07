@@ -1,4 +1,5 @@
 <template>
+
   <div class="portfolio-container">
 
 
@@ -319,7 +320,7 @@
 <!------------------------------ END DESKT PROJECT MODAL -------------------------->
 
 
-  </div>
+    </div>
 </template>
 
 <script>

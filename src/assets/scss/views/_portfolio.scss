@@ -240,17 +240,21 @@
 
     &__projects {
         background: $secondary-dark-color;
+        padding: 0 1%;
+        @include phone-medium {
+            padding: 2rem 2rem;
+        }
         @include tablet {
-            padding: 6.2rem 40px 6.2rem 40px;
+            padding: 4rem 2rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-gap: 2rem;
         }
         @include desktop {
             display: none;
         }
         &--item {
-            width: 100vw;
+            width: 100%;
             height: 450px;
             padding: 0.5rem;
             display: flex;
@@ -258,12 +262,8 @@
             justify-content: center;
             align-items: center;
             border-bottom: 0.5px solid $secondary-color;
-            @include phone-medium {
-                padding: 15px 25px 15px 25px;
-                justify-content: start;
-            }
-            @include tablet {
-                padding: 0px;
+            @include tablet{
+                justify-content: flex-start;
             }
             @include desktop {
                 display: none;
@@ -326,7 +326,7 @@
                 justify-items: center;
                 align-items: center;
                 grid-row-gap: 8rem;
-                padding: 8rem 0 16rem 0;
+                padding: 4rem 0 12rem 0;
                 .DesktProjects-item {
                     width: 90%;
                     min-height: 400px;

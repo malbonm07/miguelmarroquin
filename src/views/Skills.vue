@@ -102,6 +102,7 @@
                 <h4>JAVASCRIPT</h4>
                 <li>VueJs</li>
                 <li>Vanilla</li>
+                <li>jQuery</li>
               </ul>
             </div>
             <div class="workflow">
@@ -110,6 +111,7 @@
                 <li>github</li>
                 <li>webpack</li>
                 <li>NPM</li>
+                <li>Visual Studio Code</li>
               </ul>
             </div>
           </div>
