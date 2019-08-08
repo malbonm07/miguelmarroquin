@@ -35,12 +35,11 @@
 </template>
 
 <script>
-import img7 from '@/assets/imagenes/proyectos/vuetify-blog.png';
 export default {
     data() {
         return {
             proyectoName: {
-                img: img7,
+                img: "https://i.imgur.com/0fRIGOl.png",
                 titulo: 'blog con vuetify'
             }
         }

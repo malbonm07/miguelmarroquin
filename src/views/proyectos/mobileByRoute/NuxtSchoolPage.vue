@@ -39,12 +39,11 @@
 </template>
 
 <script>
-import img1 from '@/assets/imagenes/proyectos/landing-school.png'
 export default {
     data() {
         return {
             proyectoName: {
-                img: img1,
+                img: "https://i.imgur.com/MDph2ou.png",
                 nombre: 'school page'
             }
         }

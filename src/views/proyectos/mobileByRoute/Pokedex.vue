@@ -35,12 +35,11 @@
 </template>
 
 <script>
-import img5 from '@/assets/imagenes/proyectos/vue-pokemon.png'
 export default {
     data() {
         return {
             proyectoName: {
-                img: img5,
+                img: "https://i.imgur.com/J0Rywzi.png",
                 nombre: 'quasar app'
             }
         }

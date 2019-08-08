@@ -37,12 +37,11 @@
 </template>
 
 <script>
-import img2 from '@/assets/imagenes/proyectos/quasar-app.png';
 export default {
     data() {
         return {
             proyectoName: {
-                img: img2,
+                img: "https://i.imgur.com/fbQGIfi.png",
                 nombre: 'quasar app'
             }
         }
