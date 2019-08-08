@@ -36,12 +36,11 @@
 </template>
 
 <script>
-import img6 from '@/assets/imagenes/proyectos/vue-shopcart.png'
 export default {
     data() {
         return {
             proyectoName: {
-                img: img6,
+                img: "https://i.imgur.com/OQjIpeW.png",
                 nombre: 'vue shop cart'
             }
         }

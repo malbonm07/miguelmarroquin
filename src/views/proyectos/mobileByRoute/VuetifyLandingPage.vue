@@ -39,12 +39,11 @@
 </template>
 
 <script>
-import img8 from '@/assets/imagenes/proyectos/vuetify-landing.png'
 export default {
     data() {
         return {
             proyectoName: {
-                img: img8,
+                img: "https://i.imgur.com/nN3as4L.png",
                 nombre: 'vuetify landing page'
             }
         }

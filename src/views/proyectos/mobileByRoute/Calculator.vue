@@ -37,12 +37,11 @@
 </template>
 
 <script>
-import img4 from '@/assets/imagenes/proyectos/vue-calculator.png'
 export default {
     data() {
         return {
             proyectoName: {
-                img: img4,
+                img: "https://i.imgur.com/v5i4Qi7.png",
                 nombre: 'calculadora'
             }
         }

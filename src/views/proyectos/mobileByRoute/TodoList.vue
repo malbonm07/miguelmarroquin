@@ -36,12 +36,11 @@
 </template>
 
 <script>
-import img3 from '@/assets/imagenes/proyectos/todo-list-vue.png'
 export default {
     data() {
         return {
             proyectoName: {
-                img: img3,
+                img: "https://i.imgur.com/nC1JW8W.png",
                 nombre: 'todo list'
             }
         }

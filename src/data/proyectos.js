@@ -1,15 +1,6 @@
-import img2 from '@/assets/imagenes/proyectos/quasar-app.png'
-import img8 from '@/assets/imagenes/proyectos/vuetify-landing.png'
-import img1 from '@/assets/imagenes/proyectos/landing-school.png'
-import img4 from '@/assets/imagenes/proyectos/vue-calculator.png'
-import img6 from '@/assets/imagenes/proyectos/vue-shopcart.png'
-import img5 from '@/assets/imagenes/proyectos/vue-pokemon.png'
-import img7 from '@/assets/imagenes/proyectos/vuetify-blog.png'
-import img3 from '@/assets/imagenes/proyectos/todo-list-vue.png'
-
 const proyectos = [
     {
-        img: img2,
+        img: "https://media.giphy.com/media/W2QJOFzWyh1Mg2BtFS/giphy.gif",
         titulo: 'vue music SPA con quasar',
         link: '/portfolio/quasar-music-app',
         linkGithub: 'https://github.com/malbonm07/quasar-music-app',
@@ -30,7 +21,7 @@ const proyectos = [
 
     },
     {
-        img: img8,
+        img: "https://media.giphy.com/media/LkrWAlScM5owLtU2NX/giphy.gif",
         titulo: 'landing page con vuetify',
         link: '/portfolio/vuetify-landing',
         linkGithub: 'https://github.com/malbonm07/nuxt-landing-template',
@@ -49,7 +40,7 @@ const proyectos = [
 
     },
     {
-        img: img1,
+        img: "https://media.giphy.com/media/MdvP37QPFGWemUnIcV/giphy.gif",
         titulo: 'escuela digital con nuxt',
         link: '/portfolio/nuxt-school-page',
         linkGithub: 'https://github.com/malbonm07/landing-school',
@@ -65,7 +56,7 @@ const proyectos = [
         herramientas: ['Html', 'Sass', 'Nuxt', 'Vue', 'Javascript', 'BEM']
     },
     {
-        img: img7,
+        img: 'https://i.imgur.com/0fRIGOl.png',
         titulo: 'blog con vuetify',
         link: '/portfolio/vuetify-blog',
         linkGithub: 'https://github.com/malbonm07/nuxt-blog-template',
@@ -79,7 +70,7 @@ const proyectos = [
         herramientas: ['html', 'sass', 'vuetify', 'nuxt', 'vue', 'vue router']
     },
     {
-        img: img4,
+        img: 'https://i.imgur.com/v5i4Qi7.png',
         titulo: 'calculadora con vueJS',
         link: '/portfolio/vue-calculator',
         linkGithub: 'https://github.com/malbonm07/vue-calculator',
@@ -95,7 +86,7 @@ const proyectos = [
         herramientas: ['html', 'sass', 'flexbox', 'grid', 'javascript']
     },
     {
-        img: img6,
+        img: 'https://i.imgur.com/OQjIpeW.png',
         titulo: 'shop cart con VueJS',
         link: '/portfolio/vue-shop-cart',
         linkGithub: 'https://github.com/malbonm07/vue-shopping-cart',
@@ -111,7 +102,7 @@ const proyectos = [
         herramientas: ['html', 'sass', 'vue', 'javascript']
     },
     {
-        img: img5,
+        img: 'https://i.imgur.com/J0Rywzi.png',
         titulo: 'pokedex con vuetify',
         link: '/portfolio/pokedex',
         linkGithub: 'https://github.com/malbonm07/pokemon',
@@ -128,7 +119,7 @@ const proyectos = [
         herramientas: ['html', 'sass', 'vue', 'vuetify', 'Axios', 'vue router']
     },
     {
-        img: img3,
+        img: 'https://i.imgur.com/nC1JW8W.png',
         titulo: 'todo list con vueJS',
         link: '/portfolio/todo-list',
         linkGithub: 'https://github.com/malbonm07/v-todolist',
