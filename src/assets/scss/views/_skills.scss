@@ -22,41 +22,13 @@
                 font-size: 9.6rem;
                 letter-spacing: 3px;
             }
-            span:nth-child(1) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownSkills 1s ease-in-out forwards;
-                animation-delay: 0.18s;
-            }
-            span:nth-child(2) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownSkills 1s ease-in-out forwards;
-                animation-delay: .2s;
-            }
-            span:nth-child(3) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownSkills 1s ease-in-out forwards;
-                animation-delay: 0.3s;
-            }
-            span:nth-child(4) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownSkills 1s ease-in-out forwards;
-                animation-delay: 0.4s;
-            }
-            span:nth-child(5) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownSkills 1s ease-in-out forwards;
-                animation-delay: 0.5s;
-            }
-            span:nth-child(6) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownSkills 1s ease-in-out forwards;
-                animation-delay: 0.6s;
+            @for $i from 1 through 6 {
+                span:nth-child(#{$i}) {
+                    display: block;
+                    opacity: 0;
+                    animation: fadeDownSkills 1s ease-in-out forwards;
+                    animation-delay: #{0.1 * $i}s;
+                }
             }
         }
 
@@ -113,37 +85,11 @@
                     font-weight: 200;
                     margin: 15px 0;
                 }
-                li:nth-child(1) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.3s;
-                }
-                li:nth-child(2) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.4s;
-                }
-                li:nth-child(3) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.5s;
-                }
-                li:nth-child(4) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.6s;
-                }
-                li:nth-child(5) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.7s;
-                }
-                li:nth-child(6) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.8s;
-                }
-                li:nth-child(7) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 1.9s;
-                }
-                li:nth-child(8) {
-                    animation: fadeUpSoftSkills 1s ease-in-out forwards;
-                    animation-delay: 2s;
+                @for $i from 1 through 8 {
+                    li:nth-child(#{$i}) {
+                        animation: fadeUpSoftSkills 1s ease-in-out forwards;
+                        animation-delay: #{1.2 + 0.1 * $i}s;
+                    }
                 }
             }
             &-btn {
@@ -275,38 +221,13 @@
                     display: flex;
                     flex-direction: column;
                     .css {
-                        width: 0%;
-                        height: 30%;
-                        margin-bottom: 2rem;
-                        background: $secondary-dark-color;
-                        align-self: center;
-                        transition: .3s cubic-bezier(.52,.01,.16,1);
-                        // animation: skDescriptionApp 0.3s cubic-bezier(.52,.01,.16,1) forwards;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include mupi(30%, center);
                     }
                     .javascript {
-                        width: 0%;
-                        height: 30%;
-                        margin-bottom: 2rem;
-                        align-self: center;
-                        background: $secondary-dark-color;
-                        transition: .3s cubic-bezier(.52,.01,.16,1);
-                        // animation: skDescriptionApp 0.3s cubic-bezier(.52,.01,.16,1) forwards;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include mupi(30%, center);
                     }
                     .workflow {
-                        min-width: 0%;
-                        min-height: 30%;
-                        background: $secondary-dark-color;
-                        transition: .3s cubic-bezier(.52,.01,.16,1);
-                        // animation: skDescriptionApp 0.3s cubic-bezier(.52,.01,.16,1) forwards;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include mupi(30%, flex-start);
                     }
                     .ul-list {
                         display: flex;

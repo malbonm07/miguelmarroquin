@@ -22,47 +22,13 @@
             @include desktop {
                 font-size: 8.5rem;
             }
-            span:nth-child(1) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: 0.18s;
-            }
-            span:nth-child(2) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: .2s;
-            }
-            span:nth-child(3) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: 0.3s;
-            }
-            span:nth-child(4) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: 0.4s;
-            }
-            span:nth-child(5) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: 0.5s;
-            }
-            span:nth-child(6) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: 0.6s;
-            }
-            span:nth-child(7) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownCourses 1s ease-in-out forwards;
-                animation-delay: 0.7s;
+            @for $i from 1 through 7 {
+                span:nth-child(#{$i}) {
+                    display: block;
+                    opacity: 0;
+                    animation: fadeDownWorks 1s ease-in-out forwards;
+                    animation-delay: #{0.1 * $i}s;
+                }
             }
         }
 
@@ -124,35 +90,12 @@
                         color: #64FFDA;
                     }
                 }
-                li:nth-child(1) {
-                    opacity: 0;
-                    animation: fadeUpCourses .5s ease-in-out forwards;
-                    animation-delay: 1.3s;
-                }
-                li:nth-child(2) {
-                    opacity: 0;
-                    animation: fadeUpCourses .5s ease-in-out forwards;
-                    animation-delay: 1.4s;
-                }
-                li:nth-child(3) {
-                    opacity: 0;
-                    animation: fadeUpCourses .5s ease-in-out forwards;
-                    animation-delay: 1.5s;
-                }
-                li:nth-child(4) {
-                    opacity: 0;
-                    animation: fadeUpCourses .5s ease-in-out forwards;
-                    animation-delay: 1.6s;
-                }
-                li:nth-child(5) {
-                    opacity: 0;
-                    animation: fadeUpCourses .5s ease-in-out forwards;
-                    animation-delay: 1.7s;
-                }
-                li:nth-child(6) {
-                    opacity: 0;
-                    animation: fadeUpCourses .5s ease-in-out forwards;
-                    animation-delay: 1.8s;
+                @for $i from 1 through 6 {
+                    li:nth-child(#{$i}) {
+                        // opacity: 0;
+                        animation: fadeUpCourses .5s ease-in-out forwards;
+                        animation-delay: #{1.2 + 0.1 * $i}s;
+                    }
                 }
             }
             &-btn {

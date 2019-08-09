@@ -71,7 +71,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/v5i4Qi7.png',
-        titulo: 'calculadora con vueJS',
+        titulo: 'calculadora vueJS',
         link: '/portfolio/vue-calculator',
         linkGithub: 'https://github.com/malbonm07/vue-calculator',
         linkSitio: 'https://malbonm07.github.io/v-calculator/',
@@ -87,7 +87,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/OQjIpeW.png',
-        titulo: 'shop cart con VueJS',
+        titulo: 'shop cart VueJS',
         link: '/portfolio/vue-shop-cart',
         linkGithub: 'https://github.com/malbonm07/vue-shopping-cart',
         linkSitio: 'https://malbonm07.github.io/v-shoppingcart/',

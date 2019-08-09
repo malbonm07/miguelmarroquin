@@ -33,7 +33,8 @@
             "sub": "Trabajos que hice",
             "btn": "Proyectos",
             "details": "Ver Detalles",
-            "view": "Ver Proyecto"
+            "view": "Ver Proyecto",
+            "viewGithub" : "Ver en Github"
         },
         "education": {
             "sub": "Cursos que Hice",

@@ -33,7 +33,8 @@
           "sub": "Own Works",
           "btn": "Projects",
           "details": "See Details",
-          "view": "View Project"
+          "view": "View Project",
+          "viewGithub" : "View Github"
         },
         "education": {
           "sub": "Courses I Took",

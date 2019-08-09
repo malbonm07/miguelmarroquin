@@ -22,36 +22,46 @@
             @include tablet {
                 font-size: 110px;
             }
-            span:nth-child(1) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownHello .8s ease-in-out forwards;
-                animation-delay: 0.18s;
+
+            // Using control directives FOR in Sass to refactor code below:
+            @for $i from 1 through 5 {
+                span:nth-child(#{$i}) {
+                    display: block;
+                    opacity: 0;
+                    animation: fadeDownHello .8s ease-in-out forwards;
+                    animation-delay: #{0.1 * $i}s;
+                }
             }
-            span:nth-child(2) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownHello .8s ease-in-out forwards;
-                animation-delay: .2s;
-            }
-            span:nth-child(3) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownHello .8s ease-in-out forwards;
-                animation-delay: 0.3s;
-            }
-            span:nth-child(4) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownHello .8s ease-in-out forwards;
-                animation-delay: 0.4s;
-            }
-            span:nth-child(5) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownHello .8s ease-in-out forwards;
-                animation-delay: 0.5s;
-            }
+            // span:nth-child(1) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownHello .8s ease-in-out forwards;
+            //     animation-delay: 0.18s;
+            // }
+            // span:nth-child(2) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownHello .8s ease-in-out forwards;
+            //     animation-delay: .2s;
+            // }
+            // span:nth-child(3) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownHello .8s ease-in-out forwards;
+            //     animation-delay: 0.3s;
+            // }
+            // span:nth-child(4) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownHello .8s ease-in-out forwards;
+            //     animation-delay: 0.4s;
+            // }
+            // span:nth-child(5) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownHello .8s ease-in-out forwards;
+            //     animation-delay: 0.5s;
+            // }
         }
 
         // ####################### FIGURE BACKGROUND STYLES ######################
@@ -156,30 +166,12 @@
                 background: rgba(255,255,255,0.9);
             }
         }
-        a:nth-child(1) {
-            opacity: 0;
-            animation: socialIconsAppears .3s ease-in-out forwards;
-            animation-delay: .1s;
-        }
-        a:nth-child(2) {
-            opacity: 0;
-            animation: socialIconsAppears .3s ease-in-out forwards;
-            animation-delay: .2s;
-        }
-        a:nth-child(3) {
-            opacity: 0;
-            animation: socialIconsAppears .3s ease-in-out forwards;
-            animation-delay: .3s;
-        }
-        a:nth-child(4) {
-            opacity: 0;
-            animation: socialIconsAppears .3s ease-in-out forwards;
-            animation-delay: .4s;
-        }
-        a:nth-child(5) {
-            opacity: 0;
-            animation: socialIconsAppears .3s ease-in-out forwards;
-            animation-delay: .5s;
+        @for $i from 1 through 5 {
+            a:nth-child(#{$i}) {
+                opacity: 0;
+                animation: socialIconsAppears .3s ease-in-out forwards;
+                animation-delay: #{0.1 * $i}s;
+            }
         }
     }
 }

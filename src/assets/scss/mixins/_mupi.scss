@@ -1,0 +1,12 @@
+@mixin mupi ($height, $align){
+    width: 0%;
+    height: 30%;
+    margin-bottom: 2rem;
+    background: $secondary-dark-color;
+    align-self: center;
+    transition: .3s cubic-bezier(.52,.01,.16,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: $align;
+}

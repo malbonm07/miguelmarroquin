@@ -22,36 +22,45 @@
                 font-size: 8.5rem;
                 letter-spacing: 3px;
             }
-            span:nth-child(1) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownWorks 1s ease-in-out forwards;
-                animation-delay: 0.18s;
+
+            // Using control directives FOR in Sass to refactor code below:
+            @for $i from 1 through 5 {
+                span:nth-child(#{$i}) {
+                    opacity: 0;
+                    animation: fadeDownWorks 1s ease-in-out forwards;
+                    animation-delay: #{0.1 * $i}s;
+                }
             }
-            span:nth-child(2) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownWorks 1s ease-in-out forwards;
-                animation-delay: .2s;
-            }
-            span:nth-child(3) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownWorks 1s ease-in-out forwards;
-                animation-delay: 0.3s;
-            }
-            span:nth-child(4) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownWorks 1s ease-in-out forwards;
-                animation-delay: 0.4s;
-            }
-            span:nth-child(5) {
-                display: block;
-                opacity: 0;
-                animation: fadeDownWorks 1s ease-in-out forwards;
-                animation-delay: 0.5s;
-            }
+            // span:nth-child(1) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownWorks 1s ease-in-out forwards;
+            //     animation-delay: 0.1s;
+            // }
+            // span:nth-child(2) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownWorks 1s ease-in-out forwards;
+            //     animation-delay: 0.2s;
+            // }
+            // span:nth-child(3) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownWorks 1s ease-in-out forwards;
+            //     animation-delay: 0.3s;
+            // }
+            // span:nth-child(4) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownWorks 1s ease-in-out forwards;
+            //     animation-delay: 0.4s;
+            // }
+            // span:nth-child(5) {
+            //     display: block;
+            //     opacity: 0;
+            //     animation: fadeDownWorks 1s ease-in-out forwards;
+            //     animation-delay: 0.5s;
+            // }
         }
 
         // ##################### FIGURE BACKGROUND STYLES ######################
@@ -116,45 +125,12 @@
                         color: inherit;
                     }
                 }
-                li:nth-child(1) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .3s ease-in-out forwards;
-                    animation-delay: 1.3s;
-                }
-                li:nth-child(2) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .3s ease-in-out forwards;
-                    animation-delay: 1.4s;
-                }
-                li:nth-child(3) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .3s ease-in-out forwards;
-                    animation-delay: 1.5s;
-                }
-                li:nth-child(4) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .3s ease-in-out forwards;
-                    animation-delay: 1.6s;
-                }
-                li:nth-child(5) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .3s ease-in-out forwards;
-                    animation-delay: 1.7s;
-                }
-                li:nth-child(6) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .3s ease-in-out forwards;
-                    animation-delay: 1.8s;
-                }
-                li:nth-child(7) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .5s ease-in-out forwards;
-                    animation-delay: 1.9s;
-                }
-                li:nth-child(8) {
-                    opacity: 0;
-                    animation: fadeUpWorksLi .5s ease-in-out forwards;
-                    animation-delay: 2s;
+                @for $i from 1 through 8 {
+                    li:nth-child(#{$i}) {
+                        opacity: 0;
+                        animation: fadeUpWorksLi .3s ease-in-out forwards;
+                        animation-delay: #{1.2 + 0.1 * $i}s;
+                    }
                 }
             }
             .desktContainer-list {
@@ -174,45 +150,12 @@
                             }
                         }
                     }
-                    li:nth-child(1) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .3s ease-in-out forwards;
-                        animation-delay: 1.3s;
-                    }
-                    li:nth-child(2) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .3s ease-in-out forwards;
-                        animation-delay: 1.4s;
-                    }
-                    li:nth-child(3) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .3s ease-in-out forwards;
-                        animation-delay: 1.5s;
-                    }
-                    li:nth-child(4) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .3s ease-in-out forwards;
-                        animation-delay: 1.6s;
-                    }
-                    li:nth-child(5) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .3s ease-in-out forwards;
-                        animation-delay: 1.7s;
-                    }
-                    li:nth-child(6) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .3s ease-in-out forwards;
-                        animation-delay: 1.8s;
-                    }
-                    li:nth-child(7) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .5s ease-in-out forwards;
-                        animation-delay: 1.9s;
-                    }
-                    li:nth-child(8) {
-                        opacity: 0;
-                        animation: fadeUpWorksLi .5s ease-in-out forwards;
-                        animation-delay: 2s;
+                    @for $i from 1 through 8 {
+                        li:nth-child(#{$i}) {
+                            opacity: 0;
+                            animation: fadeUpWorksLi .3s ease-in-out forwards;
+                            animation-delay: #{1.2 + 0.1 * $i}s;
+                        }
                     }
                 }
             }
@@ -381,8 +324,6 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        // align-self: start;
-                        // transition: 0.2s cubic-bezier(.52,.01,.16,1);
                         .details {
                             text-align: center;
                             color: $white1-color;
