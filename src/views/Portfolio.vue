@@ -23,6 +23,7 @@
 
                 <!------------------------ DESKTOP WORKS LIST ---------------------->
                 <ul class="desktContainer-list">
+                    <li><a class="li-route" v-scroll-to="{el: '#miguel'}">miguel alonso marroquin</a></li>
                     <li><a class="li-route" v-scroll-to="{el: '#musicapp'}">vue music app con quasar</a></li>
                     <li><a class="li-route" v-scroll-to="{el: '#vuetyLanding'}">
                     vuetify landing page
@@ -104,7 +105,7 @@
                     </div>
                     <div class="DesktProjects-item row-reverse" id="vuetyLanding">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/nuxt-landing-template/" target="_blank"><v-lazy-image class="lazy-img" :src="proyectos[1].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
+                            <a :href="proyectos[1].linkSitio" target="_blank"><v-lazy-image class="lazy-img" :src="proyectos[1].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                             <!-- <div class="img-overlay">{{proyectos[1].titulo}}</div> -->
                             <div class="img-overlay">{{$t("message.portfolio.view")}}</div></a>
                         </figure>
@@ -122,7 +123,7 @@
                 <div class="portfolio-container__DesktProjects--container">
                     <div class="DesktProjects-item" id="escuelaNuxt">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/landing-school/" target="_blank">
+                            <a :href="proyectos[2].linkSitio" target="_blank">
                                 <v-lazy-image class="lazy-img" :src="proyectos[2].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                                 <!-- <div class="img-overlay">{{proyectos[2].titulo}}</div> -->
                                 <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
@@ -140,7 +141,7 @@
                     </div>
                     <div class="DesktProjects-item row-reverse" id="blogVue">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/nuxt-blog-template/" target="_blank">
+                            <a :href="proyectos[3].linkSitio" target="_blank">
                                 <v-lazy-image class="lazy-img" :src="proyectos[3].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                                 <!-- <div class="img-overlay">{{proyectos[3].titulo}}</div> -->
                                 <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
@@ -160,7 +161,7 @@
                 <div class="portfolio-container__DesktProjects--container">
                     <div class="DesktProjects-item" id="calculadoraVue">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/v-calculator/" target="_blank">
+                            <a :href="proyectos[4].linkSitio" target="_blank">
                                 <v-lazy-image class="lazy-img" :src="proyectos[4].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                                 <!-- <div class="img-overlay">{{proyectos[4].titulo}}</div> -->
                                 <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
@@ -178,7 +179,7 @@
                     </div>
                     <div class="DesktProjects-item row-reverse" id="shopCart">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/v-shoppingcart/" target="_blank">
+                            <a :href="proyectos[5].linkSitio" target="_blank">
                                 <v-lazy-image class="lazy-img" :src="proyectos[5].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                                 <!-- <div class="img-overlay">{{proyectos[5].titulo}}</div> -->
                                 <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
@@ -198,7 +199,7 @@
                 <div class="portfolio-container__DesktProjects--container">
                     <div class="DesktProjects-item" id="pokedex">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/v-pokemon/" target="_blank">
+                            <a :href="proyectos[6].linkSitio" target="_blank">
                                 <v-lazy-image class="lazy-img" :src="proyectos[6].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                                 <!-- <div class="img-overlay">{{proyectos[6].titulo}}</div> -->
                                 <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
@@ -216,7 +217,7 @@
                     </div>
                     <div class="DesktProjects-item row-reverse" id="todoList">
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/v-todolist/" target="_blank">
+                            <a :href="proyectos[7].linkSitio" target="_blank">
                                 <v-lazy-image class="lazy-img" :src="proyectos[7].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                                 <!-- <div class="img-overlay">{{proyectos[7].titulo}}</div> -->
                                 <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
@@ -229,6 +230,26 @@
                             <a @click="projectModal(proyectos[7])" class="name">{{proyectos[7].titulo}}</a>
                             <div class="skills-span" v-scroll="addFadeUp">
                                 <span v-for="(skill, i) in proyectos[7].skills" :key="i">{{skill}},&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-container__DesktProjects--container">
+                    <div class="DesktProjects-item" id="pokedex">
+                        <figure class="DesktP-img">
+                            <a :href="proyectos[8].linkSitio" target="_blank">
+                                <v-lazy-image class="lazy-img" :src="proyectos[8].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
+                                <!-- <div class="img-overlay">{{proyectos[6].titulo}}</div> -->
+                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
+                            </a>
+                        </figure>
+                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
+                            <a @click="projectModal(proyectos[8])" class="details">
+                                {{$t("message.portfolio.details")}}
+                            </a>
+                            <a @click="projectModal(proyectos[8])" class="name">{{proyectos[8].titulo}}</a>
+                            <div class="skills-span" v-scroll="addFadeUp">
+                                <span v-for="(skill, i) in proyectos[8].skills" :key="i">{{skill}},&nbsp;</span>
                             </div>
                         </div>
                     </div>

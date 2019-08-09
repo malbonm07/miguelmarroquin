@@ -125,7 +125,7 @@
                         color: inherit;
                     }
                 }
-                @for $i from 1 through 8 {
+                @for $i from 1 through 9 {
                     li:nth-child(#{$i}) {
                         opacity: 0;
                         animation: fadeUpWorksLi .3s ease-in-out forwards;
@@ -150,7 +150,7 @@
                             }
                         }
                     }
-                    @for $i from 1 through 8 {
+                    @for $i from 1 through 9 {
                         li:nth-child(#{$i}) {
                             opacity: 0;
                             animation: fadeUpWorksLi .3s ease-in-out forwards;
@@ -269,7 +269,7 @@
                 justify-items: center;
                 align-items: center;
                 grid-row-gap: 8rem;
-                padding: 4rem 0 12rem 0;
+                padding: 4rem 0 16rem 0;
                 .DesktProjects-item {
                     width: 90%;
                     min-height: 400px;

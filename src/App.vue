@@ -124,6 +124,37 @@
 <script>
 
 export default {
+  metaInfo() {
+    return {
+    // Children can override the title.
+    title: 'Miguel Alonso Marroquin | Front End Developer',
+    meta: [
+      {'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {name: 'description', content: 'Apasionado Front End Developer, autodidacta y que le gustan los retos, dispuesto a contribuir y aprender.'},
+      {property: 'og:title', content: 'Miguel Alonso Marroquin | Front End Developer'},
+      {property: 'og:site_name', content: 'Miguel Alonso Marroquin'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:url', content: 'https://malbonm07.github.io'},
+      {property: 'og:image', content: 'https://i.imgur.com/ZoQbreu.png'},
+      // Often the same as your meta description, but not always.
+      {property: 'og:description', content: 'Front End Developer'},
+      {name: 'twitter:card', content: 'summary'},
+      {name: 'twitter:site', content: 'https://malbonm07.github.io'},
+      {name: 'twitter:title', content: 'Miguel ALonso Marroquin - Portfolio'},
+      {name: 'twitter:description', content: 'Self taught | Front End Web Developer'},
+      // Your twitter handle, if you have one.
+      {name: 'twitter:creator', content: '@malbonm07'},
+      {name: 'twitter:image:src', content: 'https://i.imgur.com/ZoQbreu.png'},
+    ],
+    link: [
+      {rel: 'canonical', href: 'https://malbonm07.github.io'},
+      {rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"},
+      {rel: "icon", type:"image/png", sizes: "32x32", href: "/favicon-32x32.png"},
+      {rel: "icon", type:"image/png", sizes: "16x16", href: "/favicon-16x16.png"}
+    ]
+    }
+  },    
   data() {
     return {
       showMobNav: false,
@@ -147,7 +178,8 @@ export default {
     activeRoute() {
       return this.$route
     }
-  }
+  },
+ 
 }
 </script>
 

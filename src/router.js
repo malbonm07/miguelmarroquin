@@ -36,6 +36,10 @@ export default new Router({
           component: () => import('./views/Portfolio.vue')
         },
         {
+          path: 'personal-portfolio',
+          component: () => import('./views/proyectos/mobileByRoute/PersonalPortfolio.vue')
+        },
+        {
           path: 'quasar-music-app',
           component: () => import('./views/proyectos/mobileByRoute/QuasarAppVue')
         },

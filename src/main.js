@@ -7,6 +7,7 @@ import scroll from './directives/scroll';
 import VueScrollTo from 'vue-scrollto';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import VueMeta from 'vue-meta'
 
 
 //importing icons from fontawesome
@@ -20,6 +21,7 @@ library.add(faTwitter, faBootstrap, faCodepen, faCss3Alt, faFacebookF, faGithub,
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
+Vue.use(VueMeta);
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,

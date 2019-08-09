@@ -112,6 +112,7 @@
                 <li>webpack</li>
                 <li>NPM</li>
                 <li>Visual Studio Code</li>
+                <li>Emmet</li>
               </ul>
             </div>
           </div>

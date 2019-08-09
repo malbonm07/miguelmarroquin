@@ -1,5 +1,24 @@
 const proyectos = [
     {
+        img: "https://media.giphy.com/media/fZ2bJg4HC4pB6risMw/giphy.gif",
+        titulo: 'miguel alonso portfolio',
+        link: '/portfolio/personal-portfolio',
+        linkGithub: 'https://github.com/malbonm07/quasar-music-app',
+        linkSitio: 'https://malbonm07.github.io/vue-quasar-spa/#/',
+        skills: [
+            'VueJS',
+            'Vue-router',
+            'Javascript linting: Eslint',
+            'Code splitting',
+            'Lazy loading Routes',
+            'Vue Lazy load images',
+            'Vue i18n',
+        ],
+        details: `Después de practicar con Vue haciendo algunas plantillas creando paginas web o SPA, decidí que era momento de crear un nuevo portafolio para demostrar todos mis trabajos, para ello me puse manos a la obra, empecé creando un nuevo proyecto con vue-cli, para los estilos use Sass junto a la metodología BEM, cada componente y view de cada pagina tiene su archivo .scss y todo está importado en el main.scss, me pareció una manera más ordeanada de trabajar. Empecé con mobile first design, luego tablet y desktop. Las animaciones están hechas con puro css y otras con pequeñas librerías. Las rutas y las imagenes están contruidas bajo el concepto de Lazy Loading que mejora el performance de la página.`,
+        herramientas: ['html', 'css', 'sass', 'BEM Arquitecture', 'javascript', 'vue router', 'vue', 'i18n']
+
+    },
+    {
         img: "https://media.giphy.com/media/W2QJOFzWyh1Mg2BtFS/giphy.gif",
         titulo: 'vue music SPA con quasar',
         link: '/portfolio/quasar-music-app',
