@@ -1,6 +1,5 @@
 # Miguel Alonso Marroquin
-=====
-##### @malbonm07
+### @malbonm07
 
 ## Project setup
 ```
