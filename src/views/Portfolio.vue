@@ -23,7 +23,7 @@
 
                 <!------------------------ DESKTOP WORKS LIST ---------------------->
                 <ul class="desktContainer-list">
-                    <li><a class="li-route" v-scroll-to="{el: '#miguel'}">miguel alonso marroquin</a></li>
+                    <li><a class="li-route" v-scroll-to="{el: '#miguelportfolio'}">miguel alonso marroquin</a></li>
                     <li><a class="li-route" v-scroll-to="{el: '#musicapp'}">vue music app con quasar</a></li>
                     <li><a class="li-route" v-scroll-to="{el: '#vuetyLanding'}">
                     vuetify landing page

@@ -23,7 +23,7 @@
                 font-size: 11rem;
             }
 
-            // Using control directives FOR in Sass to refactor code below:
+            // Using control directives @FOR in Sass to refactor code below:
             @for $i from 1 through 5 {
                 span:nth-child(#{$i}) {
                     display: block;
