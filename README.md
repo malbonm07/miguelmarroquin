@@ -1,4 +1,6 @@
 # Miguel Alonso Marroquin
+=====
+##### @malbonm07
 
 ## Project setup
 ```
@@ -45,7 +47,7 @@ I'm still working on things like refactoring the code a bit more, creating more 
 - Internationalization with [Vue i18n](https://kazupon.github.io/vue-i18n/)
 - [Lazy loading images](https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/)
 - [Custom Directives in Vue](https://vuejs.org/v2/cookbook/creating-custom-scroll-directives.html)
-- [SEO metas](https://www.link-assistant.com/news/html-tags-for-seo.html)
+- SEO for SPA with [v-meta](https://github.com/nuxt/vue-meta)
 - Responsive Design
 - Css Unit px|em|rem for a responsive design
 - Pure Css Layout
@@ -63,7 +65,7 @@ I'm still working on things like refactoring the code a bit more, creating more 
 * CSS - Sass
 * Javascript
 * [v-lazy-images](https://github.com/alexjoverm/v-lazy-image)
-* SEO for SPA with [v-meta](https://github.com/nuxt/vue-meta)
+* [v-meta](https://github.com/nuxt/vue-meta)
 * [AoS](https://michalsnik.github.io/aos/)
 * [Scroll-to](https://github.com/rigor789/vue-scrollto)
 * [Vue i18n](https://kazupon.github.io/vue-i18n/)
