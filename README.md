@@ -78,5 +78,5 @@ I'm still working on things like refactoring the code a bit more, creating more 
 * [Service Working](https://docs.vuestorefront.io/guide/core-themes/service-workers.html)
 
 ---
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Vue.js docs](https://vuejs.org).
 @malbonm07
