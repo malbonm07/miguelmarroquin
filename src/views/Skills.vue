@@ -28,6 +28,7 @@
         >
           {{$t("message.skills.btn")}}
         </button>
+        <DownArrow></DownArrow>
       </div>
       <backBtn></backBtn>
     </div>
@@ -130,12 +131,14 @@
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer.vue';
 import backBtn from '@/components/backBtn.vue';
+import DownArrow from '@/components/downArrow.vue';
 import { scrollEffect } from '@/functions/skills/animatedSkillMupi.js';
 export default {
   components: {
     backBtn,
+    DownArrow,
     Footer
   },
   name: 'skills',

@@ -1,7 +1,18 @@
 <template>
   <div id="app" class="app-container">
 
-    
+
+<!------------------------------ LOGO -------------------------->
+    <router-link class="logo" to="/">
+      <div class="logo">
+        <img src="https://i.imgur.com/ZKGaUYi.png" alt="logo" class="logo-img">
+      </div>
+      <!-- <div class="linea1">M</div>
+      <div class="linea2">M</div> -->
+    </router-link>
+<!------------------------------ END LOGO -------------------------->
+
+
 <!------------------------------ NAV MENU DESKTOP -------------------------->
     <div id="nav" class="desk-nav-menu">
       <ul class="desk-nav-menu__nav">
@@ -38,14 +49,6 @@
       </ul>
     </div>
 <!------------------------------ END NAV MENU DESKTOP -------------------------->
-
-
-<!------------------------------ LOGO -------------------------->
-    <router-link class="logo" to="/">
-      <div class="linea1">M</div>
-      <div class="linea2">M</div>
-    </router-link>
-<!------------------------------ END LOGO -------------------------->
 
 
 <!------------------------------ MOBILE NAV BTN -------------------------->

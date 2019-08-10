@@ -26,6 +26,7 @@
                 <button class="education-container__courses--description-btn mt-2" v-scroll-to="{el: '#certificates'}">
                 {{$t("message.education.certificates")}}
                 </button>
+                <DownArrow></DownArrow>
             </div>
             <backBtn></backBtn>
         </div>
@@ -67,11 +68,13 @@
 </template>
 
 <script>
-import backBtn from '@/components/backBtn.vue'
+import backBtn from '@/components/backBtn.vue';
+import DownArrow from '@/components/downArrow.vue';
 import Footer from '@/components/Footer.vue'
 export default {
     components: {
         backBtn,
+        DownArrow,
         Footer
     }
 }

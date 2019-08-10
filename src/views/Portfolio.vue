@@ -23,29 +23,10 @@
 
                 <!------------------------ DESKTOP WORKS LIST ---------------------->
                 <ul class="desktContainer-list">
-                    <li><a class="li-route" v-scroll-to="{el: '#miguelportfolio'}">miguel alonso marroquin</a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#musicapp'}">vue music app con quasar</a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#vuetyLanding'}">
-                    vuetify landing page
-                    </a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#escuelaNuxt'}">
-                    pagina web de escuela con nuxt
-                    </a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#blogVue'}">
-                    blog con vue
-                    </a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#calculadoraVue'}">
-                    calculadora vue
-                    </a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#shopCart'}">
-                    vue shop cart
-                    </a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#pokedex'}">
-                    mini pokedex vue
-                    </a></li>
-                    <li><a class="li-route" v-scroll-to="{el: '#todoList'}">
-                    todo list vue
-                    </a></li>
+                    <li v-for="(proyecto, index)  in proyectos" :key="index">
+                        <a class="li-route" v-scroll-to="{el: `#${proyecto.id}`}">{{proyecto.titulo}}
+                        </a>
+                    </li>
                 </ul>
                 <!-------------------------END DESKTOP WORKS LIST ---------------------->
 
@@ -53,6 +34,7 @@
                 <button class="portfolio-container__works--description-btn mt-1" v-scroll-to="{el: '#proyectos'}">
                 {{$t("message.portfolio.btn")}}
                 </button>
+                <DownArrow></DownArrow>
             </div>
             <backBtn></backBtn>
         </div>
@@ -169,10 +151,12 @@
 import proyectos from '@/data/proyectos.js';
 import Footer from '@/components/Footer.vue';
 import backBtn from '@/components/backBtn.vue';
+import DownArrow from '@/components/downArrow.vue';
 
 export default {
     components: {
         backBtn,
+        DownArrow,
         Footer
     },
     data() {
