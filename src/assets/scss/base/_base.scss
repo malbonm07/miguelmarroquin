@@ -19,8 +19,8 @@ html, body {
     @include lg-desktop {
         font-size: 80%;
     }
-    @media (min-width: 2550px) { 
-        font-size: 150%;
+    @media (min-width: 2000px) { 
+        font-size: 120%;
     }
 }
 ul {

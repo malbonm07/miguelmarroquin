@@ -1,6 +1,7 @@
 const proyectos = [
     {
         img: "https://media.giphy.com/media/fZ2bJg4HC4pB6risMw/giphy.gif",
+        id: 'miguelportfolio',
         titulo: 'miguel alonso portfolio',
         link: '/portfolio/personal-portfolio',
         linkGithub: 'https://github.com/malbonm07/quasar-music-app',
@@ -20,6 +21,7 @@ const proyectos = [
     },
     {
         img: "https://media.giphy.com/media/W2QJOFzWyh1Mg2BtFS/giphy.gif",
+        id: 'musicapp',
         titulo: 'vue music SPA con quasar',
         link: '/portfolio/quasar-music-app',
         linkGithub: 'https://github.com/malbonm07/quasar-music-app',
@@ -41,6 +43,7 @@ const proyectos = [
     },
     {
         img: "https://media.giphy.com/media/LkrWAlScM5owLtU2NX/giphy.gif",
+        id:'vuetyLanding',
         titulo: 'landing page con vuetify',
         link: '/portfolio/vuetify-landing',
         linkGithub: 'https://github.com/malbonm07/nuxt-landing-template',
@@ -60,6 +63,7 @@ const proyectos = [
     },
     {
         img: "https://media.giphy.com/media/MdvP37QPFGWemUnIcV/giphy.gif",
+        id: 'escuelaNuxt',
         titulo: 'escuela digital con nuxt',
         link: '/portfolio/nuxt-school-page',
         linkGithub: 'https://github.com/malbonm07/landing-school',
@@ -76,6 +80,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/0fRIGOl.png',
+        id: 'blogVue',
         titulo: 'blog con vuetify',
         link: '/portfolio/vuetify-blog',
         linkGithub: 'https://github.com/malbonm07/nuxt-blog-template',
@@ -90,6 +95,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/v5i4Qi7.png',
+        id: 'calculadoraVue',
         titulo: 'calculadora vueJS',
         link: '/portfolio/vue-calculator',
         linkGithub: 'https://github.com/malbonm07/vue-calculator',
@@ -106,6 +112,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/OQjIpeW.png',
+        id: 'shopCart',
         titulo: 'shop cart VueJS',
         link: '/portfolio/vue-shop-cart',
         linkGithub: 'https://github.com/malbonm07/vue-shopping-cart',
@@ -122,6 +129,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/J0Rywzi.png',
+        id: 'pokedex',
         titulo: 'pokedex con vuetify',
         link: '/portfolio/pokedex',
         linkGithub: 'https://github.com/malbonm07/pokemon',
@@ -139,6 +147,7 @@ const proyectos = [
     },
     {
         img: 'https://i.imgur.com/nC1JW8W.png',
+        id: 'todoList',
         titulo: 'todo list con vueJS',
         link: '/portfolio/todo-list',
         linkGithub: 'https://github.com/malbonm07/v-todolist',

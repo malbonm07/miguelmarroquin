@@ -265,11 +265,11 @@
                 width: 100%;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: 50% 50%;
+                grid-template-rows: repeat(8, 400px);
                 justify-items: center;
                 align-items: center;
                 grid-row-gap: 8rem;
-                padding: 4rem 0 16rem 0;
+                padding: 4rem 0 8rem 0;
                 .DesktProjects-item {
                     width: 90%;
                     min-height: 400px;
@@ -277,7 +277,7 @@
                     justify-content: space-around;
                     align-items: center;
                     .DesktP-img {
-                        width: 50%;
+                        max-width: 540px;
                         height: 100%;
                         background: transparent;
                         border-bottom: 1px solid #66FCF1;
@@ -357,13 +357,19 @@
                         }
                     }
                 }
+
+                // this function puts index's items 0,2,4,6 in reverse order
+                @for $i from 0 through 4 {
+                    .DesktProjects-item[data-index='#{$i + $i}'] {
+                        flex-direction: row-reverse;
+                    }
+                }
             }
         }
     }
     .row-reverse {
         flex-direction: row-reverse;
     }
-
 }
 
 .v-lazy-image {
@@ -372,6 +378,9 @@
 }
 .v-lazy-image-loaded {
     filter: blur(0);
+}
+.blanco {
+    background: white;
 }
 
 /*######################################################################## 

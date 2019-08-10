@@ -160,12 +160,12 @@
             .skills-center {
                 width: 100%;
                 height: 100%;
-                @include desktop {
-                    width: 100%;
+                @include tablet {
+                    width: 45%;
                 }
                 .skills-list {
                   display: grid;
-                  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
                   text-align: center;
                   grid-column-gap: 1.90rem;
                   grid-row-gap: 4.5rem;
@@ -173,7 +173,7 @@
                   max-width: 650px;
                   margin: auto;
                     li {
-                    width: 80%;
+                    width: 100%;
                     margin: auto;
                     position: relative;
                     span, a {
@@ -216,7 +216,7 @@
                 display: none;
                 @include tablet {
                     display: block;
-                    width: 100%;
+                    width: 55%;
                     padding: 1rem 2rem;
                     display: flex;
                     flex-direction: column;

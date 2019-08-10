@@ -65,7 +65,8 @@
 
             <!------------------------------ MOBILE PROJECTS ---------------------->
             <div class="portfolio-container__projects">
-                <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index" data-aos-duration="500" data-aos="fade-up">
+                <div class="portfolio-container__projects--item blanco" v-for="(proyecto, index) in proyectos" :key="index" data-aos-duration="500" data-aos="fade-up"
+                >
                     <figure class="portfolio-container__projects--item--img">
                         <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                     </figure>
@@ -74,7 +75,7 @@
                             {{$t("message.portfolio.details")}}
                         </router-link>
                         <router-link class="name" :to="proyecto.link">{{proyecto.titulo}}</router-link>
-                        <div class="skills-span" v-scroll="addFadeUp">
+                        <div class="skills-span">
                             <span v-for="(skill, i) in proyecto.skills" :key="i">{{skill}},&nbsp;</span>
                         </div>
                     </div>
@@ -86,170 +87,22 @@
             <!------------------------------ DESKTOP PROJECTS ---------------------->
             <div class="portfolio-container__DesktProjects">
                 <div class="portfolio-container__DesktProjects--container">
-                    <div class="DesktProjects-item" id="musicapp">
+                    <div class="DesktProjects-item"
+                    v-for="(proyecto, index) in proyectos" :key="index" :id="proyecto.id"
+                    :data-index="index"
+                    >
                         <figure class="DesktP-img">
-                            <a href="https://malbonm07.github.io/vue-quasar-spa/#/" target="_blank"><v-lazy-image class="lazy-img" :src="proyectos[0].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                            <!-- <div class="img-overlay">{{proyectos[0].titulo}}</div> -->
+                            <a :href="proyecto.linkSitio" target="_blank"><v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
                             <div class="img-overlay">{{$t("message.portfolio.view")}}</div></a>
                         </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[0])" class="details" 
-                            >
-                            {{$t("message.portfolio.details")}}</a>
-                            <a @click="projectModal(proyectos[0])" class="name"
-                            >{{proyectos[0].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[0].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="DesktProjects-item row-reverse" id="vuetyLanding">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[1].linkSitio" target="_blank"><v-lazy-image class="lazy-img" :src="proyectos[1].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                            <!-- <div class="img-overlay">{{proyectos[1].titulo}}</div> -->
-                            <div class="img-overlay">{{$t("message.portfolio.view")}}</div></a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[1])" class="details">
+                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in"
+                        >
+                            <a @click="projectModal(proyecto)" class="details">
                                 {{$t("message.portfolio.details")}}
                             </a>
-                            <a @click="projectModal(proyectos[1])" class="name">{{proyectos[1].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[1].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-container__DesktProjects--container">
-                    <div class="DesktProjects-item" id="escuelaNuxt">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[2].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[2].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[2].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[2])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[2])" class="name">{{proyectos[2].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[2].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="DesktProjects-item row-reverse" id="blogVue">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[3].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[3].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[3].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[3])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[3])" class="name">{{proyectos[3].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[3].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-container__DesktProjects--container">
-                    <div class="DesktProjects-item" id="calculadoraVue">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[4].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[4].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[4].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[4])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[4])" class="name">{{proyectos[4].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[4].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="DesktProjects-item row-reverse" id="shopCart">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[5].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[5].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[5].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[5])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[5])" class="name">{{proyectos[5].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[5].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-container__DesktProjects--container">
-                    <div class="DesktProjects-item" id="pokedex">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[6].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[6].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[6].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[6])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[6])" class="name">{{proyectos[6].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[6].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="DesktProjects-item row-reverse" id="todoList">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[7].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[7].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[7].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[7])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[7])" class="name">{{proyectos[7].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[7].skills" :key="i">{{skill}},&nbsp;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-container__DesktProjects--container">
-                    <div class="DesktProjects-item" id="pokedex">
-                        <figure class="DesktP-img">
-                            <a :href="proyectos[8].linkSitio" target="_blank">
-                                <v-lazy-image class="lazy-img" :src="proyectos[8].img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
-                                <!-- <div class="img-overlay">{{proyectos[6].titulo}}</div> -->
-                                <div class="img-overlay">{{$t("message.portfolio.view")}}</div>
-                            </a>
-                        </figure>
-                        <div class="DesktP-links" data-aos-duration="500" data-aos="zoom-in">
-                            <a @click="projectModal(proyectos[8])" class="details">
-                                {{$t("message.portfolio.details")}}
-                            </a>
-                            <a @click="projectModal(proyectos[8])" class="name">{{proyectos[8].titulo}}</a>
-                            <div class="skills-span" v-scroll="addFadeUp">
-                                <span v-for="(skill, i) in proyectos[8].skills" :key="i">{{skill}},&nbsp;</span>
+                            <a @click="projectModal(proyecto)" class="name">{{proyecto.titulo}}</a>
+                            <div class="skills-span">
+                                <span v-for="(skill, i) in proyecto.skills" :key="i">{{skill}},&nbsp;</span>
                             </div>
                         </div>
                     </div>
@@ -314,8 +167,8 @@
 
 <script>
 import proyectos from '@/data/proyectos.js';
-import Footer from '@/components/Footer.vue'
-import backBtn from '@/components/backBtn.vue'
+import Footer from '@/components/Footer.vue';
+import backBtn from '@/components/backBtn.vue';
 
 export default {
     components: {
@@ -326,13 +179,10 @@ export default {
         return {
             currentProjectModal: null,
             showProjectModal: false,
-            proyectos: proyectos
+            proyectos: proyectos,
         }
     },
     methods: {
-        addFadeUp(evt, el) {
-
-        },
         projectModal(obj) {
             if(!this.showProjectModal) {
                 document.body.style.cssText = "height: 100%; overflow: hidden"
