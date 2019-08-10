@@ -46,7 +46,7 @@ I'm still working on things like refactoring the code a bit more, creating more 
 - Internationalization with [Vue i18n](https://kazupon.github.io/vue-i18n/)
 - [Lazy loading images](https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/)
 - [Custom Directives in Vue](https://vuejs.org/v2/cookbook/creating-custom-scroll-directives.html)
-- SEO for SPA with [v-meta](https://github.com/nuxt/vue-meta)
+- [SEO for SPA](https://www.youtube.com/watch?v=Op8Q8bUAKNc) with [v-meta](https://github.com/nuxt/vue-meta)
 - Responsive Design
 - Css Unit px|em|rem for a responsive design
 - Pure Css Layout
