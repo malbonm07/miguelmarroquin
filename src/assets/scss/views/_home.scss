@@ -13,6 +13,9 @@
         position: relative;
         z-index: 20;
         overflow: hidden;
+        @media screen and (orientation: landscape) {
+            padding: 70px 0px;
+        }
         &--text {
             color: $white1-color;
             text-align: center;
