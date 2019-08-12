@@ -75,31 +75,31 @@
           <ul class="mob-nav-menu__nav--list">
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/"
-              @click.native="closeMobNav">
+              @click.native="closeMobNav('#3AAFA9')">
               {{$t("message.nav.intro")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/about"
-              @click.native="closeMobNav">
+              @click.native="closeMobNav('#EC5D3D')">
               {{$t("message.nav.about")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/skills"
-              @click.native="closeMobNav">
+              @click.native="closeMobNav('#0B0C10')">
               {{$t("message.nav.skills")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/portfolio"
-              @click.native="closeMobNav">
+              @click.native="closeMobNav('#2E47BF')">
               {{$t("message.nav.portfolio")}}
             </router-link>
             </li>
             <li class="mob-nav-menu__nav--list--link">
               <router-link class="route-link" to="/education"
-              @click.native="closeMobNav">
+              @click.native="closeMobNav('#6A1B9A')">
               {{$t("message.nav.education")}}
             </router-link>
             </li>
@@ -167,8 +167,9 @@ export default {
     }
   },
   methods: {
-    closeMobNav() {
+    closeMobNav(color) {
       if(this.showMobNav) {
+        document.body.style.background = color;
         this.showMobNav = false;
         this.$refs.mobToggle.checked = false;
       }
@@ -198,12 +199,6 @@ export default {
 //mob nav menu styles are in './assets/scss/layouts/nav/mob-nav-menu';
 //mob nav menu btn styles are in './assets/scss/layouts/nav/mob-nav-btn';
 //nav menu styles are in './assets/scss/layouts/nav/navbar-desktop';
-
-
-
-// #app {
-//   background:#2E47BF;
-// }
 
 .page-enter-active, .page-leave-active {
   transition: opacity 0.5s;
