@@ -127,6 +127,7 @@
 </template>
 
 <script>
+require('intersection-observer');
 import {languageSwitch} from '@/mixins/languageSwitch';
 
 export default {

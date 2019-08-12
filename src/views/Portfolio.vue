@@ -180,7 +180,7 @@ export default {
                 this.showProjectModal = false;
             }
         }
-    }
+    },
 }
 </script>
 
