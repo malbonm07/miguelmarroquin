@@ -15,31 +15,31 @@
     <div id="nav" class="desk-nav-menu">
       <ul class="desk-nav-menu__nav">
         <li class="desk-nav-menu__nav--link">
-          <router-link class="route-link" to="/"
+          <router-link class="route-link" to="/" @click.native="bodyColor('#3AAFA9')"
           exact>
           {{$t("message.nav.intro")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
-          <router-link class="route-link" to="/about"
+          <router-link class="route-link" to="/about" @click.native="bodyColor('#EC5D3D')"
           exact>
           {{$t("message.nav.about")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
-          <router-link class="route-link" to="/skills"
+          <router-link class="route-link" to="/skills" @click.native="bodyColor('#0B0C10')"
           exact>
           {{$t("message.nav.skills")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
-          <router-link class="route-link" to="/portfolio"
+          <router-link class="route-link" to="/portfolio" @click.native="bodyColor('#2E47BF')"
           exact>
           {{$t("message.nav.portfolio")}}
         </router-link>
         </li>
         <li class="desk-nav-menu__nav--link">
-          <router-link class="route-link" to="/education"
+          <router-link class="route-link" to="/education" @click.native="bodyColor('#6A1B9A')"
           exact>
           {{$t("message.nav.education")}}
         </router-link>
@@ -173,12 +173,18 @@ export default {
         this.$refs.mobToggle.checked = false;
       }
     },
+    bodyColor(color) {
+      document.body.style.background = color;
+    }
   },
   computed: {
     activeRoute() {
       return this.$route
     }
   },
+  created() {
+    document.body.style.background = '#3AAFA9';
+  }
  
 }
 </script>
@@ -196,14 +202,16 @@ export default {
 
 
 // #app {
-//   background: $primary-color;
+//   background:#2E47BF;
 // }
 
 .page-enter-active, .page-leave-active {
-  transition: opacity;
+  transition: opacity 0.5s;
 }
-.page-enter, .page-leave-to {
+.page-enter{
   opacity: 0;
-  transform: translateX(-100%);
 }
+ .page-leave-to {
+   opacity: 0;
+ }
 </style>

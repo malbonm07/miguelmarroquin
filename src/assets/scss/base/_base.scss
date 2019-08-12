@@ -15,7 +15,7 @@
 html, body {
     font-family: 'Lato', serif;
     font-size: 62.5%;
-    background: $secondary-dark-color;
+    // background: $secondary-dark-color;
     @include lg-desktop {
         font-size: 80%;
     }
