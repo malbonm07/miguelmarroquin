@@ -36,6 +36,23 @@
 
 }
 
+.mob-langSwitch {
+    background: transparent;
+    border: none;
+    margin: 5px;
+    outline: none;
+    font-size: 1.4rem;
+    color: grey;
+    transform: translateY(30px);
+    @include tablet {
+        display: none;
+    }
+}
+.mob-active {
+    border-bottom: 1px solid $secondary-dark-color;
+    color: $secondary-dark-color;
+}
+
 .langBtn-active {
     background: $primary-dark-color;
     color: white;

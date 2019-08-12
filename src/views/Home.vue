@@ -53,26 +53,16 @@
 </template>
 
 <script>
-import CountryFlag from 'vue-country-flag'
+import CountryFlag from 'vue-country-flag';
+import {languageSwitch} from '@/mixins/languageSwitch';
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
+  mixins: [languageSwitch],
   components: {
     CountryFlag
   },
   name: 'home',
-  methods: {
-    changeLanguage(lang) {
-      this.$i18n.locale = lang;
-    }
-  },
-  computed: {
-    activeLanguage() {
-      console.log(this.$i18n.locale)
-      return this.$i18n.locale;
-    }
-  }
 }
 </script>
 

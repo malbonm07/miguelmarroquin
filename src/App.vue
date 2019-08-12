@@ -7,8 +7,6 @@
       <div class="logo">
         <img src="https://i.imgur.com/IBL3Gg1.png" alt="logo" class="logo-img">
       </div>
-      <!-- <div class="linea1">M</div>
-      <div class="linea2">M</div> -->
     </router-link>
 <!------------------------------ END LOGO -------------------------->
 
@@ -105,6 +103,10 @@
               {{$t("message.nav.education")}}
             </router-link>
             </li>
+            <div>
+              <button @click="changeLanguage('es')" class="mob-langSwitch" :class="{'mob-active' : activeLanguage === 'es'}">ES</button>
+              <button @click="changeLanguage('us')" class="mob-langSwitch" :class="{'mob-active' : activeLanguage === 'us'}">EN</button>
+            </div>
           </ul>
           <div class="mob-nav-menu__nav--icons">
             <h4 class="text-center text-caption uppercase text-regular mb-2 mt-3">{{$t("message.nav.touch")}}</h4>
@@ -125,6 +127,7 @@
 </template>
 
 <script>
+import {languageSwitch} from '@/mixins/languageSwitch';
 
 export default {
   metaInfo() {
@@ -156,7 +159,8 @@ export default {
       {rel: "icon", type:"image/png", sizes: "16x16", href: "/favicon-16x16.png"}
     ]
     }
-  },    
+  },
+  mixins: [languageSwitch],
   data() {
     return {
       showMobNav: false,
@@ -169,12 +173,6 @@ export default {
         this.$refs.mobToggle.checked = false;
       }
     },
-    // positionUp(evt, el) {
-    //     console.log(window.scrollY);
-    // },
-    changeLang() {
-      this.$i18n.locale = 'us'
-    }
   },
   computed: {
     activeRoute() {
@@ -201,12 +199,11 @@ export default {
 //   background: $primary-color;
 // }
 
-// .page-enter-active, .page-leave-active {
-//   transition: opacity 1s;
-//   transition-delay: .1s;
-// }
-// .page-enter, .page-leave-to {
-//   opacity: 0;
-//   transform: translateX(-100%);
-// }
+.page-enter-active, .page-leave-active {
+  transition: opacity;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+}
 </style>

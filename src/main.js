@@ -20,11 +20,10 @@ import i18n from './i18n'
 library.add(faTwitter, faBootstrap, faCodepen, faCss3Alt, faFacebookF, faGithub, faHtml5, faJsSquare, faVuejs, faSass, faNpm, faLinkedinIn, faTh, faEnvelope, faLink, faAngleUp)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-
 Vue.use(VueMeta);
 Vue.use(VueScrollTo, {
   container: "body",
-  duration: 500,
+  duration: 1000,
   easing: "ease in out",
   offset: 0,
   force: true,
