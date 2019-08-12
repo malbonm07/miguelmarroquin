@@ -5,12 +5,12 @@
                     class="lazy-img" :src="proyectoName.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>
         </figure>
         <h5 class="img-sub">
-            <a class="img-sub__link" href="">
+            <a class="img-sub__link" href="https://github.com/malbonm07/vue-shopping-cart" target="_blank">
                 <font-awesome-icon class="img-sub__link-icon" :icon="['fab', 'github']" />
                 Ver en Github
             </a></h5>
         <h5 class="img-sub">
-            <a class="img-sub__link" href="">
+            <a class="img-sub__link" href="https://malbonm07.github.io/v-shoppingcart/" target="_blank">
                 <font-awesome-icon class="img-sub__link-icon" :icon="['fas', 'link']" />
                 Ver el sitio
             </a></h5>

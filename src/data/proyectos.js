@@ -127,24 +127,24 @@ const proyectos = [
         details: `Uno de mis primeros proyectos, en este caso tuve como reto la lógica para programar una SPA carrito de compra basico, para crear las funcionalidades como seleccionar, comprar y limpiar la lista de items utilicé Vue. Uno de los problemas que tuve que resolver era la perdida de datos al momento de refrescar la página, y buscando información decidí optar por la propiedad LocalStorage de HTML. Con ello pude guardar todos los datos y evitar la perdida de los mismos.`,
         herramientas: ['html', 'sass', 'vue', 'javascript']
     },
-    {
-        img: 'https://i.imgur.com/J0Rywzi.png',
-        id: 'pokedex',
-        titulo: 'pokedex con vuetify',
-        link: '/portfolio/pokedex',
-        linkGithub: 'https://github.com/malbonm07/pokemon',
-        linkSitio: 'https://malbonm07.github.io/v-pokemon/',
-        skills: [
-            'VueJS',
-            'Vuetify',
-            'UI Components',
-            'Vue router',
-            'Rest API with AXIOS'
+    // {
+    //     img: 'https://i.imgur.com/J0Rywzi.png',
+    //     id: 'pokedex',
+    //     titulo: 'pokedex con vuetify',
+    //     link: '/portfolio/pokedex',
+    //     linkGithub: 'https://github.com/malbonm07/pokemon',
+    //     linkSitio: 'https://malbonm07.github.io/v-pokemon/',
+    //     skills: [
+    //         'VueJS',
+    //         'Vuetify',
+    //         'UI Components',
+    //         'Vue router',
+    //         'Rest API with AXIOS'
 
-        ],
-        details: `En esta pequeña app puse a prueba mi conocimiento en el consumo de Rest API haciendo uso de la librería AXIOS. Para el diseño utilicé por primera vez Vuetify que viene con UI Componentes y para los datos utilicé PokéAPI.`,
-        herramientas: ['html', 'sass', 'vue', 'vuetify', 'Axios', 'vue router']
-    },
+    //     ],
+    //     details: `En esta pequeña app puse a prueba mi conocimiento en el consumo de Rest API haciendo uso de la librería AXIOS. Para el diseño utilicé por primera vez Vuetify que viene con UI Componentes y para los datos utilicé PokéAPI.`,
+    //     herramientas: ['html', 'sass', 'vue', 'vuetify', 'Axios', 'vue router']
+    // },
     {
         img: 'https://i.imgur.com/nC1JW8W.png',
         id: 'todoList',
