@@ -116,6 +116,7 @@
     &__certificates {
         width: 100%;
         min-height: 100vh;
+        background: lighten($primary-color, 10%);
         @media screen and (orientation: landscape) {
             padding: 50px 0px;
         }
