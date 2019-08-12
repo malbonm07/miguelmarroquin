@@ -2,8 +2,8 @@
     display: none;
     @include tablet {
         display: block;
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 4rem;
+        height: 4rem;
         position: fixed;
         top: 2.5rem;
         left: 6%;
@@ -11,35 +11,5 @@
         .logo-img {
             width: 100%;
         }
-        // display: block;
-        // position: fixed;
-        // width: 3.2rem;
-        // top: 2.5rem;
-        // left: 3rem;
-        // height: 3rem;
-        // z-index: 90;
-        // cursor: pointer;
-        // .linea1 {
-        //     font-size: 0.7rem;
-        //     color: white;
-        //     text-align: center;
-        //     width: 100%;
-        //     height: 1rem;
-        //     background: $secondary-dark-color;
-        //     border: .5px solid $primary-color;
-        //     transform: rotate(-35deg);
-        //     margin-bottom: 7px;
-        // }
-        // .linea2 {
-        //     font-size: 0.7rem;
-        //     color: white;
-        //     text-align: center;
-        //     width: 100%;
-        //     height: 1rem;
-        //     background: $secondary-dark-color;
-        //     border: .5px solid $primary-color;
-        //     transform: rotate(-35deg);
-    
-        // }
     }
 }

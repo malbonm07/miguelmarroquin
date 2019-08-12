@@ -5,7 +5,7 @@
 <!------------------------------ LOGO -------------------------->
     <router-link class="logo" to="/">
       <div class="logo">
-        <img src="https://i.imgur.com/ZKGaUYi.png" alt="logo" class="logo-img">
+        <img src="https://i.imgur.com/IBL3Gg1.png" alt="logo" class="logo-img">
       </div>
       <!-- <div class="linea1">M</div>
       <div class="linea2">M</div> -->

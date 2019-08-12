@@ -38,13 +38,14 @@
         height: 2px;
         width: 15px;
         background-color: $secondary-color;
+        box-shadow: 0.5px 0.5px lighten($primary-dark-color, 2%);
         &:nth-child(1){
             width: 70%;
           }
           &:nth-child(2){
             width: 60%;
             height: 1px;
-            background-color: $primary-dark-color;
+            background-color: transparent;
           }
           &:nth-child(3){
             width: 70%;

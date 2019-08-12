@@ -46,7 +46,7 @@
                 </ul>
                 <h3>Platzi</h3>
                 <ul class="mb-2 text-center">
-                    <li><a href="https://platzi.com/@malbonm07/curso/1339-fundamentos-javascript/diploma/detalle/" target="_blank">Javascript Basics</a></li>
+                    <li><a href="https://platzi.com/@malbonm07/curso/1339-fundamentos-javascript/diploma/detalle/" target="_blank">Javascript ES7</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1170-git-github-2017/diploma/detalle/" target="_blank">Git and Github</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1111-vuejs/diploma/detalle/" target="_blank">Bootstrap</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1350-html5-css3/diploma/detalle/" target="_blank">Online Web Development course</a></li>
