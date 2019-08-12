@@ -1,0 +1,28 @@
+@mixin btn ($bg, $color){
+    height: calc(1.6rem * 2);
+    opacity: 0;
+    animation: fadeUpBtnCourses .3s ease-in-out forwards;
+    animation-delay: 1.3s;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2.3rem;
+    background: $bg;
+    color: $color;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    font-family: 'Indie Flower';
+    &:hover {
+        cursor: pointer;
+    }   
+}
+
+@keyframes fadeUpBtnCourses {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

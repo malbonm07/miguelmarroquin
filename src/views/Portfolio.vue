@@ -31,7 +31,7 @@
                 <!-------------------------END DESKTOP WORKS LIST ---------------------->
 
 
-                <button class="portfolio-container__works--description-btn mt-1" v-scroll-to="{el: '#proyectos'}">
+                <button class="portfolio-btn mt-1" v-scroll-to="{el: '#proyectos'}">
                 {{$t("message.portfolio.btn")}}
                 </button>
                 <DownArrow></DownArrow>
@@ -47,7 +47,7 @@
 
             <!------------------------------ MOBILE PROJECTS ---------------------->
             <div class="portfolio-container__projects">
-                <div class="portfolio-container__projects--item blanco" v-for="(proyecto, index) in proyectos" :key="index" data-aos-duration="500" data-aos="fade-up"
+                <div class="portfolio-container__projects--item" v-for="(proyecto, index) in proyectos" :key="index" data-aos-duration="500" data-aos="fade-up"
                 >
                     <figure class="portfolio-container__projects--item--img">
                         <v-lazy-image class="lazy-img" :src="proyecto.img" src-placeholder="https://cdn-images-1.medium.com/max/80/1*xjGrvQSXvj72W4zD6IWzfg.jpeg"/>

@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 7rem;
+            height: 8rem;
             &--link {
                 margin: 5px;
                 position: relative;
@@ -42,22 +42,22 @@
             &--link:nth-child(2) {
                 opacity: 0;
                 animation: fadeDownDeskLi .2s ease-in-out forwards;
-                animation-delay: 1.15s;
+                animation-delay: 1.3s;
             }
             &--link:nth-child(3) {
                 opacity: 0;
                 animation: fadeDownDeskLi .2s ease-in-out forwards;
-                animation-delay: 1.2s;
+                animation-delay: 1.5s;
             }
             &--link:nth-child(4) {
                 opacity: 0;
                 animation: fadeDownDeskLi .2s ease-in-out forwards;
-                animation-delay: 1.25s;
+                animation-delay: 1.7s;
             }
             &--link:nth-child(5) {
                 opacity: 0;
                 animation: fadeDownDeskLi .2s ease-in-out forwards;
-                animation-delay: 1.3s;
+                animation-delay: 1.9s;
             }
         }
     }

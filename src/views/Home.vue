@@ -15,7 +15,7 @@
       <div class="home-container__hello--description text-center">
         <p v-html='$t("message.home.msg")'>
         </p>
-        <button class="home-container__hello--description-btn mt-2">
+        <button class="home-btn mt-5">
           <router-link class="text-white" to="/portfolio">
             {{$t("message.home.btn")}}
           </router-link>

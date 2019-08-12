@@ -98,24 +98,8 @@
                     }
                 }
             }
-            &-btn {
-                opacity: 0;
-                animation: fadeUpSubtitleCourses .3s ease-in-out forwards;
-                animation-delay: 1.3s;
-                border: 1px solid transparent;
-                background: $secondary-dark-color;
-                outline: none;
-                color: $white2-color;
-                padding: 3px 19px;
-                font-size: 1.4rem;
-                letter-spacing: 1.5px;
-                font-family: 'Indie Flower';
-                &:hover {
-                    cursor: pointer;
-                    background: $secondary-dark-color;
-                    border-color: #6A1B9A;
-                    color: $white2-color;
-                }
+            .education-btn {
+                @include btn($secondary-dark-color, $white2-color);
             }
         }
         

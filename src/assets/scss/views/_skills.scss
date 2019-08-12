@@ -92,23 +92,8 @@
                     }
                 }
             }
-            &-btn {
-                opacity: 0;
-                animation: fadeUpDescription .3s ease-in-out forwards;
-                animation-delay: 1.2s;
-                background: $secondary-dark-color;
-                border: 1px solid $primary-color;
-                outline: none;
-                color: $white1-color;
-                padding: 3px 19px;
-                font-size: 1.4rem;
-                letter-spacing: 1.5px;
-                font-family: 'Indie Flower';
-                &:hover {
-                    cursor: pointer;
-                    background: $primary-color;
-                    color: $secondary-dark-color;
-                }
+            .skills-btn {
+                @include btn($primary-color, $secondary-dark-color);
             }
         }
     }

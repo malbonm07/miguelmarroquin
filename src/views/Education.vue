@@ -23,7 +23,7 @@
                     <li><a href="https://platzi.com/@malbonm07/curso/1373-diseno-prototipos/diploma/detalle/" target="_blank" class="text-white">Curso de Diseño de Prototipos</a></li>
                     <li><a href="https://platzi.com/@malbonm07/curso/1357-js-jest/diploma/detalle/" target="_blank" class="text-white">Javascript testing con Jest</a></li>
                 </ul>
-                <button class="education-container__courses--description-btn mt-2" v-scroll-to="{el: '#certificates'}">
+                <button class="education-btn mt-2" v-scroll-to="{el: '#certificates'}">
                 {{$t("message.education.certificates")}}
                 </button>
                 <DownArrow></DownArrow>
