@@ -23,10 +23,10 @@
             color: $white1-color;
             text-align: center;
             margin-bottom: 3.2rem;
-            font-size: 6.5rem;
+            font-size: 6rem;
             display: flex;
             @include desktop {
-                font-size: 8.5rem;
+                font-size: 8rem;
             }
             @for $i from 1 through 7 {
                 span:nth-child(#{$i}) {
@@ -89,7 +89,7 @@
                 li {
                     color: $white1-color;
                     font-weight: 200;
-                    margin: 1.5rem 0;
+                    margin: 1.3rem 0;
                     text-transform: capitalize;
                     &:hover a{
                         cursor: pointer;
@@ -98,7 +98,6 @@
                 }
                 @for $i from 1 through 6 {
                     li:nth-child(#{$i}) {
-                        // opacity: 0;
                         animation: fadeUpCourses .5s ease-in-out forwards;
                         animation-delay: #{1.2 + 0.1 * $i}s;
                     }

@@ -19,14 +19,11 @@
         &--text {
             color: $white1-color;
             margin-bottom: 2.4rem;
-            font-size: 8rem;
+            font-size: 7rem;
             display: flex;
             letter-spacing: 2px;
             @include phone-medium {
-                font-size: 9rem;
-            }
-            @include tablet {
-                font-size: 11rem;
+                font-size: 8rem;
             }
             @for $i from 1 through 5 {
                 span:nth-child(#{$i}) {

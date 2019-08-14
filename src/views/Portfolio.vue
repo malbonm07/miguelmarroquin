@@ -181,6 +181,13 @@ export default {
             }
         }
     },
+    created() {
+        // let pantallaBody = document.getElementsByTagName('body');
+        // let pantallaWindow = window.innerHeight;
+
+        // console.log(pantallaBody.innerHeight);
+        // console.log(pantallaWindow);
+    }
 }
 </script>
 

@@ -22,7 +22,6 @@
             <li>{{$t("message.skills.ul.li4")}}</li>
             <li>{{$t("message.skills.ul.li5")}}</li>
             <li>{{$t("message.skills.ul.li6")}}</li>
-            <li>{{$t("message.skills.ul.li7")}}</li>
         </ul>
         <button class="skills-btn mt-1" v-scroll-to="{el: '#tools'}"
         >

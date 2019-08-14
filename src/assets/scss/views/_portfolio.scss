@@ -21,11 +21,11 @@
         }
         &--text {
             color: $white1-color;
-            font-size: 7.2rem;
+            font-size: 6rem;
             display: flex;
             letter-spacing: 2px;
             @include phone-medium {
-                font-size: 8.5rem;
+                font-size: 8rem;
                 letter-spacing: 3px;
             }
 
@@ -125,7 +125,7 @@
                 li {
                     color: $white1-color;
                     font-weight: 200;
-                    margin: 15px 0;
+                    margin: 1.3rem 0;
                     text-transform: capitalize;
                     .li-route {
                         color: inherit;
@@ -136,6 +136,12 @@
                         opacity: 0;
                         animation: fadeUpWorksLi .3s ease-in-out forwards;
                         animation-delay: #{1.2 + 0.1 * $i}s;
+                    }
+                    li:nth-child(7) {
+                        display: none;
+                    }
+                    li:nth-child(8) {
+                        display: none;
                     }
                 }
             }

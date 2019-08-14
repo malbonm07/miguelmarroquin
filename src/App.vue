@@ -186,6 +186,11 @@ export default {
   },
   created() {
     document.body.style.background = '#3AAFA9';
+    let app = document.getElementById('app')
+    let pantallaWindow = window.innerHeight;
+
+    console.log(app.clientHeight);
+    console.log(app.innerHeight);
   }
  
 }
@@ -200,6 +205,10 @@ export default {
 //mob nav menu styles are in './assets/scss/layouts/nav/mob-nav-menu';
 //mob nav menu btn styles are in './assets/scss/layouts/nav/mob-nav-btn';
 //nav menu styles are in './assets/scss/layouts/nav/navbar-desktop';
+
+#app {
+
+}
 
 .page-enter-active, .page-leave-active {
   transition: opacity 0.5s;

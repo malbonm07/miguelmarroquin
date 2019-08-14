@@ -3,7 +3,6 @@
     // ############################ SECTION PART 1 ################################
     &__soft {
         width: 100%;
-        min-height: 100vh;
         background: #0B0C10;
         display: flex;
         flex-direction: column;
@@ -12,17 +11,21 @@
         position: relative;
         z-index: 40;
         overflow: hidden;
+        min-height: calc(100vh);
+        @include phone-medium {
+            min-height: 100vh;
+        }
         @media screen and (orientation: landscape) {
             padding: 85px 0px;
         }
         &--text {
             color: $white1-color;
             margin-bottom: 0rem;
-            font-size: 8.5rem;
+            font-size: 6rem;
             display: flex;
             letter-spacing: 2px;
             @include phone-medium {
-                font-size: 9.6rem;
+                font-size: 8rem;
                 letter-spacing: 3px;
             }
             @for $i from 1 through 6 {
@@ -79,7 +82,7 @@
                 font-weight: 400;
                 color: $white2-color;
                 letter-spacing: 2px;
-                padding: 1rem 0;
+                padding: 0rem 0 1rem 0;
                 border-bottom: 1px solid #64FFDA;
             }
             &-list {
@@ -88,16 +91,16 @@
                     font-weight: 200;
                     margin: 15px 0;
                 }
-                @for $i from 1 through 8 {
+                @for $i from 1 through 7 {
                     li:nth-child(#{$i}) {
                         animation: fadeUpSoftSkills 1s ease-in-out forwards;
                         animation-delay: #{1.2 + 0.1 * $i}s;
                     }
                 }
             }
-            .skills-btn {
-                @include btn($primary-color, $secondary-dark-color);
-            }
+        }
+        .skills-btn {
+            @include btn($primary-color, $secondary-dark-color);
         }
     }
     // ############################ SECTION PART 2 ################################
@@ -115,7 +118,7 @@
             margin: auto;
             width: 100%;
             color: black;
-            height: 12rem;
+            height: 15rem;
             display: flex;
             justify-content: center;
             align-items: center;
