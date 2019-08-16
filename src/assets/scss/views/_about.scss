@@ -5,6 +5,7 @@
     &__hello {
         width: 100%;
         min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
         background: #EC5D3D;
         display: flex;
         flex-direction: column;
@@ -18,7 +19,6 @@
         }
         &--text {
             color: $white1-color;
-            margin-bottom: 2.4rem;
             font-size: 7rem;
             display: flex;
             letter-spacing: 2px;
@@ -87,7 +87,7 @@
                 font-size: 1.6rem;
                 font-weight: 200;
                 color: $secondary-dark-color;
-                line-height: 2.5rem;
+                line-height: 2.4rem;
                 @include desktop {
                     font-size: 1.8rem;
                 }

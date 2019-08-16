@@ -12,7 +12,7 @@
             </div>
             <div class="spacer"></div>
             <div class="portfolio-container__works--description text-center">
-                <h2 class="mb-2">{{$t("message.portfolio.sub")}}</h2>
+                <h2>{{$t("message.portfolio.sub")}}</h2>
 
                 <!------------------------ MOB WORKS LIST ---------------------->
                 <ul class="portfolio-container__works--description-list">

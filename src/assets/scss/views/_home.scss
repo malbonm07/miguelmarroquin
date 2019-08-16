@@ -4,7 +4,8 @@
 
     &__hello {
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background: $primary-color;
         display: flex;
         flex-direction: column;
@@ -114,7 +115,7 @@
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1s;
                 font-size: 1.8rem;
-                line-height: 2.5rem;
+                line-height: 2.4rem;
             }
             .home-btn {
                 @include btn($secondary-dark-color, $white2-color);

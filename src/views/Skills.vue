@@ -14,7 +14,7 @@
       </div>
       <div class="spacer"></div>
       <div class="skills-container__soft--description text-center">
-        <h2 class="mb-2">{{$t("message.skills.sub")}}</h2>
+        <h2>{{$t("message.skills.sub")}}</h2>
         <ul class="skills-container__soft--description-list">
             <li>{{$t("message.skills.ul.li1")}}</li>
             <li>{{$t("message.skills.ul.li2")}}</li>
