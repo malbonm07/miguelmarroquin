@@ -73,7 +73,7 @@
         &--description {
             color: $secondary-dark-color;
             padding: 0 15px 0 15px;
-            transform: translateY(40px);
+            // transform: translateY(40px);
             h2 {
                 opacity: 0;
                 animation: fadeUpSubTitle .3s ease-in-out forwards;

@@ -182,11 +182,9 @@ export default {
         }
     },
     created() {
-        // let pantallaBody = document.getElementsByTagName('body');
-        // let pantallaWindow = window.innerHeight;
-
-        // console.log(pantallaBody.innerHeight);
-        // console.log(pantallaWindow);
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
     }
 }
 </script>

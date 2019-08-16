@@ -4,7 +4,8 @@
 
     &__works {
         width: 100%;
-        min-height: 100vh;
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
         background: #2E47BF;
         display: flex;
         flex-direction: column;
@@ -105,7 +106,7 @@
         }
         &--description {
             padding: 0 15px;
-            transform: translateY(40px);
+            // transform: translateY(40px);
             h2 {
                 opacity: 0;
                 animation: fadeUpSubTitleWorks .3s ease-in-out forwards;
