@@ -71,7 +71,6 @@
         &--description {
             color: $secondary-dark-color;
             padding: 0 15px 0 15px;
-            // transform: translateY(40px);
             h2 {
                 opacity: 0;
                 animation: fadeUpSubTitle .3s ease-in-out forwards;
@@ -82,7 +81,6 @@
                 letter-spacing: 1.5px;
                 text-transform: uppercase;
                 padding: 1rem 0 1rem 0;
-                // border-bottom: 1px solid #64FFDA;
             }
             &-list {
                 li {

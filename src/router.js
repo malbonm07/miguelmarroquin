@@ -64,6 +64,10 @@ export default new Router({
           component: () => import('./views/proyectos/mobileByRoute/ShopCart.vue')
         },
         {
+          path: 'social-app',
+          component: () => import('./views/proyectos/mobileByRoute/SocialApp.vue')
+        },
+        {
           path: 'pokedex',
           component: () => import('./views/proyectos/mobileByRoute/Pokedex.vue')
         },

@@ -1,0 +1,65 @@
+.social-app {
+    width: 100%;
+    min-height: 100vh;
+    background: #E7EEED;
+    padding: 15px 15px 50px 15px;
+    @include tablet {
+        padding: 4rem;
+    }
+    &--img {
+        width: 100%;
+        .lazy-img {
+            width: 100%;
+        }
+    }
+    .img-sub {
+        margin: 15px 0;
+        &__link {
+            color: #2E47BF;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 1.6rem;
+            &-icon {
+                font-size: 1.8rem;
+                margin-right: 3px;
+            }
+        }
+    }
+    &--description {
+        font-size: 1.6rem;
+        font-weight: 200;
+        line-height: 20px;
+        color: $secondary-dark-color;
+        h3 {
+            font-size: 1.2rem;
+            margin: 1.6rem 0;
+            color: $text-grey2;
+            letter-spacing: 1px;
+        }
+        .skills-description {
+            a {
+                font-weight: 400;
+                color: $secondary-dark-color;
+            }
+            p {
+                line-height: 25px;
+            }
+        }
+        .workflow-description {
+            li {
+                margin-bottom: 1.6rem;
+                .sub {
+                    color: #2E47BF;
+                    margin: 5px 0;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    text-transform: capitalize;
+                }
+                a {
+                    font-weight: 400;
+                    color: $secondary-dark-color;
+                }
+            }
+        }
+    }
+}

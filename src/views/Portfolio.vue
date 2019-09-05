@@ -168,17 +168,17 @@ export default {
     },
     methods: {
         projectModal(obj) {
-            if(!this.showProjectModal) {
-                document.body.style.cssText = "height: 100%; overflow: hidden"
-                this.showProjectModal = true;
+            // if(!this.showProjectModal) {
+                // document.body.style.cssText = "height: 100%; overflow: hidden"
                 this.currentProjectModal = obj;
-            }
+                this.showProjectModal = true;
+            // }
         },
         closeModalProject() {
-            if(this.showProjectModal) {
-                document.body.style.cssText = "height: inherit; overflow: none"
+            // if(this.showProjectModal) {
+                // document.body.style.cssText = "height: inherit; overflow: none"
                 this.showProjectModal = false;
-            }
+            // }
         }
     },
     created() {

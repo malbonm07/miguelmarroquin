@@ -1,23 +1,22 @@
 const proyectos = [
     {
-        img: "https://media.giphy.com/media/fZ2bJg4HC4pB6risMw/giphy.gif",
-        id: 'miguelportfolio',
-        titulo: 'miguel alonso portfolio',
-        link: '/portfolio/personal-portfolio',
-        linkGithub: 'https://github.com/malbonm07/miguelmarroquin',
-        linkSitio: 'https://malbonm07.github.io',
+        img: 'https://i.imgur.com/beqN3ue.png',
+        id: 'social',
+        titulo: 'social application',
+        link: '/portfolio/social-app',
+        linkGithub: 'https://github.com/malbonm07/social-app',
+        linkSitio: 'https://github.com/malbonm07/social-app',
         skills: [
             'VueJS',
-            'Vue-router',
-            'Javascript linting: Eslint',
-            'Code splitting',
-            'Lazy loading Routes',
-            'Vue Lazy load images',
-            'Vue i18n',
-        ],
-        details: `Después de practicar con Vue haciendo algunas plantillas, creando paginas web y SPA, decidí que era momento de crear un nuevo portafolio para demostrar todos mis trabajos, para ello me puse manos a la obra, empecé creando un nuevo proyecto con vue-cli, para los estilos use Sass junto a la metodología BEM, cada componente y view de cada pagina tiene su archivo .scss y todo está importado en el main.scss, me pareció una manera más ordeanada de trabajar. Empecé con mobile first design, luego tablet y desktop. Las animaciones están hechas con puro css y otras con pequeñas librerías. Las rutas y las imagenes están contruidas bajo el concepto de Lazy Loading que mejora el performance de la página.`,
-        herramientas: ['html', 'css', 'sass', 'BEM Arquitecture', 'javascript', 'vue router', 'vue', 'i18n']
+            'Vuetify',
+            'UI Components',
+            'Vue router',
+            'Rest API with AXIOS',
+            'Vuex'
 
+        ],
+        details: `Una SPA con caracteristicas de una red social, creado con Vue, Vuex, Firebase, Express. Este proyecto cubre cosas como integración/consumo de una REST Api server construido con Node js y express, registro, login y autenticación, upload de imagenes, notificaciones y más.`,
+        herramientas: ['html', 'sass', 'vue', 'vuex', 'vuetify', 'Axios', 'vue router']
     },
     {
         img: "https://media.giphy.com/media/W2QJOFzWyh1Mg2BtFS/giphy.gif",
@@ -127,6 +126,26 @@ const proyectos = [
         details: `Uno de mis primeros proyectos, en este caso tuve como reto la lógica para programar una SPA carrito de compra basico, para crear las funcionalidades como seleccionar, comprar y limpiar la lista de items utilicé Vue. Uno de los problemas que tuve que resolver era la perdida de datos al momento de refrescar la página, y buscando información decidí optar por la propiedad LocalStorage de HTML. Con ello pude guardar todos los datos y evitar la perdida de los mismos.`,
         herramientas: ['html', 'sass', 'vue', 'javascript']
     },
+    {
+        img: "https://media.giphy.com/media/fZ2bJg4HC4pB6risMw/giphy.gif",
+        id: 'miguelportfolio',
+        titulo: 'miguel alonso portfolio',
+        link: '/portfolio/personal-portfolio',
+        linkGithub: 'https://github.com/malbonm07/miguelmarroquin',
+        linkSitio: 'https://malbonm07.github.io',
+        skills: [
+            'VueJS',
+            'Vue-router',
+            'Javascript linting: Eslint',
+            'Code splitting',
+            'Lazy loading Routes',
+            'Vue Lazy load images',
+            'Vue i18n',
+        ],
+        details: `Después de practicar con Vue haciendo algunas plantillas, creando paginas web y SPA, decidí que era momento de crear un nuevo portafolio para demostrar todos mis trabajos, para ello me puse manos a la obra, empecé creando un nuevo proyecto con vue-cli, para los estilos use Sass junto a la metodología BEM, cada componente y view de cada pagina tiene su archivo .scss y todo está importado en el main.scss, me pareció una manera más ordeanada de trabajar. Empecé con mobile first design, luego tablet y desktop. Las animaciones están hechas con puro css y otras con pequeñas librerías. Las rutas y las imagenes están contruidas bajo el concepto de Lazy Loading que mejora el performance de la página.`,
+        herramientas: ['html', 'css', 'sass', 'BEM Arquitecture', 'javascript', 'vue router', 'vue', 'i18n']
+
+    },
     // {
     //     img: 'https://i.imgur.com/J0Rywzi.png',
     //     id: 'pokedex',
@@ -145,23 +164,23 @@ const proyectos = [
     //     details: `En esta pequeña app puse a prueba mi conocimiento en el consumo de Rest API haciendo uso de la librería AXIOS. Para el diseño utilicé por primera vez Vuetify que viene con UI Componentes y para los datos utilicé PokéAPI.`,
     //     herramientas: ['html', 'sass', 'vue', 'vuetify', 'Axios', 'vue router']
     // },
-    {
-        img: 'https://i.imgur.com/nC1JW8W.png',
-        id: 'todoList',
-        titulo: 'todo list con vueJS',
-        link: '/portfolio/todo-list',
-        linkGithub: 'https://github.com/malbonm07/v-todolist',
-        linkSitio: 'https://malbonm07.github.io/v-todolist/',
-        skills: [
-            'VueJS',
-            'Props, directives, methods',
-            'Computed properties',
-            'Watch property',
-            'Event handling, Conditional',
-        ],
-        details: `Mi primera app desarrollada con VueJS aquí puse en práctica algunos conocimientos del Framework para tratar de entender mejor el core, la comunicación entre componentes a traves de props y custom events, el manejo básico del state, condicionales, mapeo de arrays a Elementos con v-for. La app tiene funcionalidades para agregar, editar y eliminar datos, también se puede filtrar las tareas activas o completas.`,
-        herramientas: ['html', 'css', 'vue', 'javascript']
-    },
+    // {
+    //     img: 'https://i.imgur.com/nC1JW8W.png',
+    //     id: 'todoList',
+    //     titulo: 'todo list con vueJS',
+    //     link: '/portfolio/todo-list',
+    //     linkGithub: 'https://github.com/malbonm07/v-todolist',
+    //     linkSitio: 'https://malbonm07.github.io/v-todolist/',
+    //     skills: [
+    //         'VueJS',
+    //         'Props, directives, methods',
+    //         'Computed properties',
+    //         'Watch property',
+    //         'Event handling, Conditional',
+    //     ],
+    //     details: `Mi primera app desarrollada con VueJS aquí puse en práctica algunos conocimientos del Framework para tratar de entender mejor el core, la comunicación entre componentes a traves de props y custom events, el manejo básico del state, condicionales, mapeo de arrays a Elementos con v-for. La app tiene funcionalidades para agregar, editar y eliminar datos, también se puede filtrar las tareas activas o completas.`,
+    //     herramientas: ['html', 'css', 'vue', 'javascript']
+    // },
 ]
 
 export default proyectos;
