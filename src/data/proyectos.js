@@ -1,5 +1,42 @@
 const proyectos = [
     {
+        img: 'https://i.imgur.com/jHeCJVv.png',
+        id: 'fixbrand',
+        titulo: 'FIXBRAND',
+        link: '/portfolio/fixbrand',
+        linkGithub: 'http://fixbrand.com/',
+        linkSitio: 'http://fixbrand.com/',
+        skills: [
+            'JQuery',
+            'CSS',
+            'HTML5',
+            'JavaScript',
+            'Ajax'
+        ],
+        details: `A manageable website with animations between pages. My job was to layout and perform 3 different types of CRUD (portfolio, clients, contacts) in the front-end.`,
+        herramientas: ['html', 'jquery', 'css flexbox', 'javascript', 'bootstrap']
+    },
+    {
+        img: 'https://i.imgur.com/ajen1ED.png',
+        id: 'glorieta',
+        titulo: 'La Glorieta Landing Page',
+        link: '/portfolio/glorieta',
+        linkGithub: 'http://cmsreservas.noveltie.la/',
+        linkSitio: 'http://cmsreservas.noveltie.la/',
+        skills: [
+            'Css Flexbox',
+            'JQuery',
+            'DOM Manipulation',
+            'Shopping cart',
+            'Development of item catalog, pagination and custom search',
+            'Implement complex DOM calculations and updates',
+            'OOP'
+
+        ],
+        details: `A website that allows its customers to make online reservations, in addition to displaying information about it, their news and contact information.`,
+        herramientas: ['html', 'css flexbox', 'jquery']
+    },
+    {
         img: 'https://i.imgur.com/beqN3ue.png',
         id: 'social',
         titulo: 'social application',
@@ -21,7 +58,7 @@ const proyectos = [
     {
         img: "https://media.giphy.com/media/W2QJOFzWyh1Mg2BtFS/giphy.gif",
         id: 'musicapp',
-        titulo: 'vue music SPA con quasar',
+        titulo: 'vue music SPA - quasar',
         link: '/portfolio/quasar-music-app',
         linkGithub: 'https://github.com/malbonm07/quasar-music-app',
         linkSitio: 'https://malbonm07.github.io/vue-quasar-spa/#/',
@@ -43,7 +80,7 @@ const proyectos = [
     {
         img: "https://media.giphy.com/media/LkrWAlScM5owLtU2NX/giphy.gif",
         id:'vuetyLanding',
-        titulo: 'landing page con vuetify',
+        titulo: 'landing page - vuetify',
         link: '/portfolio/vuetify-landing',
         linkGithub: 'https://github.com/malbonm07/nuxt-landing-template',
         linkSitio: 'https://malbonm07.github.io/nuxt-landing-template/',
@@ -63,7 +100,7 @@ const proyectos = [
     {
         img: "https://media.giphy.com/media/MdvP37QPFGWemUnIcV/giphy.gif",
         id: 'escuelaNuxt',
-        titulo: 'escuela digital con nuxt',
+        titulo: 'escuela digital - Nuxt',
         link: '/portfolio/nuxt-school-page',
         linkGithub: 'https://github.com/malbonm07/landing-school',
         linkSitio: 'https://malbonm07.github.io/landing-school/',
@@ -76,21 +113,6 @@ const proyectos = [
         ],
         details: `Para mejorar mi dominio en Css me propuse como reto reproducir una pagina web enfocada en la enseñanza artistica. Decidí hacerla totalmente responsive e imitar los componentes utilizando Vue. Para el swiper instalé vue-awesome-swiper . Los otros componentes como los Expansion panels y Tabs los desarrollé con Vue y Sass.`,
         herramientas: ['Html', 'Sass', 'Nuxt', 'Vue', 'Javascript', 'BEM']
-    },
-    {
-        img: 'https://i.imgur.com/0fRIGOl.png',
-        id: 'blogVue',
-        titulo: 'blog con vuetify',
-        link: '/portfolio/vuetify-blog',
-        linkGithub: 'https://github.com/malbonm07/nuxt-blog-template',
-        linkSitio: 'https://malbonm07.github.io/nuxt-blog-template/',
-        skills: [
-            'Vuetify',
-            'Sass',
-            'Css Grid',
-        ],
-        details: `Este es un blog desarrollado con Vuetify Framework que se basa en los principios de Material Design, es completamente responsive. Está subida en gh-pages.`,
-        herramientas: ['html', 'sass', 'vuetify', 'nuxt', 'vue', 'vue router']
     },
     {
         img: 'https://i.imgur.com/v5i4Qi7.png',
@@ -108,23 +130,6 @@ const proyectos = [
         details: `Este es uno de los proyectos que realicé para obtener mi certificado Front End en Freecodecamp. Para maquetar el diseño utilicé Css Grid Flexbox, la estructura lo hice con HTML.
         Para desarrollar la app utilicé Vue. Con todo listo puse en práctica mi lógica en programación.`,
         herramientas: ['html', 'sass', 'flexbox', 'grid', 'javascript']
-    },
-    {
-        img: 'https://i.imgur.com/OQjIpeW.png',
-        id: 'shopCart',
-        titulo: 'shop cart VueJS',
-        link: '/portfolio/vue-shop-cart',
-        linkGithub: 'https://github.com/malbonm07/vue-shopping-cart',
-        linkSitio: 'https://malbonm07.github.io/v-shoppingcart/',
-        skills: [
-            'VueJS',
-            'Vue Components',
-            'Props, directives, methods',
-            'Css grid, Sass',
-            'localStorage'
-        ],
-        details: `Uno de mis primeros proyectos, en este caso tuve como reto la lógica para programar una SPA carrito de compra basico, para crear las funcionalidades como seleccionar, comprar y limpiar la lista de items utilicé Vue. Uno de los problemas que tuve que resolver era la perdida de datos al momento de refrescar la página, y buscando información decidí optar por la propiedad LocalStorage de HTML. Con ello pude guardar todos los datos y evitar la perdida de los mismos.`,
-        herramientas: ['html', 'sass', 'vue', 'javascript']
     },
     {
         img: "https://media.giphy.com/media/fZ2bJg4HC4pB6risMw/giphy.gif",
@@ -146,41 +151,6 @@ const proyectos = [
         herramientas: ['html', 'css', 'sass', 'BEM Arquitecture', 'javascript', 'vue router', 'vue', 'i18n']
 
     },
-    // {
-    //     img: 'https://i.imgur.com/J0Rywzi.png',
-    //     id: 'pokedex',
-    //     titulo: 'pokedex con vuetify',
-    //     link: '/portfolio/pokedex',
-    //     linkGithub: 'https://github.com/malbonm07/pokemon',
-    //     linkSitio: 'https://malbonm07.github.io/v-pokemon/',
-    //     skills: [
-    //         'VueJS',
-    //         'Vuetify',
-    //         'UI Components',
-    //         'Vue router',
-    //         'Rest API with AXIOS'
-
-    //     ],
-    //     details: `En esta pequeña app puse a prueba mi conocimiento en el consumo de Rest API haciendo uso de la librería AXIOS. Para el diseño utilicé por primera vez Vuetify que viene con UI Componentes y para los datos utilicé PokéAPI.`,
-    //     herramientas: ['html', 'sass', 'vue', 'vuetify', 'Axios', 'vue router']
-    // },
-    // {
-    //     img: 'https://i.imgur.com/nC1JW8W.png',
-    //     id: 'todoList',
-    //     titulo: 'todo list con vueJS',
-    //     link: '/portfolio/todo-list',
-    //     linkGithub: 'https://github.com/malbonm07/v-todolist',
-    //     linkSitio: 'https://malbonm07.github.io/v-todolist/',
-    //     skills: [
-    //         'VueJS',
-    //         'Props, directives, methods',
-    //         'Computed properties',
-    //         'Watch property',
-    //         'Event handling, Conditional',
-    //     ],
-    //     details: `Mi primera app desarrollada con VueJS aquí puse en práctica algunos conocimientos del Framework para tratar de entender mejor el core, la comunicación entre componentes a traves de props y custom events, el manejo básico del state, condicionales, mapeo de arrays a Elementos con v-for. La app tiene funcionalidades para agregar, editar y eliminar datos, también se puede filtrar las tareas activas o completas.`,
-    //     herramientas: ['html', 'css', 'vue', 'javascript']
-    // },
 ]
 
 export default proyectos;

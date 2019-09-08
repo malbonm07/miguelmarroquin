@@ -56,6 +56,7 @@
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
+        <div class="menu">menu</div>
       </label>
     </div>
 <!------------------------------ END MOB NAV BTN -------------------------->
@@ -115,7 +116,7 @@
             <!-- <a href="https://www.facebook.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'facebook-f']" /></a> -->
             <a href="https://github.com/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'github']" /></a>
             <a href="https://codepen.io/Malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
-            <a href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+            <!-- <a href="https://www.linkedin.com/in/malbonm07" target="_blank" class="icon-link"><font-awesome-icon :icon="['fab', 'linkedin-in']" style="display:none"/></a> -->
           </div>
         </nav>
       </div>
@@ -205,6 +206,11 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/main.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+html, body {
+    font-family: 'Lato', serif;
+}
 // body {margin: 0; height: 100%; overflow: hidden}
 //logo styles ares in '.assets/scss/logo';
 //langagues switch styles are in './assets/scss/components/langSwitch';'

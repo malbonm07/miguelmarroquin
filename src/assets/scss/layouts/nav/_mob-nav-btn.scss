@@ -17,6 +17,7 @@
       flex-direction: column;
       align-items: center;
       cursor: pointer;
+      position: relative;
       &:hover{
         .line{
           transition: all 0.2s ease-in-out;
@@ -43,13 +44,23 @@
             width: 70%;
           }
           &:nth-child(2){
+            position: relative;
             width: 60%;
             height: 1px;
             background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           &:nth-child(3){
             width: 70%;
           }
+      }
+      .menu {
+        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+        transition: .3s;
       }
     }
     
@@ -66,6 +77,9 @@
         &:nth-child(3){
           transform: translateY(-7px) rotate(-45deg);
         }
+      }
+      .menu {
+        opacity: 0;
       }
     }
 }

@@ -85,15 +85,16 @@
                 opacity: 0;
                 animation: fadeUpDescription .3s ease-in-out forwards;
                 animation-delay: 1s;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 font-weight: 200;
-                color: $secondary-dark-color;
+                // color: $secondary-dark-color;
+                color: white;
                 line-height: 2.4rem;
                 @include desktop {
                     font-size: 1.8rem;
                 }
                 a {
-                    color: $secondary-dark-color;
+                    color: white;
                     font-weight: 400;
                     &:hover {
                         cursor: pointer;

@@ -40,6 +40,10 @@ export default new Router({
           component: () => import('./views/proyectos/mobileByRoute/PersonalPortfolio.vue')
         },
         {
+          path: 'glorieta',
+          component: () => import('./views/proyectos/mobileByRoute/Glorieta.vue')
+        },
+        {
           path: 'quasar-music-app',
           component: () => import('./views/proyectos/mobileByRoute/QuasarAppVue')
         },
@@ -52,28 +56,16 @@ export default new Router({
           component: () => import('./views/proyectos/mobileByRoute/NuxtSchoolPage.vue')
         },
         {
-          path: 'vuetify-blog',
-          component: () => import('./views/proyectos/mobileByRoute/BlogVuetify.vue')
-        },
-        {
           path: 'vue-calculator',
           component: () => import('./views/proyectos/mobileByRoute/Calculator.vue')
         },
         {
-          path: 'vue-shop-cart',
-          component: () => import('./views/proyectos/mobileByRoute/ShopCart.vue')
+          path: 'fixbrand',
+          component: () => import('./views/proyectos/mobileByRoute/Fixbrand.vue')
         },
         {
           path: 'social-app',
           component: () => import('./views/proyectos/mobileByRoute/SocialApp.vue')
-        },
-        {
-          path: 'pokedex',
-          component: () => import('./views/proyectos/mobileByRoute/Pokedex.vue')
-        },
-        {
-          path: 'todo-list',
-          component: () => import('./views/proyectos/mobileByRoute/TodoList.vue')
         },
       ]
     },

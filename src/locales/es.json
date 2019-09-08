@@ -9,11 +9,11 @@
             "touch": "Estemos en Contacto"
         },
         "home": {
-            "msg": "<h2>Hola!, Yo soy&nbsp;<span class='text-regular'>Miguel Alonso Marroquin</span>&nbsp;aspirante a desarrollador Front End, Diseño de interfaces y UX, viviendo actualmente en Perú. Bienvenido a mi portafolio! :)</h2>",
+            "msg": "<h2>Hola!, Yo soy&nbsp;<span class='text-regular'>Miguel Alonso Marroquin</span>&nbsp;un apasionado desarrollador Front End, Diseño de interfaces y UX, viviendo actualmente en Perú. Bienvenido a mi portafolio! :)</h2>",
             "btn": "Portafolio"
         },
         "about": {
-            "msg": "<h2 class='text-regular'>He desarrollado paginas <a href='https://www.w3schools.com/html/html_responsive.asp' target='_blank'>Web Responsive</a> con tecnologías como <a href='https://www.w3.org/html/' target='_blank'>HTML</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CCS</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> entre otros más. Me tomé el tiempo de aprender programación y web development y decidí que este es el tipo de trabajo que quiero ejercer, intentando mejorar siempre, algunas veces con errores pero aprendiendo constantemente. Me considero una persona comprometida con mi trabajo, dispuesto a contribuir y  aprender.</h2>"
+            "msg": "<h2 class='text-regular'>Soy un apasionado por la tecnología, me encantan los retos porque es la manera en la que me siento motivo a mejorar, tengo experiencia en tecnologías como <a href='https://www.w3.org/html/' target='_blank'>HTML</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CSS</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> entre otros más. Me tomé el tiempo de aprender programación y web development y decidí que este es el tipo de trabajo que quiero ejercer, intentando mejorar siempre, algunas veces con errores pero aprendiendo constantemente. Me considero una persona comprometida con mi trabajo, dispuesto a contribuir y  aprender.</h2>"
         },
         "skills": {
             "sub": "Habilidades Blandas",

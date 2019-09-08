@@ -9,11 +9,11 @@
             "touch": "Get in Touch"
         },
         "home": {
-            "msg": "<h2>Hello!, I'am <span class='text-regular'>Miguel Alonso Marroquin</span>&nbsp;aspirant to Front End Development, interface design y UX, currently living in Perú. Welcome to my portfolio! :)</h2>",
+            "msg": "<h2>Hello!, I'am <span class='text-regular'>Miguel Alonso Marroquin</span>,&nbsp;a passionate Front End Development, UI/UX, currently living in Perú. Welcome to my portfolio! :)</h2>",
             "btn": "Portfolio"
         },
         "about": {
-            "msg": "<h2 class='text-regular'>Lifelong student, I have developed web pages through the approach <a href='https://www.w3schools.com/html/html_responsive.asp' target='_blank'>Responsive Web Design</a> with technologies such as <a href='https://www.w3.org/html/' target='_blank'>HTML5</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CCS3</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> and more. I took the time to learn programming and web development and decided that this is the type of work I want, always improving, sometimes with mistakes, and constantly learning. I am a person committed to my work, eager to contribute and learn.</h2>"
+            "msg": "<h2 class='text-regular'>I am passionate about technology and design, I love challenges because it is the way I can improve. Lifelong student I have experience in technologies such as <a href='https://www.w3.org/html/' target='_blank'>HTML5</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CSS</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> and more. I took the time to learn programming and web development and decided that this is the type of work I want, always improving, sometimes with mistakes, and constantly learning. I am a person committed to my work, eager to contribute and learn.</h2>"
         },
         "skills": {
             "sub": "Soft Skills",
@@ -30,14 +30,14 @@
             "sub2": "Programmings Languages, Frameworks and Tools"
         },
         "portfolio": {
-          "sub": "Own Projects",
+          "sub": "Personal Projects",
           "btn": "Projects",
           "details": "See Details",
           "view": "View Project",
           "viewGithub" : "View Github"
         },
         "education": {
-          "sub": "Courses I Took",
+          "sub": "Courses I have taken",
           "certificates": "Certificates"
         }
     }

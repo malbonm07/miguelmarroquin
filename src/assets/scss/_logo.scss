@@ -1,5 +1,14 @@
 .logo {
-    display: none;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 30px;
+    left: 35px;
+    z-index: 90;
+    .logo-img {
+        width: 100%;
+    }
     @include tablet {
         display: block;
         width: 4rem;
