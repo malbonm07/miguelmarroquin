@@ -151,7 +151,7 @@ const proyectos = [
     {
         img: "https://media.giphy.com/media/fZ2bJg4HC4pB6risMw/giphy.gif",
         id: 'miguelportfolio',
-        titulo: 'miguel alonso portfolio',
+        titulo: 'Portfolio',
         link: '/portfolio/personal-portfolio',
         linkGithub: 'https://github.com/malbonm07/miguelmarroquin',
         linkSitio: 'https://malbonm07.github.io',
