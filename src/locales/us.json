@@ -13,7 +13,7 @@
             "btn": "Portfolio"
         },
         "about": {
-            "msg": "<h2 class='text-regular'>I am passionate about technology and design, I love challenges because it is the way I can improve. Lifelong student I have experience in technologies such as <a href='https://www.w3.org/html/' target='_blank'>HTML5</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CSS</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> and more. I took the time to learn programming and web development and decided that this is the type of work I want, always improving, sometimes with mistakes, and constantly learning. I am a person committed to my work, eager to contribute and learn.</h2>"
+            "msg": "<h2 class='text-regular'>I am passionate about technology and design, I love challenges because it is the way I can improve. Lifelong student. I have experience in technologies such as <a href='https://www.w3.org/html/' target='_blank'>HTML5</a>, <a href='https://www.w3.org/Style/CSS/Overview.en.html' target='_blank'>CSS</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>Javascript</a>, <a href='https://vuejs.org/' target='_blank'>VueJS</a> and more. I took the time to learn programming and web development and decided that this is the type of work I want, always improving, sometimes with mistakes, and constantly learning. I am a person committed to my work, eager to contribute and learn.</h2>"
         },
         "skills": {
             "sub": "Soft Skills",
@@ -34,7 +34,27 @@
           "btn": "Projects",
           "details": "See Details",
           "view": "View Project",
-          "viewGithub" : "View Github"
+          "viewSite": "View site",
+          "tools": "Tools",
+          "technologies": "Technologies",
+          "viewGithub" : "View Github",
+          "projects": {
+            "hadas": {
+              "description": "Startup dedicated to cleaning services in houses, apartament and offices. I was in charge of the development of version 2.0 of the website and the administrative panel (dashboard)."
+            },
+            "fixbrand": {
+              "description": "A manageable website with animations between pages. My job was to layout and perform 3 different types of CRUD (portfolio, clients, contacts) in the front-end."
+            },
+            "glorieta": {
+              "description": "A website that allows its customers to make online reservations, in addition to displaying information about it, their news and contact information. In this project I applied some knowledge like OOP, DOM manipulation, Implement complex DOM calculations and updates."
+            },
+            "social": {
+              "description": "A SPA (personal project) made with Vue, Vuex, Firebase, Express. This project covers things like integration / consumption of a REST Api server built with Node js and express, registration, login and authentication, image uploads, notifications and more."
+            },
+            "portfolio": {
+              "description": "Portfolio to show all my work, made with Vue, for this I got down to work, I started creating a new project with vue-cli, for the styles use Sass along with the BEM methodology, each component and view of each page has its .scss file and everything is imported into the main.scss, it seemed to me a more orderly way of working. I started with mobile first design, then tablet and desktop. The animations are made with pure css and others with small libraries. The routes and images are built under the concept of Lazy Loading that improves the performance of the page."
+            }
+          }
         },
         "education": {
           "sub": "Courses I have taken",

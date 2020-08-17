@@ -7,22 +7,22 @@
         <h5 class="img-sub">
             <a class="img-sub__link" href="https://github.com/malbonm07/social-app" target="_blank">
                 <font-awesome-icon class="img-sub__link-icon" :icon="['fab', 'github']" />
-                Ver en Github
+                {{$t("message.portfolio.viewGithub")}}
             </a></h5>
         <h5 class="img-sub">
             <a class="img-sub__link" href="https://github.com/malbonm07/social-app" target="_blank">
                 <font-awesome-icon class="img-sub__link-icon" :icon="['fas', 'link']" />
-                Ver el sitio
+                {{$t("message.portfolio.viewSite")}}
             </a></h5>
         <article class="social-app--description">
             <div class="skills-description">
                 <h3>Skills:</h3>
-                <p>Una <span class="text-regular">SPA</span> con caracteristicas de una red social, creado con <span class="text-regular">Vue</span> , <span class="text-regular">Vuex</span> , <span class="text-regular">Firebase</span> , <span class="text-regular">Express</span> . Este proyecto cubre cosas como integración/consumo de una <span class="text-regular">REST Api</span>  server construido con Node js y express, registro, login y autenticación, upload de imagenes, notificaciones y más</p>
+                <p>{{$t("message.portfolio.projects.social.description")}}</p>
             </div>
             <ul class="workflow-description">
-                <h3>Herramientas:</h3>
+                <h3>{{$t("message.portfolio.tools")}}:</h3>
                 <li>
-                    <h4 class="sub">tecnologías</h4>
+                    <h4 class="sub">{{$t("message.portfolio.technologies")}}</h4>
                     <p><a href="https://sass-lang.com/" target="_blank">Sass</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">LocalStorage</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Html5</a></p>
                 </li>
                 <li>

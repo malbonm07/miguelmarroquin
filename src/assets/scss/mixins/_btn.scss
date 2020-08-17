@@ -4,12 +4,15 @@
     animation-delay: 1.3s;
     border: 1px solid transparent;
     outline: none;
-    padding: 0.5rem 2.3rem;
+    padding: 1rem 2.3rem;
+    // padding: 0.5rem 2.3rem;
     background: $bg;
     color: $color;
     font-size: 1.4rem;
+    font-weight: 600;
     letter-spacing: 1.5px;
-    font-family: 'Indie Flower';
+    text-transform: uppercase;
+    // font-family: 'Indie Flower';
     font-size: 1.4rem;
     transition: .2s ease-in-out;
     &:hover {

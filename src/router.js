@@ -64,6 +64,10 @@ export default new Router({
           component: () => import('./views/proyectos/mobileByRoute/Fixbrand.vue')
         },
         {
+          path: 'hadas',
+          component: () => import('./views/proyectos/mobileByRoute/Hadas.vue')
+        },
+        {
           path: 'social-app',
           component: () => import('./views/proyectos/mobileByRoute/SocialApp.vue')
         },

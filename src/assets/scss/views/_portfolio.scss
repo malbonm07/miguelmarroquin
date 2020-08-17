@@ -130,18 +130,18 @@
                         color: inherit;
                     }
                 }
-                @for $i from 1 through 9 {
+                @for $i from 1 through 5 {
                     li:nth-child(#{$i}) {
                         opacity: 0;
                         animation: fadeUpWorksLi .3s ease-in-out forwards;
                         animation-delay: #{1.2 + 0.1 * $i}s;
                     }
-                    li:nth-child(5) {
-                        display: none;
-                    }
-                    li:nth-child(7) {
-                        display: none;
-                    }
+                    // li:nth-child(5) {
+                    //     display: none;
+                    // }
+                    // li:nth-child(7) {
+                    //     display: none;
+                    // }
                 }
             }
             .desktContainer-list {
@@ -262,14 +262,14 @@
                 width: 100%;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-template-rows: repeat(8, 400px);
+                grid-template-rows: repeat(5, 400px);
                 justify-items: center;
                 align-items: center;
                 grid-row-gap: 8rem;
                 padding: 4rem 0 8rem 0;
                 .DesktProjects-item {
                     width: 90%;
-                    min-height: 400px;
+                    // min-height: 400px;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;

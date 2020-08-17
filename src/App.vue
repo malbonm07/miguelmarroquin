@@ -56,7 +56,7 @@
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-        <div class="menu">menu</div>
+        <!-- <div class="menu">menu</div> -->
       </label>
     </div>
 <!------------------------------ END MOB NAV BTN -------------------------->
@@ -131,11 +131,11 @@
 require('intersection-observer');
 import {languageSwitch} from '@/mixins/languageSwitch';
 
-window.addEventListener('resize', () => {
-// We execute the same script as before
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+// window.addEventListener('resize', () => {
+// // We execute the same script as before
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
+// });
 
 export default {
   metaInfo() {
@@ -194,10 +194,7 @@ export default {
   created() {
     document.body.style.background = '#3AAFA9';
     let app = document.getElementById('app')
-    let pantallaWindow = window.innerHeight;
-
-    console.log(app.clientHeight);
-    console.log(app.innerHeight);
+    // let pantallaWindow = window.innerHeight;
   }
  
 }

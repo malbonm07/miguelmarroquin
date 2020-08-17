@@ -34,7 +34,27 @@
             "btn": "Proyectos",
             "details": "Ver Detalles",
             "view": "Ver Proyecto",
-            "viewGithub" : "Ver en Github"
+            "viewSite": "Ver el sitio",
+            "tools": "Herramientas",
+            "technologies": "Tecnologías",
+            "viewGithub" : "Ver en Github",
+            "projects": {
+                "hadas": {
+                    "description": "Empresa dedicada al servicio de limpieza. Estuve a cargo del desarrollo frontend de la página, anto de la versión pública como también la del panel de control administrativo (dashboard)."
+                },
+                "fixbrand": {
+                    "description": "Un sitio web manejable con animaciones entre páginas. Mi trabajo consistía en diseñar y realizar 3 tipos diferentes de CRUD (cartera, clientes, contactos) en el front-end."
+                },
+                "glorieta": {
+                    "description": "Un sitio web que permite a sus clientes realizar reservas online, además de mostrar información sobre el mismo, sus novedades e información de contacto. En este proyecto apliqué algunos conocimientos como OOP, manipulación DOM, Implementar cálculos y actualizaciones DOM complejos."
+                },
+                "social": {
+                    "description": "Una SPA (proyecto personal) con caracteristicas de una red social, creado con Vue, Vuex, Firebase, Express. Este proyecto cubre cosas como integración/consumo de una REST Api server construido con Node js y express, registro, login y autenticación, upload de imagenes, notificaciones y más"
+                },
+                "portfolio": {
+                    "description": "Después de practicar con Vue haciendo algunas plantillas creando paginas web o SPA, decidí que era momento de crear un nuevo portafolio para demostrar todos mis trabajos, para ello me puse manos a la obra, empecé creando un nuevo proyecto con vue-cli, para los estilos use Sass junto a la metodología BEM, cada componente y view de cada pagina tiene su archivo .scss y todo está importado en el main.scss, me pareció una manera más ordeanada de trabajar. Empecé con mobile first design, luego tablet y desktop. Las animaciones están hechas con puro css y otras con pequeñas librerías. Las rutas y las imagenes están contruidas bajo el concepto de Lazy Loading que mejora el performance de la página."
+                }
+            }
         },
         "education": {
             "sub": "Cursos que Hice",
